@@ -16,8 +16,32 @@ function Intro(props) {
                     </div>
                 </div>
             </div>
-            <div className={styles.line}></div>
+            <div className={styles.socialIcons}>
+              <a
+                href="https://github.com/Souravdey777/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/souravdey777/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://twitter.com/Souravdey777/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-twitter"></i>
+              </a>
+            </div>
                 <br/>
+                <br/>
+            <div className={styles.line}></div>
                 <br/>
                 <br/>
                 <div>Hi, I'm 24 yrs. <b>Full Stack Software Developer</b> from West Bengal, India.</div>

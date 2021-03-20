@@ -5,10 +5,10 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-bottom: 200px;
 }
 
 .profilepic {
-  margin: 1em 4em;
   width: 175px;
   height: 175px;
   background: conic-gradient(

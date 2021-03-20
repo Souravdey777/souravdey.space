@@ -2,7 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background: url("/pp 2.png") no-repeat center center fixed black;
+  background: url("/bg.png") no-repeat center center fixed black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

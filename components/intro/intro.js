@@ -25,7 +25,7 @@ function Intro(props) {
           </div>
         </div>
       </div>
-      <div className={styles.socialIcons}>
+      <div  style={{maxWidth:"768px"}} className={styles.socialIcons}>
         <a
           href="https://github.com/Souravdey777/"
           target="_blank"
@@ -48,18 +48,10 @@ function Intro(props) {
           <i className="fab fa-twitter"></i>
         </a>
       </div>
-      <div className={styles.line}></div>
-      <p>
-        I am a <b>passionate learner</b> having a keen interest in collaborating
-        and empowering teams to build digital solutions that solve real-world
-        problems. I'm also a design thinking facilitator and a <b>user-centric
-        developer</b> who believes that the merger between Design Thinking and
-        Digital Technologies will lead to the building of user-centered
-        solutions that are impactful toward the betterment of business and
-        society.
-      </p>
+      {/* <div className={styles.line}></div> */}
 
-      <div className={styles.line}></div>
+
+      {/* <div className={styles.line}></div> */}
     </div>
   );
 }

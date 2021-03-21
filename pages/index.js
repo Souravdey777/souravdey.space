@@ -24,7 +24,7 @@ export default function Home() {
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 1680 40" style={{bottom: "-1px", zIndex:1,}}><path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path></svg>
 <div style={{background:"white", height:"1500px"}}>
 <FadeInSection>
-  <div style={{background:"white", padding:"2rem", borderRadius:"20px", border:"1px solid #8193b277", boxShadow:"#00000022 0px 15px 15px", margin:"1rem", color:"#627597"}} > 
+  <div style={{background:"white", padding:"2rem", borderRadius:"20px", border:"1px solid #8193b277", boxShadow:"#00000022 0px 15px 15px", margin:"4rem 1rem", color:"#627597"}} > 
   <p style={{maxWidth:"768px"}}>
         I am a <b>passionate learner</b> having a keen interest in collaborating
         and empowering teams to build digital solutions that solve real-world

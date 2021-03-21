@@ -1,18 +1,27 @@
-import React from 'react';
-import Heading from '../heading/heading';
-import Image from 'next/image'
-import styles from './intro.module.css'
-
+import React from "react";
+import Heading from "../heading/heading";
+import Image from "next/image";
+import styles from "./intro.module.css";
 
 function Intro(props) {
   return (
-    <div>
+    <div className={styles.introRoot}>
       <div className={styles.segment2}>
-        <Heading>Sourav Dey</Heading>
-        {/* <Heading>Dey</Heading> */}
+        <div>
+          <Heading>Sourav Dey</Heading>
+          <p>
+            Hi, I'm 24 yrs. 👋 <b>Full Stack Software Developer</b> from West
+            Bengal, India.
+          </p>
+        </div>
         <div className={styles.profilepic}>
           <div className={styles.profilepic2}>
-            <Image src='/images/profilepic.png' width={150} height={150} alt="Sourav Dey" />
+            <Image
+              src="/images/profilepic.png"
+              width={150}
+              height={150}
+              alt="Sourav Dey"
+            />
           </div>
         </div>
       </div>
@@ -39,17 +48,18 @@ function Intro(props) {
           <i className="fab fa-twitter"></i>
         </a>
       </div>
-      <br />
-      <br />
       <div className={styles.line}></div>
-      <br />
-      <br />
-      <div>Hi, I'm 24 yrs. 👋 <b>Full Stack Software Developer</b> from West Bengal, India.</div>
-      <br />
-      <br />
-      <div>
-        I am a <b>passionate learner</b> having a keen interest in collaborating and empowering teams to build digital solutions that solve real-world problems. I'm also a design thinking facilitator and a user-centric developer who believes that the merger between Design Thinking and Digital Technologies will lead to the building of user-centered solutions that are impactful toward the betterment of business and society.
-                </div>
+      <p>
+        I am a <b>passionate learner</b> having a keen interest in collaborating
+        and empowering teams to build digital solutions that solve real-world
+        problems. I'm also a design thinking facilitator and a <b>user-centric
+        developer</b> who believes that the merger between Design Thinking and
+        Digital Technologies will lead to the building of user-centered
+        solutions that are impactful toward the betterment of business and
+        society.
+      </p>
+
+      <div className={styles.line}></div>
     </div>
   );
 }

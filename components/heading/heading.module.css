@@ -1,19 +1,11 @@
 .headingRoot {
-  font-family: var(--font-head-bold);
-  font-weight: 900;
-  font-size: 5em;
-  line-height: 1em;
+  font-family: var(--font-exo-eb);
+  font-size: 4em;
+  color: white;
   margin: 0;
   padding: 0;
-  /* background-color: black; */
-  /* background: -webkit-linear-gradient(
-    10deg,
-    rgb(237, 194, 100),
-    rgb(143, 195, 255)
-  ); */
-  /* background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
+  line-height: 1;
+  letter-spacing: -0.025em !important;
 }
 
 @media (max-width: 768px) {

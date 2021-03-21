@@ -15,13 +15,14 @@ export default function Home() {
           crossOrigin="anonymous"
         />
       </Head>
+      
 
       <main className={styles.main}>
         <Intro/>
       </main>
 
-      <footer className={styles.footer}>
-      </footer>
+      {/* <footer className={styles.footer}>
+      </footer> */}
     </div>
   )
 }

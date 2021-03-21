@@ -10,7 +10,7 @@ function Intro(props) {
         <div>
           <Heading>Sourav Dey</Heading>
           <p>
-            Hi, I'm 24 yrs. 👋 <b>Full Stack Software Developer</b> from West
+            👋 Hey, I'm a 24 yrs. old, <b>Full Stack Software Developer</b> from West
             Bengal, India.
           </p>
         </div>

@@ -14,8 +14,8 @@ function Intro(props) {
             Bengal, India.
           </p>
         </div>
-        <div className={styles.profilepic}>
-          <div className={styles.profilepic2}>
+        <div className={styles.profilePicBackgroundOutter}>
+          <div className={styles.profilePicBackgroundInner}>
             <Image
               src="/images/profilepic.png"
               width={150}
@@ -25,13 +25,12 @@ function Intro(props) {
           </div>
         </div>
       </div>
-      <div  style={{maxWidth:"768px"}} className={styles.socialIcons}>
+      <div className={styles.socialIcons}>
         <a
           href="mailto:piyush.kolkata@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {/* <i className="fab fa-Envelope"></i> */}
           <i className="fas fa-envelope"></i>
         </a>
         <a
@@ -57,7 +56,7 @@ function Intro(props) {
         </a>
       </div>
       {/* <div className={styles.line}></div> */}
-      <p style={{maxWidth:"768px", marginBottom:"100px"}}>
+      <p style={{marginBottom:"100px"}}>
         I am a <b>passionate learner</b> having a keen interest in collaborating
         and empowering teams to build digital solutions that solve real-world
         problems. I'm also a design thinking facilitator and a <b>user-centric
@@ -67,7 +66,6 @@ function Intro(props) {
         society.
       </p>
 
-      {/* <div className={styles.line}></div> */}
     </div>
   );
 }

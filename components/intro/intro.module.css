@@ -1,40 +1,30 @@
 .introRoot {
   color: #8193b2;
+  margin: auto;
+  min-height: 100vh;
 }
 
 .segment2 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 200px;
+  align-items: center;
+  margin-bottom: 5rem;
+  font-size: 1.2rem;
 }
 
-.profilepic {
+.profilePicBackgroundOutter {
   width: 175px;
   height: 175px;
-  /* background: conic-gradient(
-    rgb(139, 203, 255),
-    rgb(205, 191, 255),
-    rgb(235, 255, 162),
-    rgb(255, 183, 255),
-    rgb(255, 226, 172),
-    rgb(139, 203, 255)
-  ); */
-  background: -webkit-linear-gradient(
-    -70deg,
-    #a2facf,
-    #64acff,
-    #ffe364,
-    #a2facf
-  );
+  margin: 2rem;
+  background: linear-gradient(-70deg, #a2facf, #64acff, #ffe364, #a2facf);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.profilepic2 {
+.profilePicBackgroundInner {
   margin: 0px;
   width: 165px;
   height: 165px;
@@ -50,16 +40,25 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-bottom: 100px;
 }
 
 .socialIcons a {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid #8193b2;
   transition-duration: 0.4s;
 }
 
 .socialIcons a:hover {
-  color: white;
+  color: #ececec;
+  background: #ffffff22;
+  border: 2px solid #ececec;
 }
 
 .line {

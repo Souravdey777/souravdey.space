@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Intro from '../components/intro/intro'
+import Intro from '../components/intro/introOld.js'
 import styles from '../styles/Home.module.css'
 import React from "react";
 

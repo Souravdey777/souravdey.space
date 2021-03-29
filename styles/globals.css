@@ -23,7 +23,8 @@ body {
   -o-background-size: cover;
   background-size: cover;
   font-family: var(--font-exo-r);
-  cursor: url("/cursor.png"), auto;
+  cursor: url("/Cursor.cur"), auto; /*IE & Edge*/
+  cursor: url("/Cursor.svg") 16 16, auto; /*Rest browsers*/
 }
 
 a {

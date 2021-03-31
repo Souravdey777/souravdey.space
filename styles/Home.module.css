@@ -29,7 +29,7 @@
   align-items: center;
   font-size: 1rem;
   bottom: 3rem;
-  background: #ffffff;
+  background: #8193b2;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -43,7 +43,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  border: 2px solid #ffffff;
+  border: 2px solid #8193b2;
   transition-duration: 1s;
 }
 
@@ -62,14 +62,12 @@
   }
 
   .socialIcons {
-    /* position: unset; */
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    bottom: auto;
-    top: 4rem;
-    right: 2rem;
-    max-width: 50%;
+    position: unset;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-top: 2rem;
   }
+
   .socialIcons a {
     margin: 0.8rem;
   }

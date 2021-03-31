@@ -89,7 +89,7 @@ p {
     font-size: 1.25rem;
   }
   .LogoNav {
-    padding: 2rem;
+    padding: 0 2rem;
   }
   .floatText {
     position: unset;

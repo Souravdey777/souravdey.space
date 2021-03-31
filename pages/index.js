@@ -80,6 +80,10 @@ export default function Home() {
             Technologies will lead to the building of user-centered solutions
             that are impactful toward the betterment of business and society.
           </p>
+          <div className="floatText">
+          <span className="gradientText">DESIGNING<br/>& DEVELOPING</span><br/><span className="floatTextWord">FUTURE</span>
+
+          </div>
           </div>
           {/* <div style={{ marginTop: "50px" }}>
             <Link href="/">

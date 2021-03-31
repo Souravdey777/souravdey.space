@@ -51,6 +51,26 @@ p {
   background: black;
 }
 
+.floatText {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  font-size: 5rem;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 100%;
+  text-align: right;
+  opacity: 20%;
+}
+
+.floatTextWord {
+  background: -webkit-linear-gradient(-70deg, #a2facf, #64acff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 4px transparent;
+  color: #000000;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -70,5 +90,10 @@ p {
   }
   .LogoNav {
     padding: 2rem;
+  }
+  .floatText {
+    position: unset;
+    font-size: 2rem;
+    margin-top: 50px;
   }
 }

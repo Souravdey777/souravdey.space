@@ -1,9 +1,14 @@
-import Head from 'next/head'
-import Intro from '../components/intro/introOld.js'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import Image from "next/Image";
+import styles from "../styles/Home.module.css";
 import React from "react";
+import { useRouter } from "next/router";
+import Link from 'next/link'
+import { ROUTES } from "../utils/routes";
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <div className={styles.container}>
       {/* HTML Head Tag */}
@@ -12,70 +17,88 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps"
+        ></link>
+        <link
+          rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
           integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
           crossOrigin="anonymous"
         />
       </Head>
-
-      {/* Website Body */}
       <main className={styles.main}>
-        <Intro />
+        <div className="LogoNav">
+          <span
+            className="gradientText"
+            style={{ fontWeight: "bold", fontSize: "1.125rem" }}
+          >
+            Sourav Dey
+          </span>
+          <div className={styles.socialIcons}>
+            <a
+              href="mailto:piyush.kolkata@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fas fa-envelope"></i>
+            </a>
+            <a
+              href="https://github.com/Souravdey777/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-github"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/souravdey777/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://twitter.com/Souravdey777/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i className="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+        <div className="body">
+          <div>
+            <div className="qoutes">
+              <Image src="/images/qoutes.svg" width={80} height={80} />
+            </div>
+            <p className="gradientText" style={{ fontSize: "2rem" }}>
+              Hi <b>Sourav</b> here,
+            <br />a <b>Full Stack Software Developer</b>
+            </p>
+            <p className={styles.intro}>
+              I am a <span className="gradientText">passionate learner</span> having a keen interest in collaborating to
+            build digital solutions that <span className="gradientText">solve real-world problems</span>. I'm also a
+            design thinking facilitator and a user-centric developer who
+            believes that the merger between Design Thinking and Digital
+            Technologies will lead to the building of user-centered solutions
+            that are impactful toward the betterment of business and society.
+          </p>
+          </div>
+          {/* <div style={{ marginTop: "50px" }}>
+            <Link href="/">
+              <span className="link" style={{ marginRight: "40px" }} >
+                <span>/aboutMe</span>
+                </span>
+            </Link>
+            <Link href={ROUTES.WORK_EXPERIENCE}>
+              <span style={{ marginRight: "40px" }} >{ROUTES.WORK_EXPERIENCE}</span>
+            </Link>
+            <span style={{ marginRight: "40px" }} >/techSkills</span>
+            <span style={{ marginRight: "40px" }} >/sideProjects</span>
+            <span style={{ marginRight: "40px" }} >/blogs</span>
+          </div> */}
+
+        </div>
       </main>
-      {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="none" viewBox="0 0 1680 40" ><path d="M0 40h1680V30S1340 0 840 0 0 30 0 30z" fill="#fff"></path></svg> */}
-      {/* <div style={{ background: "white", height: "1500px", marginTop:"-1px" }}> */}
-        {/* <FadeInSection>
-          <div style={{ background: "white", minHeight:"500px", padding: "2rem", borderRadius: "20px", border: "1px solid #8193b277", boxShadow: "#00000022 0px 15px 15px", margin: " 0 1rem", color: "#627597" }} >
-            <p style={{ maxWidth: "768px" }}>
-              I am a <b>passionate learner</b> having a keen interest in collaborating
-        and empowering teams to build digital solutions that solve real-world
-        problems. I'm also a design thinking facilitator and a <b>user-centric
-        developer</b> who believes that the merger between Design Thinking and
-        Digital Technologies will lead to the building of user-centered
-        solutions that are impactful toward the betterment of business and
-        society.
-      </p>
-          </div>
-        </FadeInSection> */}
-{/*          
-        <FadeInSection>
-          <div style={{ background: "white", minHeight:"500px", padding: "2rem", borderRadius: "20px", border: "1px solid #8193b277", boxShadow: "#00000022 0px 15px 15px", margin: "10rem 15rem", color: "#627597" }} >
-            <p style={{ maxWidth: "768px" }}>
-              I am a <b>passionate learner</b> having a keen interest in collaborating
-        and empowering teams to build digital solutions that solve real-world
-        problems. I'm also a design thinking facilitator and a <b>user-centric
-        developer</b> who believes that the merger between Design Thinking and
-        Digital Technologies will lead to the building of user-centered
-        solutions that are impactful toward the betterment of business and
-        society.
-      </p>
-          </div>
-        </FadeInSection> */}
-      {/* </div> */}
-
-
-      {/* <footer className={styles.footer}>
-      </footer> */}
-    </div>
-  )
-}
-
-function FadeInSection(props) {
-  const [isVisible, setVisible] = React.useState(false);
-  const domRef = React.useRef();
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => setVisible(entry.isIntersecting));
-    });
-    observer.observe(domRef.current);
-  }, []);
-  return (
-    <div
-      className={` ${isVisible ? 'fade-in-section is-visible' : 'fade-in-section'}`}
-      ref={domRef}
-    >
-      {props.children}
     </div>
   );
 }
-

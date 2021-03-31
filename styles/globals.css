@@ -2,29 +2,14 @@ html,
 body {
   padding: 0;
   margin: 0;
-  background: radial-gradient(
-      79.79% 118.51% at -29.79% 101.67%,
-      rgba(0, 56, 255, 0.44) 0%,
-      rgba(0, 56, 255, 0) 100%
-    ),
-    radial-gradient(
-      51.2% 76.04% at 113.55% 29.74%,
-      rgba(0, 41, 255, 0.12) 0%,
-      rgba(0, 41, 255, 0) 100%
-    ),
-    radial-gradient(
-      59.52% 78.33% at 95.47% 131.56%,
-      rgba(213, 124, 255, 0.26) 0%,
-      rgba(235, 0, 255, 0) 100%
-    ),
-    black;
+  background: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: var(--font-exo-r);
-  cursor: url("/Cursor.cur"), auto; /*IE & Edge*/
-  cursor: url("/Cursor.svg") 16 16, auto; /*Rest browsers*/
+
+  /* cursor: url("/Cursor.cur"), auto; IE & Edge */
+  /* cursor: url("/Cursor.svg") 16 16, auto; Rest browsers*/
 }
 
 a {
@@ -32,27 +17,11 @@ a {
   text-decoration: none;
 }
 
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(100px) scale(0.9);
-  visibility: hidden;
-  transition: opacity 1000ms ease-out, transform 600ms ease-out,
-    visibility 1000ms ease-out;
-  will-change: opacity, transform, visibility;
-  transition-delay: 0.3s;
-}
-
-.fade-in-section.is-visible {
-  opacity: 1;
-  transform: none;
-  visibility: visible;
-}
-
 p {
-  font-size: 1.6rem;
+  font-size: 1rem;
 }
 
-b {
+.gradientText {
   color: white;
   background: -webkit-linear-gradient(-70deg, #a2facf, #64acff);
   background-clip: text;
@@ -60,23 +29,30 @@ b {
   -webkit-text-fill-color: transparent;
 }
 
+.LogoNav {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+}
+
+.body {
+  margin: 2rem;
+}
+
+.link {
+  border-radius: 18px;
+  padding: 1rem;
+  background: linear-gradient(-70deg, #a2facf, #64acff);
+}
+
+.link span {
+  border-radius: 14px;
+  padding: 0.5em;
+  background: black;
+}
+
 * {
   box-sizing: border-box;
-}
-
-@font-face {
-  font-family: "exo-regular";
-  src: url("../assets/fonts/Exo_2/static/Exo2-Regular.ttf");
-}
-
-@font-face {
-  font-family: "exo-bold";
-  src: url("../assets/fonts/Exo_2/static/Exo2-Bold.ttf");
-}
-
-@font-face {
-  font-family: "exo-extrabold";
-  src: url("../assets/fonts/Exo_2/static/Exo2-Black.ttf");
 }
 
 :root {
@@ -90,6 +66,9 @@ b {
 
 @media (max-width: 768px) {
   p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+  }
+  .LogoNav {
+    padding: 2rem;
   }
 }

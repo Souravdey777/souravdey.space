@@ -37,18 +37,19 @@ p {
 
 .body {
   margin: 2rem;
+  max-width: 30rem;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .link {
-  border-radius: 18px;
-  padding: 1rem;
-  background: linear-gradient(-70deg, #a2facf, #64acff);
-}
-
-.link span {
+  border-radius: 25px;
+  padding: 0.2rem 1rem;
+  padding-bottom: 0.4rem;
+  border: 3px solid #83d3e7;
   border-radius: 14px;
-  padding: 0.5em;
-  background: black;
+  font: 16px;
+  margin-right: 40px;
 }
 
 .floatText {

@@ -2,17 +2,18 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import React from "react";
-import Link from 'next/link'
+import Link from "next/link";
 import { ROUTES } from "../utils/routes";
 
-export default function Home() {
+import getTimeAgoString from '@souravdey/time-ago'
 
+export default function Home() {
   return (
     <div className={styles.container}>
       {/* HTML Head Tag */}
       <Head>
         <title>Sourav Dey</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/Cursor.svg" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps"
@@ -26,12 +27,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className="LogoNav">
-          <span
-            className="gradientText"
-            style={{ fontWeight: "bold", fontSize: "1.125rem" }}
-          >
-            Sourav Dey
-          </span>
+          <div style={{ fontWeight: "bold", fontSize: "1.125rem", flex: 1 }}>
+            <span className="gradientText">Sourav Dey</span>
+          </div>
           <div className={styles.socialIcons}>
             <a
               href="mailto:piyush.kolkata@gmail.com"
@@ -70,35 +68,38 @@ export default function Home() {
             </div>
             <p className="gradientText" style={{ fontSize: "2rem" }}>
               Hi <b>Sourav</b> here,
-            <br />a <b>Full Stack Software Developer</b>
+              <br />a <b>Full Stack Software Developer</b>
             </p>
             <p className={styles.intro}>
-              I am a <span className="gradientText">passionate learner</span> having a keen interest in collaborating to
-            build digital solutions that <span className="gradientText">solve real-world problems</span>. I'm also a
-            design thinking facilitator and a user-centric developer who
-            believes that the merger between Design Thinking and Digital
-            Technologies will lead to the building of user-centered solutions
-            that are impactful toward the betterment of business and society.
-          </p>
-          <div className="floatText">
+              I am a <span className="gradientText">passionate learner</span>{" "}
+              having a keen interest in collaborating to build digital solutions
+              that{" "}
+              <span className="gradientText">solve real-world problems</span>.
+              I'm also a design thinking facilitator and a user-centric
+              developer who believes that the merger between Design Thinking and
+              Digital Technologies will lead to the building of user-centered
+              solutions that are impactful toward the betterment of business and
+              society.
+            </p>
+          </div>
+
+          {/* <div className="floatText">
           <span className="gradientText">DESIGNING<br/>& DEVELOPING</span><br/><span className="floatTextWord">FUTURE</span>
 
-          </div>
-          </div>
+          </div> */}
           {/* <div style={{ marginTop: "50px" }}>
             <Link href="/">
-              <span className="link" style={{ marginRight: "40px" }} >
-                <span>/aboutMe</span>
-                </span>
+              <span className="link">/aboutMe</span>
             </Link>
             <Link href={ROUTES.WORK_EXPERIENCE}>
-              <span style={{ marginRight: "40px" }} >{ROUTES.WORK_EXPERIENCE}</span>
+              <span style={{ marginRight: "40px" }}>
+                {ROUTES.WORK_EXPERIENCE}
+              </span>
             </Link>
-            <span style={{ marginRight: "40px" }} >/techSkills</span>
-            <span style={{ marginRight: "40px" }} >/sideProjects</span>
-            <span style={{ marginRight: "40px" }} >/blogs</span>
+            <span style={{ marginRight: "40px" }}>/techSkills</span>
+            <span style={{ marginRight: "40px" }}>/sideProjects</span>
+            <span style={{ marginRight: "40px" }}>/blogs</span>
           </div> */}
-
         </div>
       </main>
     </div>

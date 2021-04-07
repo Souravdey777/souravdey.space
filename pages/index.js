@@ -5,8 +5,6 @@ import React from "react";
 import Link from "next/link";
 import { ROUTES } from "../utils/routes";
 
-import getTimeAgoString from '@souravdey/time-ago'
-
 export default function Home() {
   return (
     <div className={styles.container}>

@@ -78,7 +78,7 @@ export default function Home() {
         <div className="body">
           <div>
 
-            <div style={{ textAlign: "right" }}>
+            <div className="test" style={{ textAlign: "right" }}>
               <Image src="/images/dots.png" width={190} height={64} />
             </div>
             <div className="qoutes">

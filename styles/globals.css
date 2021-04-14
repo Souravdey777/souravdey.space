@@ -19,6 +19,8 @@ a {
 
 p {
   font-size: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 .gradientText {
@@ -42,6 +44,7 @@ p {
   font-weight: bold;
   right: 1rem;
   top: 1rem;
+  text-align: right;
 }
 
 .body {
@@ -50,7 +53,7 @@ p {
   margin: auto;
   display: flex;
   flex-flow: row wrap;
-  height: 2000px;
+  height: 1500px;
   animation: transitionIn 0.75s;
 }
 

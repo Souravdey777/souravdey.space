@@ -1,12 +1,19 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import React from "react";
+import React, { useRef } from "react";
 import Link from "next/link";
 import { ROUTES } from "../utils/routes";
 import Clog from '@souravdey/colored-console'
 
+
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+
 export default function Home() {
+  
+  const myRef = useRef(null)
+  const executeScroll = () => scrollToRef(myRef)
+
   return (
     <div className={styles.container}>
       {/* HTML Head Tag */}
@@ -36,37 +43,37 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <i className="fas fa-envelope"></i>
+            <Image src="/images/email.svg" width={30} height={30} />
           </a>
           <a
             href="https://github.com/Souravdey777/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image src="/images/github.svg" width={40} height={40} />
+            <Image src="/images/github.svg" width={30} height={30} />
           </a>
           <a
             href="https://www.linkedin.com/in/souravdey777/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image src="/images/linkedin.svg" width={40} height={40} />
+            <Image src="/images/linkedin.svg" width={30} height={30} />
           </a>
           <a
             href="https://twitter.com/Souravdey777/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image src="/images/twitter.svg" width={40} height={40} />
+            <Image src="/images/twitter.svg" width={30} height={30} />
           </a>
         </div>
         <div className="navigation">
           <div>
             /aboutMe
           </div>
-          {/* <div>
+          <div onClick={executeScroll}>
             /workExperience
-          </div> */}
+          </div>
         </div>
         <div className="body">
           <div>
@@ -77,9 +84,11 @@ export default function Home() {
             <div className="qoutes">
               <Image src="/images/qoutes.svg" width={80} height={80} />
             </div>
-            <p className="gradientText" style={{ fontSize: "2rem" }}>
-              Hi <b>Sourav</b> here,
-              <br />a <b>Full Stack Software Developer</b>
+            <p style={{ fontSize: "2rem", marginTop:"1rem" }}>
+              <span className="gradientText">
+                Hi <b>Sourav</b> here,
+                <br/>I'm a <b>Full Stack Developer</b>
+              </span>
             </p>
             <p className={styles.intro}>
               I am a <span className="gradientText">passionate learner</span>{" "}
@@ -97,9 +106,54 @@ export default function Home() {
               <Image src="/images/tagline.png" width={230} height={50} />
             </div>
 
+            <div className={styles.socialIconsMobile}>
+
+            <a
+            href="mailto:piyush.kolkata@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src="/images/email.svg" width={30} height={30} />
+          </a>
+          <a
+            href="https://github.com/Souravdey777/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src="/images/github.svg" width={30} height={30} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/souravdey777/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src="/images/linkedin.svg" width={30} height={30} />
+          </a>
+          <a
+            href="https://twitter.com/Souravdey777/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src="/images/twitter.svg" width={30} height={30} />
+          </a>
+        </div>
+
             <div style={{ marginTop: "3rem" }}>
               <Image src="/images/dots.png" width={190} height={64} />
             </div>
+            <p  ref={myRef} style={{ marginTop: "3rem", textAlign: "right", fontWeight: "bold" }}>
+              /workExprience
+            </p>
+            <p style={{ marginTop: "3rem", fontWeight: "bold" }}>
+              {">"} git checkout -b “ <span className="gradientText">WORK EXPIRENCE</span> ”
+            </p>
+            <p className="gradientText" style={{ marginTop: "3rem", fontSize: "2rem", fontWeight: "bold" }}>
+              <span className="gradientText">TATA CONSULTANCY SERVICES</span>
+            </p>
+            <div style={{ fontSize: "1rem" }}>
+              <span className="gradientText">Full Stack Developer</span>
+            </div>
+            <p>Website under Development</p>
           </div>
         </div>
       </main>

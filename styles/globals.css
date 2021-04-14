@@ -30,16 +30,39 @@ p {
 }
 
 .LogoNav {
+  position: fixed;
   display: flex;
   flex-direction: column;
-  padding: 0 3rem;
+  left: 1rem;
+  top: 1rem;
+}
+
+.navigation {
+  position: fixed;
+  font-weight: bold;
+  right: 1rem;
+  top: 1rem;
 }
 
 .body {
-  margin: 2rem;
-  max-width: 30rem;
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: auto;
   display: flex;
   flex-flow: row wrap;
+  height: 2000px;
+  animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .link {
@@ -89,8 +112,15 @@ p {
   p {
     font-size: 1.25rem;
   }
-  .LogoNav {
+  .body {
     padding: 0 2rem;
+  }
+  .LogoNav {
+    position: unset;
+    padding: 0 2rem;
+  }
+  .navigation {
+    display: none;
   }
   .floatText {
     position: unset;

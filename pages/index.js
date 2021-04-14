@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import React from "react";
 import Link from "next/link";
 import { ROUTES } from "../utils/routes";
+import Clog from '@souravdey/colored-console'
 
 export default function Home() {
   return (
@@ -25,42 +26,54 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className="LogoNav">
-          <div style={{ fontWeight: "bold", fontSize: "1.125rem", flex: 1 }}>
+          <div style={{ fontWeight: "bold", fontSize: "1rem", flex: 1 }}>
             <span className="gradientText">Sourav Dey</span>
           </div>
-          <div className={styles.socialIcons}>
-            <a
-              href="mailto:piyush.kolkata@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fas fa-envelope"></i>
-            </a>
-            <a
-              href="https://github.com/Souravdey777/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-github"></i>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/souravdey777/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-linkedin"></i>
-            </a>
-            <a
-              href="https://twitter.com/Souravdey777/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i className="fab fa-twitter"></i>
-            </a>
+        </div>
+        <div className={styles.socialIcons}>
+          <a
+            href="mailto:piyush.kolkata@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i className="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://github.com/Souravdey777/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src="/images/github.svg" width={40} height={40} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/souravdey777/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src="/images/linkedin.svg" width={40} height={40} />
+          </a>
+          <a
+            href="https://twitter.com/Souravdey777/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image src="/images/twitter.svg" width={40} height={40} />
+          </a>
+        </div>
+        <div className="navigation">
+          <div>
+            /aboutMe
           </div>
+          {/* <div>
+            /workExperience
+          </div> */}
         </div>
         <div className="body">
           <div>
+
+            <div style={{ textAlign: "right" }}>
+              <Image src="/images/dots.png" width={190} height={64} />
+            </div>
             <div className="qoutes">
               <Image src="/images/qoutes.svg" width={80} height={80} />
             </div>
@@ -79,25 +92,15 @@ export default function Home() {
               solutions that are impactful toward the betterment of business and
               society.
             </p>
+            <div style={{ marginTop: "3rem", display: "flex", justifyContent: "space-between" }}>
+              <Image src="/Cursor.svg" width={50} height={50} />
+              <Image src="/images/tagline.png" width={230} height={50} />
+            </div>
+
+            <div style={{ marginTop: "3rem" }}>
+              <Image src="/images/dots.png" width={190} height={64} />
+            </div>
           </div>
-
-          {/* <div className="floatText">
-          <span className="gradientText">DESIGNING<br/>& DEVELOPING</span><br/><span className="floatTextWord">FUTURE</span>
-
-          </div> */}
-          {/* <div style={{ marginTop: "50px" }}>
-            <Link href="/">
-              <span className="link">/aboutMe</span>
-            </Link>
-            <Link href={ROUTES.WORK_EXPERIENCE}>
-              <span style={{ marginRight: "40px" }}>
-                {ROUTES.WORK_EXPERIENCE}
-              </span>
-            </Link>
-            <span style={{ marginRight: "40px" }}>/techSkills</span>
-            <span style={{ marginRight: "40px" }}>/sideProjects</span>
-            <span style={{ marginRight: "40px" }}>/blogs</span>
-          </div> */}
         </div>
       </main>
     </div>

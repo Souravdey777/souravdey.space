@@ -177,8 +177,8 @@ export default function Home() {
                 justifyContent: "space-between",
               }}
             >
+            <Image src="/images/dots.png" width={190} height={64} />
               <Image src="/Cursor.svg" width={50} height={50} />
-              <Image src="/images/dots.png" width={190} height={64} />
             </div>
             {/* techSkills */}
             <p
@@ -238,10 +238,11 @@ export default function Home() {
               style={{
                 marginTop: "5rem",
                 fontWeight: "bold",
+                display:"flex",
+                justifyContent:"space-between"
               }}
             >
-              © 2021 Sourav Dey
-              <br />{" "}
+              <span>© 2021 Sourav Dey</span>
               <span
                 className="gradientText"
                 style={{ fontWeight: "bold", fontSize: "1rem" }}

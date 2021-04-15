@@ -56,8 +56,10 @@ export default function Home() {
         <div className="body">
           <div>
             <About />
+            <div ref={myRef} style={{ marginTop: "3rem" }}>
+              <Image src="/images/dots.png" width={190} height={64} />
+            </div>
             <p
-              ref={myRef}
               style={{
                 marginTop: "3rem",
                 textAlign: "right",
@@ -89,7 +91,7 @@ export default function Home() {
             <div style={{ fontSize: "1rem" }}>
               <span className="gradientText">Full Stack Developer</span>
             </div>
-            2018
+            Sept 2018 - Present
             <br />
             <br />
             <p>
@@ -121,6 +123,132 @@ export default function Home() {
               PORTAL)
               <br />- Fresco Play Learning Award
             </p>
+            <p
+              className="gradientText"
+              style={{
+                marginTop: "3rem",
+                fontSize: "1rem",
+                fontWeight: "bold",
+              }}
+            >
+              <span className="gradientText">
+                INDIAN OIL CORPORATION LIMITED (IOCL)
+              </span>
+            </p>
+            <div style={{ fontSize: "1rem" }}>
+              <span className="gradientText">Software Developer Intern</span>
+            </div>
+            Jul 2017 – Aug 2017
+            <br />
+            <br />
+            <p>
+              Gained experience with Database Modeling, Understanding of SAP
+              software, and Network Schema of IOCL.
+              <br />
+              <br />
+              INVENTORY MANAGEMENT SYSTEM | JAVA (SWING), SQL
+              <br />A System Software for Managing Inventory, Stocks, Sales,
+              Purchase, and Reports
+            </p>
+            <p
+              className="gradientText"
+              style={{
+                marginTop: "3rem",
+                fontSize: "1rem",
+                fontWeight: "bold",
+              }}
+            >
+              <span className="gradientText">HEWLETT-PACKARD (HP)</span>
+            </p>
+            <div style={{ fontSize: "1rem" }}>
+              <span className="gradientText">Android Developer Trainee</span>
+            </div>
+            Jul 2016 – Aug 2016
+            <br />
+            <br />
+            <p>
+              Skill-building Experience in Java SE & Android while completing
+              various assignments and projects.
+            </p>
+            <div
+              style={{
+                marginTop: "3rem",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
+            >
+              <Image src="/Cursor.svg" width={50} height={50} />
+              <Image src="/images/dots.png" width={190} height={64} />
+            </div>
+            {/* techSkills */}
+            <p
+              style={{
+                marginTop: "3rem",
+                textAlign: "right",
+                fontWeight: "bold",
+              }}
+            >
+              /techSkills
+            </p>
+            <p
+              style={{
+                marginTop: "3rem",
+                fontWeight: "bold",
+                fontSize: "0.75rem",
+              }}
+            >
+              git checkout -b “{" "}
+              <span className="gradientText">Technical Skills</span> ”
+            </p>
+            <div
+              style={{
+                marginTop: "3rem",
+                fontSize: "1rem",
+                fontWeight: "bold",
+                display: "flex",
+                flexFlow: "row wrap",
+              }}
+            >
+              <div className="skill">
+                <span style={{ padding: "0rem 0.5rem" }}>HTML</span>
+                {/* <span style={{ padding: "0rem 0.5rem" }}>+</span>
+                <span style={{ padding: "0rem 0.5rem" }}>|</span>
+                <span style={{ padding: "0rem 0.5rem" }}>23</span> */}
+              </div>
+              <div className="skill">
+                <span style={{ padding: "0rem 0.5rem" }}>CSS</span>
+              </div>
+              <div className="skill">
+                <span style={{ padding: "0rem 0.5rem" }}>React.js</span>
+              </div>
+              <div className="skill">
+                <span style={{ padding: "0rem 0.5rem" }}>Next.js</span>
+              </div>
+              <div className="skill">
+                <span style={{ padding: "0rem 0.5rem" }}>Node.js</span>
+              </div>
+              <div className="skill">
+                <span style={{ padding: "0rem 0.5rem" }}>firebase</span>
+              </div>
+              <div className="skill">
+                <span style={{ padding: "0rem 0.5rem" }}>Google CLoud</span>
+              </div>
+            </div>
+            <div
+              style={{
+                marginTop: "5rem",
+                fontWeight: "bold",
+              }}
+            >
+              © 2021 Sourav Dey
+              <br />{" "}
+              <span
+                className="gradientText"
+                style={{ fontWeight: "bold", fontSize: "1rem" }}
+              >
+                Souravdey.Space
+              </span>
+            </div>
           </div>
         </div>
       </main>

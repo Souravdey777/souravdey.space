@@ -47,10 +47,6 @@ export default function About() {
           </a>
         ))}
       </div>
-
-      <div style={{ marginTop: "3rem" }}>
-        <Image src="/images/dots.png" width={190} height={64} />
-      </div>
     </div>
   );
 }

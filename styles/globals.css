@@ -72,6 +72,19 @@ p {
   }
 }
 
+.imageRotation {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
 .link {
   border-radius: 25px;
   padding: 0.2rem 1rem;

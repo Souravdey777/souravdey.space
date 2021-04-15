@@ -3,8 +3,10 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import React, { useRef } from "react";
 import Link from "next/link";
+import About from '../components/about'
 import { ROUTES } from "../utils/routes";
 import Clog from '@souravdey/colored-console'
+import { SOCIAL_LINKS } from "../utils/links";
 
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
@@ -33,41 +35,20 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className="LogoNav">
-          <div style={{ fontWeight: "bold", fontSize: "1rem", flex: 1 }}>
+          <div style={{ fontWeight: "bold", fontSize: "1rem" }}>
             <span className="gradientText">Sourav Dey</span>
           </div>
         </div>
-        <div className={styles.socialIcons}>
-          <a
-            href="mailto:piyush.kolkata@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image src="/images/email.svg" width={30} height={30} />
+      {/* Social Media Links in desktop */}
+      <div className={styles.socialIcons}>
+        {SOCIAL_LINKS.map((link) => (
+          <a href={link.href} target="_blank" rel="noopener noreferrer">
+            <Image src={link.image} width={36} height={36} />
+            <p className={styles.socialIconsText}>{link.href.replace("https://","").replace("mailto:","")}</p>
           </a>
-          <a
-            href="https://github.com/Souravdey777/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image src="/images/github.svg" width={30} height={30} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/souravdey777/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image src="/images/linkedin.svg" width={30} height={30} />
-          </a>
-          <a
-            href="https://twitter.com/Souravdey777/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image src="/images/twitter.svg" width={30} height={30} />
-          </a>
-        </div>
-        <div className="navigation">
+        ))}
+      </div>
+      <div className="navigation">
           <div>
             /aboutMe
           </div>
@@ -78,76 +59,14 @@ export default function Home() {
         <div className="body">
           <div>
 
-            <div className="test" style={{ textAlign: "right" }}>
-              <Image src="/images/dots.png" width={190} height={64} />
-            </div>
-            <div className="qoutes">
-              <Image src="/images/qoutes.svg" width={80} height={80} />
-            </div>
-            <p style={{ fontSize: "2rem", marginTop:"1rem" }}>
-              <span className="gradientText">
-                Hi <b>Sourav</b> here,
-                <br/>I'm a <b>Full Stack Developer</b>
-              </span>
-            </p>
-            <p className={styles.intro}>
-              I am a <span className="gradientText">passionate learner</span>{" "}
-              having a keen interest in collaborating to build digital solutions
-              that{" "}
-              <span className="gradientText">solve real-world problems</span>.
-              I'm also a design thinking facilitator and a user-centric
-              developer who believes that the merger between Design Thinking and
-              Digital Technologies will lead to the building of user-centered
-              solutions that are impactful toward the betterment of business and
-              society.
-            </p>
-            <div style={{ marginTop: "3rem", display: "flex", justifyContent: "space-between" }}>
-              <Image src="/Cursor.svg" width={50} height={50} />
-              <Image src="/images/tagline.png" width={230} height={50} />
-            </div>
-
-            <div className={styles.socialIconsMobile}>
-
-            <a
-            href="mailto:piyush.kolkata@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image src="/images/email.svg" width={30} height={30} />
-          </a>
-          <a
-            href="https://github.com/Souravdey777/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image src="/images/github.svg" width={30} height={30} />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/souravdey777/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image src="/images/linkedin.svg" width={30} height={30} />
-          </a>
-          <a
-            href="https://twitter.com/Souravdey777/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image src="/images/twitter.svg" width={30} height={30} />
-          </a>
-        </div>
-
-            <div style={{ marginTop: "3rem" }}>
-              <Image src="/images/dots.png" width={190} height={64} />
-            </div>
+            <About/>
             <p  ref={myRef} style={{ marginTop: "3rem", textAlign: "right", fontWeight: "bold" }}>
-              /workExprience
+              /workExperience
             </p>
-            <p style={{ marginTop: "3rem", fontWeight: "bold" }}>
-              {">"} git checkout -b “ <span className="gradientText">WORK EXPIRENCE</span> ”
+            <p style={{ marginTop: "3rem", fontWeight: "bold",fontSize: "0.75rem", }}>
+              git checkout -b “ <span className="gradientText">WORK EXPERIENCE</span> ”
             </p>
-            <p className="gradientText" style={{ marginTop: "3rem", fontSize: "2rem", fontWeight: "bold" }}>
+            <p className="gradientText" style={{ marginTop: "3rem", fontSize: "1rem", fontWeight: "bold" }}>
               <span className="gradientText">TATA CONSULTANCY SERVICES</span>
             </p>
             <div style={{ fontSize: "1rem" }}>

@@ -34,7 +34,7 @@ export default function Home() {
       <main className={styles.main}>
         <div
           className="LogoNav"
-          style={{ fontWeight: "bold", fontSize: "1rem" }}
+          style={{ fontWeight: "bold"}}
         >
           <span className="gradientText">Sourav Dey</span>
         </div>

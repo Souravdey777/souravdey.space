@@ -32,8 +32,6 @@ p {
 
 .LogoNav {
   position: fixed;
-  display: flex;
-  flex-direction: column;
   left: 1rem;
   top: 1rem;
 }

@@ -52,7 +52,8 @@ p {
   margin: auto;
   display: flex;
   flex-flow: row wrap;
-  height: 1500px;
+  height: 100%;
+  margin-bottom: 2rem;
   animation: transitionIn 0.75s;
 }
 

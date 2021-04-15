@@ -41,9 +41,9 @@ export default function About() {
 
       {/* Social Media Links in mobile */}
       <div className={styles.socialIconsMobile}>
-        {SOCIAL_LINKS.map((link) => (
-          <a href={link.href} target="_blank" rel="noopener noreferrer">
-            <Image src={link.image} width={30} height={30} />
+        {SOCIAL_LINKS.map((link,key) => (
+          <a href={link.href} key={key} target="_blank" rel="noopener noreferrer">
+            <Image src={link.image} width={36} height={36} />
           </a>
         ))}
       </div>

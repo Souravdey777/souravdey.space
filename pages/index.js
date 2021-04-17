@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import About from "../components/about";
 import { ROUTES } from "../utils/routes";
@@ -9,10 +9,20 @@ import Clog from "@souravdey/colored-console";
 import { SOCIAL_LINKS } from "../utils/links";
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+const currentTime = () => {
+  return new Date().toLocaleTimeString(undefined, { timeZone: "Asia/Kolkata", hour12:false });
+};
 
 export default function Home() {
   const myRef = useRef(null);
   const executeScroll = () => scrollToRef(myRef);
+  const [time, setTime] = useState(currentTime());
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTime(currentTime());
+    }, 1000);
+  });
 
   return (
     <div className={styles.container}>
@@ -189,7 +199,7 @@ export default function Home() {
               }}
             >
               <Image src="/images/dots.png" width={190} height={64} />
-              <Image src="/Cursor.svg" width={50} height={50} />
+              <div className="animatedCircle"></div>
             </div>
             {/* techSkills */}
             <p
@@ -251,20 +261,18 @@ export default function Home() {
                 fontWeight: "bold",
                 display: "flex",
                 justifyContent: "space-between",
+                fontSize: "0.75rem",
               }}
             >
-              <span
-                className="gradientText"
-                style={{ fontWeight: "bold", fontSize: "0.75rem" }}
-              >
-                © 2021 Sourav Dey
-              </span>
-              <span
-                className="gradientText"
-                style={{ fontWeight: "bold", fontSize: "0.75rem" }}
-              >
-                Souravdey.Space
-              </span>
+              <div>
+                <span className="gradientText">© 2021 Sourav Dey</span>
+                <br />
+                <br />
+                Built with <span className="gradientText">Next.js</span>
+                <br />
+                Bangalore, India • {time}
+              </div>
+              <span className="gradientText">Souravdey.Space</span>
             </div>
           </div>
         </div>

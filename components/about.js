@@ -35,7 +35,8 @@ export default function About() {
           justifyContent: "space-between",
         }}
       >
-        <Image src="/Cursor.svg" width={50} height={50} />
+        {/* <Image src="/Cursor.svg" width={50} height={50} /> */}
+        <div className="animatedCircle"></div>
         <Image src="/images/tagline.png" width={230} height={50} />
       </div>
 

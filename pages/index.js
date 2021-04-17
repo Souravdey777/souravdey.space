@@ -30,12 +30,24 @@ export default function Home() {
           integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
           crossOrigin="anonymous"
         />
+        {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-BJ96LSKFFB"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-BJ96LSKFFB');
+        `,
+          }}
+        />
       </Head>
       <main className={styles.main}>
-        <div
-          className="LogoNav"
-          style={{ fontWeight: "bold"}}
-        >
+        <div className="LogoNav" style={{ fontWeight: "bold" }}>
           <span className="gradientText">Sourav Dey</span>
         </div>
         {/* Social Media Links in desktop */}
@@ -75,8 +87,7 @@ export default function Home() {
                 fontSize: "0.75rem",
               }}
             >
-              git checkout -b “{" "}
-              <span className="gradientText">WORK EXPERIENCE</span> ”
+              git checkout <span className="gradientText">WORK EXPERIENCE</span>
             </p>
             <p
               className="gradientText"
@@ -197,8 +208,8 @@ export default function Home() {
                 fontSize: "0.75rem",
               }}
             >
-              git checkout -b “{" "}
-              <span className="gradientText">Technical Skills</span> ”
+              git checkout{" "}
+              <span className="gradientText">Technical Skills</span>
             </p>
             <div
               style={{
@@ -213,7 +224,7 @@ export default function Home() {
                 <span style={{ padding: "0rem 0.5rem" }}>HTML</span>
                 {/* <span style={{ padding: "0rem 0.5rem" }}>+</span>
                 <span style={{ padding: "0rem 0.5rem" }}>|</span>
-                <span style={{ padding: "0rem 0.5rem" }}>23</span> */}
+                <span style={{ padding: "0rem 0.5rem" }}>12</span> */}
               </div>
               <div className="skill">
                 <span style={{ padding: "0rem 0.5rem" }}>CSS</span>

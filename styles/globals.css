@@ -65,6 +65,7 @@ p {
   padding: 0.5rem 0.5rem;
   border-radius: 18px;
   border: 2px solid #8193b2;
+  display: flex;
 }
 
 .skill:hover {

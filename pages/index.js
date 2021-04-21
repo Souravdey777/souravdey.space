@@ -2,20 +2,24 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import React, { useEffect, useRef, useState } from "react";
-import Link from "next/link";
+// import Link from "next/link";
 import About from "../components/about";
 import { ROUTES } from "../utils/routes";
 import Clog from "@souravdey/colored-console";
 import { SOCIAL_LINKS } from "../utils/links";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 const currentTime = () => {
-  return new Date().toLocaleTimeString(undefined, { timeZone: "Asia/Kolkata", hour12:false });
+  return new Date().toLocaleTimeString(undefined, {
+    timeZone: "Asia/Kolkata",
+    hour12: false,
+  });
 };
 
 export default function Home() {
-  const myRef = useRef(null);
-  const executeScroll = () => scrollToRef(myRef);
+  // const myRef = useRef(null);
+  // const executeScroll = () => scrollToRef(myRef);
   const [time, setTime] = useState(currentTime());
 
   useEffect(() => {
@@ -72,16 +76,39 @@ export default function Home() {
           ))}
         </div>
         <div className="navigation">
-          <div>/aboutMe</div>
-          <div onClick={executeScroll}>/workExperience</div>
+          <div>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              /aboutMe
+            </Link>
+          </div>
+          <div>
+            <Link
+              activeClass="active"
+              to="workExperience"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              /workExperience
+            </Link>
+          </div>
         </div>
         <div className="body">
           <div>
             <About />
-            <div ref={myRef} style={{ marginTop: "3rem" }}>
+            <div style={{ marginTop: "3rem" }}>
               <Image src="/images/dots.png" width={190} height={64} />
             </div>
             <p
+              id="workExperience"
               style={{
                 marginTop: "3rem",
                 textAlign: "right",
@@ -144,6 +171,7 @@ export default function Home() {
               PORTAL)
               <br />- Fresco Play Learning Award
             </p>
+            {/* <div className="projectTest">this is test</div> */}
             <p
               className="gradientText"
               style={{

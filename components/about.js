@@ -5,7 +5,7 @@ import { SOCIAL_LINKS } from "../utils/links";
 
 export default function About() {
   return (
-    <div>
+    <div id="about">
       <div className="test" style={{ textAlign: "right" }}>
         <Image src="/images/dots.png" width={190} height={64} />
       </div>

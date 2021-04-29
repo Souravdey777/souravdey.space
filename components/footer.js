@@ -1,6 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
-export default function Footer(props) {
+export default function Footer() {
+  const [time, setTime] = useState(currentTime());
+
+  function currentTime() {
+    return new Date().toLocaleTimeString(undefined, {
+      timeZone: "Asia/Kolkata",
+      hour12: false,
+    });
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setTime(currentTime());
+    }, 1000);
+  });
+
   return (
     <div
       style={{
@@ -17,7 +32,7 @@ export default function Footer(props) {
         <br />
         Built with <span className="gradientText">Next.js</span>
         <br />
-        Bangalore, India • {props.time}
+        Bangalore, India • {time}
       </div>
       <span className="gradientText">Souravdey.Space</span>
     </div>

@@ -2,29 +2,16 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import React, { useEffect, useState } from "react";
-// import Link from "next/link";
 import About from "../components/about";
 import { SOCIAL_LINKS } from "../utils/links";
 import { Link, animateScroll as scroll } from "react-scroll";
 import WorkExperience from "../components/workExperience";
 import Footer from "../components/footer";
+import Blogs from "../components/blogs";
+import getLatestBlog from "../utils/getBlogData";
 
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
-const currentTime = () => {
-  return new Date().toLocaleTimeString(undefined, {
-    timeZone: "Asia/Kolkata",
-    hour12: false,
-  });
-};
 
-export default function Home() {
-  const [time, setTime] = useState(currentTime());
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setTime(currentTime());
-    }, 1000);
-  });
+export default function Home({ blogs }) {
 
   return (
     <div className={styles.container}>
@@ -64,8 +51,13 @@ export default function Home() {
         </div>
         {/* Social Media Links in desktop */}
         <div className={styles.socialIcons}>
-          {SOCIAL_LINKS.map((link) => (
-            <a href={link.href} target="_blank" rel="noopener noreferrer">
+          {SOCIAL_LINKS.map((link, id) => (
+            <a
+              key={id}
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Image src={link.image} width={36} height={36} />
               <p className={styles.socialIconsText}>
                 {link.href.replace("https://", "").replace("mailto:", "")}
@@ -114,90 +106,106 @@ export default function Home() {
         <div className="body">
           <div>
             <About />
-            <WorkExperience/>
-            
+            <WorkExperience />
+
             {/* techSkills */}
             <div id="techSkills">
-            <p
-              style={{
-                marginTop: "3rem",
-                textAlign: "right",
-                fontWeight: "bold",
-              }}
-            >
-              /techSkills
-            </p>
-            <p
-              style={{
-                marginTop: "3rem",
-                fontWeight: "bold",
-                fontSize: "0.75rem",
-              }}
-            >
-              git checkout{" "}
-              <span className="gradientText">Technical Skills</span>
-            </p>
+              <p
+                style={{
+                  marginTop: "3rem",
+                  textAlign: "right",
+                  fontWeight: "bold",
+                }}
+              >
+                /techSkills
+              </p>
+              <p
+                style={{
+                  marginTop: "3rem",
+                  fontWeight: "bold",
+                  fontSize: "0.75rem",
+                }}
+              >
+                git checkout{" "}
+                <span className="gradientText">Technical Skills</span>
+              </p>
+              <div
+                style={{
+                  marginTop: "3rem",
+                  fontSize: "1rem",
+                  fontWeight: "bold",
+                  display: "flex",
+                  flexFlow: "row wrap",
+                }}
+              >
+                <div className="skill">
+                  <span style={{ padding: "0rem 0.5rem" }}>HTML5</span>
+                  {/* <span style={{ padding: "0rem 0.5rem" }}>+</span>
+                <span style={{ padding: "0rem 0.5rem" }}>|</span>
+                <span style={{ padding: "0rem 0.5rem" }}>12</span> */}
+                </div>
+                <div className="skill">
+                  <span style={{ padding: "0rem 0.5rem" }}>CSS3</span>
+                </div>
+                <div className="skill">
+                  <span style={{ padding: "0rem 0.5rem" }}>JavaScript</span>
+                </div>
+                <div className="skill">
+                  <span style={{ padding: "0rem 0.5rem" }}>React.js</span>
+                </div>
+                <div className="skill">
+                  <span style={{ padding: "0rem 0.5rem" }}>Next.js</span>
+                </div>
+                <div className="skill">
+                  <span style={{ padding: "0rem 0.5rem" }}>Node.js</span>
+                </div>
+                <div className="skill">
+                  <span style={{ padding: "0rem 0.5rem" }}>Express.js</span>
+                </div>
+                <div className="skill">
+                  <span style={{ padding: "0rem 0.5rem" }}>MongoDB</span>
+                </div>
+                <div className="skill">
+                  <span style={{ padding: "0rem 0.5rem" }}>SQL</span>
+                </div>
+                <div className="skill">
+                  <span style={{ padding: "0rem 0.5rem" }}>Java</span>
+                </div>
+                <div className="skill">
+                  <span style={{ padding: "0rem 0.5rem" }}>Python</span>
+                </div>
+                <div className="skill">
+                  <span style={{ padding: "0rem 0.5rem" }}>firebase</span>
+                </div>
+                <div className="skill">
+                  <span style={{ padding: "0rem 0.5rem" }}>Google CLoud</span>
+                </div>
+              </div>
+            </div>
+
             <div
               style={{
                 marginTop: "3rem",
-                fontSize: "1rem",
-                fontWeight: "bold",
                 display: "flex",
-                flexFlow: "row wrap",
+                justifyContent: "space-between",
               }}
             >
-              <div className="skill">
-                <span style={{ padding: "0rem 0.5rem" }}>HTML5</span>
-                {/* <span style={{ padding: "0rem 0.5rem" }}>+</span>
-                <span style={{ padding: "0rem 0.5rem" }}>|</span>
-                <span style={{ padding: "0rem 0.5rem" }}>12</span> */}
-              </div>
-              <div className="skill">
-                <span style={{ padding: "0rem 0.5rem" }}>CSS3</span>
-              </div>
-              <div className="skill">
-                <span style={{ padding: "0rem 0.5rem" }}>JavaScript</span>
-              </div>
-              <div className="skill">
-                <span style={{ padding: "0rem 0.5rem" }}>React.js</span>
-              </div>
-              <div className="skill">
-                <span style={{ padding: "0rem 0.5rem" }}>Next.js</span>
-              </div>
-              <div className="skill">
-                <span style={{ padding: "0rem 0.5rem" }}>Node.js</span>
-              </div>
-              <div className="skill">
-                <span style={{ padding: "0rem 0.5rem" }}>Express.js</span>
-              </div>
-              <div className="skill">
-                <span style={{ padding: "0rem 0.5rem" }}>MongoDB</span>
-              </div>
-              <div className="skill">
-                <span style={{ padding: "0rem 0.5rem" }}>SQL</span>
-              </div>
-              <div className="skill">
-                <span style={{ padding: "0rem 0.5rem" }}>Java</span>
-              </div>
-              <div className="skill">
-                <span style={{ padding: "0rem 0.5rem" }}>Python</span>
-              </div>
-              <div className="skill">
-                <span style={{ padding: "0rem 0.5rem" }}>firebase</span>
-              </div>
-              <div className="skill">
-                <span style={{ padding: "0rem 0.5rem" }}>Google CLoud</span>
-              </div>
-              
-            </div>
+              <div className="animatedCircle" />
+              <Image src="/images/dots.png" width={190} height={64} />
             </div>
 
-
+            {blogs && <Blogs blogs={blogs.slice(0, 4)} />}
             {/* footer */}
-            <Footer time={time}/>
+            <Footer />
           </div>
         </div>
       </main>
     </div>
   );
+}
+
+export async function getServerSideProps() {
+  let blogs = (await getLatestBlog()).data.user.publication.posts;
+  console.log(blogs);
+  return { props: { blogs } };
 }

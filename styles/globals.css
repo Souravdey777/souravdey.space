@@ -91,6 +91,7 @@ b {
 .navigation div {
   margin-bottom: 10px;
   font-weight: 900;
+  cursor: pointer;
 }
 
 .navigation .active {
@@ -110,7 +111,7 @@ b {
   flex-flow: row wrap;
   height: 100%;
   margin-bottom: 2rem;
-  animation: transitionIn 0.75s;
+  animation: transitionIn 1.5s;
 }
 
 .test {
@@ -138,7 +139,7 @@ b {
 @keyframes transitionIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;

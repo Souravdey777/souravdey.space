@@ -41,9 +41,9 @@ function Blogs({ blogs }) {
               {blog.title}
             </p>
             <p
-              // style={{
-              //   fontSize: "0.75rem",
-              // }}
+              style={{
+                fontSize: "0.75rem",
+              }}
             >
               {blog.brief}
             </p>

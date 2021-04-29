@@ -7,6 +7,7 @@ import About from "../components/about";
 import { SOCIAL_LINKS } from "../utils/links";
 import { Link, animateScroll as scroll } from "react-scroll";
 import WorkExperience from "../components/workExperience";
+import Footer from "../components/footer";
 
 const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 const currentTime = () => {
@@ -58,7 +59,7 @@ export default function Home() {
         />
       </Head>
       <main className={styles.main}>
-        <div className="LogoNav" style={{ fontWeight: "bolder" }}>
+        <div className="LogoNav">
           <span className="gradientText">Sourav Dey</span>
         </div>
         {/* Social Media Links in desktop */}
@@ -179,6 +180,9 @@ export default function Home() {
                 <span style={{ padding: "0rem 0.5rem" }}>Java</span>
               </div>
               <div className="skill">
+                <span style={{ padding: "0rem 0.5rem" }}>Python</span>
+              </div>
+              <div className="skill">
                 <span style={{ padding: "0rem 0.5rem" }}>firebase</span>
               </div>
               <div className="skill">
@@ -187,25 +191,10 @@ export default function Home() {
               
             </div>
             </div>
-            <div
-              style={{
-                marginTop: "30rem",
-                fontWeight: "bold",
-                display: "flex",
-                justifyContent: "space-between",
-                fontSize: "0.75rem",
-              }}
-            >
-              <div>
-                <span className="gradientText">© 2021 Sourav Dey</span>
-                <br />
-                <br />
-                Built with <span className="gradientText">Next.js</span>
-                <br />
-                Bangalore, India • {time}
-              </div>
-              <span className="gradientText">Souravdey.Space</span>
-            </div>
+
+
+            {/* footer */}
+            <Footer time={time}/>
           </div>
         </div>
       </main>

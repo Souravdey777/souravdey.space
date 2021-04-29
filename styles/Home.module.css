@@ -50,12 +50,13 @@
   display: none;
 }
 
-.socialIcons a .socialIconsText {
+a .socialIconsText {
   margin-left: 1rem;
   display: none;
+  font-weight: bold;
 }
 
-.socialIcons a:hover .socialIconsText {
+a:hover .socialIconsText {
   display: flex;
 }
 

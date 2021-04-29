@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-
 export default function WorkExperience() {
   return (
     <div id="workExperience">
@@ -8,7 +7,7 @@ export default function WorkExperience() {
         style={{
           marginTop: "3rem",
           textAlign: "right",
-          fontWeight: "bold",
+          fontWeight: "900",
         }}
       >
         /workExperience
@@ -16,7 +15,7 @@ export default function WorkExperience() {
       <p
         style={{
           marginTop: "3rem",
-          fontWeight: "bold",
+          fontWeight: "900",
           fontSize: "0.75rem",
         }}
       >
@@ -27,7 +26,7 @@ export default function WorkExperience() {
         style={{
           marginTop: "3rem",
           fontSize: "1rem",
-          fontWeight: "bold",
+          fontWeight: "900",
         }}
       >
         <span className="gradientText">TATA CONSULTANCY SERVICES</span>
@@ -71,7 +70,7 @@ export default function WorkExperience() {
         style={{
           marginTop: "3rem",
           fontSize: "1rem",
-          fontWeight: "bold",
+          fontWeight: "900",
         }}
       >
         <span className="gradientText">
@@ -98,7 +97,7 @@ export default function WorkExperience() {
         style={{
           marginTop: "3rem",
           fontSize: "1rem",
-          fontWeight: "bold",
+          fontWeight: "900",
         }}
       >
         <span className="gradientText">HEWLETT-PACKARD (HP)</span>

@@ -31,22 +31,30 @@ function Blogs({ blogs }) {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <p
+            <div
               style={{
-                marginTop: "3rem",
-                fontSize: "1rem",
-                fontWeight: "900",
+                border: "2px solid #8193b2",
+                borderRadius:"14px",
+                margin: "20px 0px",
+                padding: "1rem",
               }}
             >
-              {blog.title}
-            </p>
-            <p
-              style={{
-                fontSize: "0.75rem",
-              }}
-            >
-              {blog.brief}
-            </p>
+              <p
+                style={{
+                  fontSize: "1rem",
+                  fontWeight: "900"
+                }}
+              >
+                {blog.title}
+              </p>
+              <p
+                style={{
+                  fontSize: "0.75rem"
+                }}
+              >
+                {blog.brief}
+              </p>
+            </div>
           </a>
         ))}
       </div>

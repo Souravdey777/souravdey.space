@@ -202,10 +202,8 @@ b {
 
 @media (max-width: 768px) {
   .largeText {
-    font-size: 3rem;
-    margin-bottom: 15rem;
+    font-size: 4rem;
   }
-
   .body {
     padding: 0 2rem;
   }
@@ -224,5 +222,11 @@ b {
 
   .test {
     margin-top: -2rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .largeText {
+    font-size: 3rem;
   }
 }

@@ -12,12 +12,10 @@ export default function About() {
       <div className="qoutes" style={{ marginTop: "3rem" }}>
         <Image src="/images/qoutes.svg" width={80} height={80} />
       </div>
-      <p style={{ fontSize: "1.5rem", marginTop: "3rem" }}>
-        <span className="gradientText">
+      <p className="gradientText largeText">
           Hi <b>Sourav</b> here,
           <br />
           I'm a <b>Full Stack Developer</b>
-        </span>
       </p>
       <p className={styles.intro}>
         I am a <b className="gradientText">passionate learner</b> having a keen

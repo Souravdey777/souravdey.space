@@ -7,6 +7,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: black;
 
   /* cursor: url("/Cursor.cur"), auto; IE & Edge */
   /* cursor: url("/Cursor.svg") 16 16, auto; Rest browsers*/
@@ -37,6 +38,12 @@ p {
 
 b {
   font-weight: 900;
+}
+
+.largeText {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .gradientText {
@@ -194,6 +201,11 @@ b {
 }
 
 @media (max-width: 768px) {
+  .largeText {
+    font-size: 3rem;
+    margin-bottom: 15rem;
+  }
+
   .body {
     padding: 0 2rem;
   }

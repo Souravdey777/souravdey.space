@@ -23,9 +23,9 @@ export default function About() {
         Full Stack Developer
       </p>
       <p className={styles.intro}>
-        I am a <b className="gradientText">passionate learner</b> having a keen
+        I am a <span className="whiteText">passionate learner</span> having a keen
         interest in collaborating to build digital solutions that{" "}
-        <b className="gradientText">solve real-world problems</b>. I'm also a
+        <span className="whiteText">solve real-world problems</span>. I'm also a
         design thinking facilitator and a user-centric developer who believes
         that the merger between Design Thinking and Digital Technologies will
         lead to the building of user-centered solutions that are impactful

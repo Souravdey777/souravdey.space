@@ -10,7 +10,7 @@ export default function About() {
         <Image src="/images/dots.png" width={190} height={64} />
       </div>
       <div className="qoutes" style={{ marginTop: "3rem" }}>
-        <Image src="/images/qoutes.svg" width={120} height={120} />
+        <Image src="/images/qoutes.svg" width={100} height={100} />
       </div>
       <p className="gradientText largeText" 
       style={{

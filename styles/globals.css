@@ -41,10 +41,15 @@ b {
 }
 
 .largeText {
-  font-size: 1.5rem;
+  font-size: 3rem;
   line-height: 90%;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  letter-spacing: -2px;
+  font-weight: 900;
+}
+
+.mediumText {
+  font-size: 2rem;
+  line-height: 90%;
   letter-spacing: -2px;
   font-weight: 900;
 }

@@ -10,9 +10,13 @@ export default function About() {
         <Image src="/images/dots.png" width={190} height={64} />
       </div>
       <div className="qoutes" style={{ marginTop: "3rem" }}>
-        <Image src="/images/qoutes.svg" width={80} height={80} />
+        <Image src="/images/qoutes.svg" width={120} height={120} />
       </div>
-      <p className="gradientText largeText">
+      <p className="gradientText largeText" 
+      style={{
+        marginTop: "2rem",
+        marginBottom: "6rem"
+      }}>
         Hi Sourav here,
         <br />
         I'm a

@@ -13,9 +13,9 @@ export default function About() {
         <Image src="/images/qoutes.svg" width={80} height={80} />
       </div>
       <p className="gradientText largeText">
-          Hi <b>Sourav</b> here,
+          Hi Sourav here,
           <br />
-          I'm a <b>Full Stack Developer</b>
+          I'm a Full Stack Developer
       </p>
       <p className={styles.intro}>
         I am a <b className="gradientText">passionate learner</b> having a keen

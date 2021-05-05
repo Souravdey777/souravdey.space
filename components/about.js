@@ -12,10 +12,12 @@ export default function About() {
       <div className="qoutes" style={{ marginTop: "3rem" }}>
         <Image src="/images/qoutes.svg" width={100} height={100} />
       </div>
-      <p className="gradientText largeText" 
-      style={{
-        marginTop: "2rem"
-      }}>
+      <p
+        className="gradientText largeText"
+        style={{
+          marginTop: "2rem",
+        }}
+      >
         Hi Sourav here,
         <br />
         I'm a
@@ -23,13 +25,22 @@ export default function About() {
         Full Stack Developer
       </p>
       <p className={styles.intro}>
-        I am a <b className="gradientText">passionate learner</b> having a keen
-        interest in collaborating to build digital solutions that{" "}
-        <b className="gradientText">solve real-world problems</b>. I'm also a
-        design thinking facilitator and a user-centric developer who believes
-        that the merger between Design Thinking and Digital Technologies will
-        lead to the building of user-centered solutions that are impactful
-        toward the betterment of business and society.
+        I am 24 years old <b className="gradientText">passionate learner</b>{" "}
+        having a keen interest in collaborating to build digital solutions 👨‍💻
+        that <b className="gradientText">solve real-world problems</b> 🌍
+        <br />
+        {/* <br />
+        Working 💼 <b className="gradientText">TCS Digital</b> as a{" "}
+        <b className="gradientText">Software Developer</b>
+        <br /> */}
+        <br />
+        I'm also a <b className="gradientText">
+          design thinking facilitator
+        </b>{" "}
+        and a <b className="gradientText">user-centric developer</b> who
+        believes that the merger between Design Thinking and Digital
+        Technologies will lead to the building of user-centered solutions that
+        are impactful toward the betterment of business and society.
       </p>
       <div
         style={{

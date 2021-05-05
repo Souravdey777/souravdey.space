@@ -14,8 +14,7 @@ export default function About() {
       </div>
       <p className="gradientText largeText" 
       style={{
-        marginTop: "2rem",
-        marginBottom: "6rem"
+        marginTop: "2rem"
       }}>
         Hi Sourav here,
         <br />

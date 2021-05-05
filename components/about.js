@@ -13,16 +13,16 @@ export default function About() {
         <Image src="/images/qoutes.svg" width={100} height={100} />
       </div>
       <p
-        className="gradientText largeText"
+        className="largeText"
         style={{
           marginTop: "2rem",
         }}
       >
-        Hi Sourav here,
+        Hi <span className="gradientText">Sourav</span> here,
         <br />
         I'm a
         <br />
-        Full Stack Developer
+        <span className="gradientText">Full Stack Developer</span>
       </p>
       <p className={styles.intro}>
         I am 24 years old <b className="gradientText">passionate learner</b>{" "}

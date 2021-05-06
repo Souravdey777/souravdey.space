@@ -10,8 +10,8 @@ import Footer from "../components/footer";
 import Blogs from "../components/blogs";
 import getLatestBlog from "../utils/getBlogData";
 
-
 export default function Home({ blogs }) {
+  const [menu, setMenu] = useState(false);
 
   return (
     <div className={styles.container}>
@@ -48,6 +48,7 @@ export default function Home({ blogs }) {
       <main className={styles.main}>
         <div className="LogoNav">
           <span className="gradientText">Sourav Dey</span>
+          <span className="gradientText" onClick={() => setMenu(!menu)}>Menu</span>
         </div>
         {/* Social Media Links in desktop */}
         <div className={styles.socialIcons}>
@@ -65,9 +66,10 @@ export default function Home({ blogs }) {
             </a>
           ))}
         </div>
-        <div className="navigation">
+        <div className={menu ? "navigation navigationClicked" : "navigation"}>
           <div>
             <Link
+              onClick={() => setMenu(false)}
               activeClass="active"
               to="about"
               spy={true}
@@ -80,6 +82,7 @@ export default function Home({ blogs }) {
           </div>
           <div>
             <Link
+              onClick={() => setMenu(false)}
               activeClass="active"
               to="workExperience"
               spy={true}
@@ -92,6 +95,7 @@ export default function Home({ blogs }) {
           </div>
           <div>
             <Link
+              onClick={() => setMenu(false)}
               activeClass="active"
               to="techSkills"
               spy={true}

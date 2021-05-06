@@ -97,6 +97,7 @@ b {
   left: 1rem;
   top: 1rem;
   font-weight: 900;
+  z-index: 100;
 }
 
 .navigation {
@@ -218,9 +219,18 @@ b {
   }
   .body {
     padding: 0 2rem;
+    padding-top: 2rem;
   }
   .LogoNav {
-    position: unset;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: #8193b244;
+    backdrop-filter: saturate(180%) blur(15px);
+
     padding: 0 2rem;
   }
   .navigation {

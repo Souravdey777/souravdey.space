@@ -55,7 +55,7 @@ b {
 }
 
 .gradientText {
-  background: -webkit-linear-gradient(-70deg, #a2facf, #64acff);
+  background-image: -webkit-linear-gradient(-70deg, #a2facf, #64acff);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -178,6 +178,7 @@ b {
   line-height: 100%;
   text-align: right;
   opacity: 20%;
+  z-index: 100;
 }
 
 .floatTextWord {
@@ -221,7 +222,7 @@ b {
   }
   .body {
     padding: 0 2rem;
-    padding-top: 2rem;
+    padding-top: 3rem;
   }
   .LogoNav {
     top: 0;
@@ -230,7 +231,7 @@ b {
     height: 3rem;
     display: flex;
     align-items: center;
-    background-color: rgba(34, 34, 34, 0.7);
+    background-color: #8193b277;
     backdrop-filter: saturate(180%) blur(20px);
 
     padding: 0 2rem;
@@ -251,9 +252,10 @@ b {
     justify-content: center;
     padding: 0 2rem;
     flex-direction: column;
-    background-color: rgba(34, 34, 34, 0.7);
+    background-color: #8193b277;
     backdrop-filter: saturate(180%) blur(20px);
     z-index: 80;
+    overflow-y: hidden;
   }
   .floatText {
     position: unset;

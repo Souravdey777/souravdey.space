@@ -48,7 +48,9 @@ export default function Home({ blogs }) {
       <main className={styles.main}>
         <div className="LogoNav">
           <span className="gradientText">Sourav Dey</span>
-          <span className="gradientText" onClick={() => setMenu(!menu)}>Menu</span>
+          <span className="gradientText" onClick={() => setMenu(!menu)}>
+              <Image src="/images/menu.svg" width={24} height={10} />
+              </span>
         </div>
         {/* Social Media Links in desktop */}
         <div className={styles.socialIcons}>

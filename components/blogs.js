@@ -33,23 +33,26 @@ function Blogs({ blogs }) {
           >
             <div
               style={{
-                border: "2px solid #8193b2",
-                borderRadius:"14px",
-                margin: "20px 0px",
-                padding: "1rem",
+                paddingTop: "3rem",
               }}
             >
               <p
                 style={{
-                  fontSize: "1rem",
-                  fontWeight: "900"
+                  fontSize: "2rem",
+                  fontWeight: "900",
+                  fontWeight: "900",
+                  margin: "1rem 0",
+                  letterSpacing: "-2px",
+                  lineHeight: "100%",
                 }}
               >
-                {blog.title}
+                <span className="gradientText">{blog.title.substring(2)}</span>
               </p>
+              <img src={blog.coverImage}  style={{width:"100%", margin:"1rem 0"}}/>
               <p
                 style={{
-                  fontSize: "0.75rem"
+                  fontSize: "1rem",
+                  lineHeight: "150%",
                 }}
               >
                 {blog.brief}

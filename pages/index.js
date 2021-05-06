@@ -48,7 +48,7 @@ export default function Home({ blogs }) {
       <main className={styles.main}>
         <div className="LogoNav">
           <span className="gradientText">Sourav Dey</span>
-          <span className="gradientText" onClick={() => setMenu(!menu)}>
+          <span className="menu" onClick={() => setMenu(!menu)}>
               <Image src="/images/menu.svg" width={24} height={10} />
               </span>
         </div>

@@ -40,6 +40,10 @@ b {
   font-weight: 900;
 }
 
+.menu {
+  display: none;
+}
+
 .largeText {
   font-size: 3rem;
   line-height: 90%;
@@ -224,6 +228,9 @@ b {
     padding: 0 2rem;
     padding-top: 3rem;
   }
+  .menu {
+    display: unset;
+  }
   .LogoNav {
     top: 0;
     left: 0;
@@ -233,7 +240,6 @@ b {
     align-items: center;
     background-color: #8193b277;
     backdrop-filter: saturate(180%) blur(20px);
-
     padding: 0 2rem;
   }
   .navigation {

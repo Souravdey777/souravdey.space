@@ -6,7 +6,7 @@ export default function WorkExperience() {
     <div id="workExperience">
       <p
         style={{
-          marginTop: "3rem",
+          paddingTop: "3rem",
           textAlign: "right",
           fontWeight: "900",
         }}

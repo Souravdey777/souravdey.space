@@ -1,18 +1,17 @@
 import React from "react";
-import Image from "next/image";
 
 function Blogs({ blogs }) {
   console.log(blogs);
   return (
-    <>
+    <div id="latestBlogs">
       <p
         style={{
-          marginTop: "3rem",
+          paddingTop: "3rem",
           textAlign: "right",
           fontWeight: "900",
         }}
       >
-        /blogs
+        /latestBlogs
       </p>
       <p
         style={{
@@ -33,7 +32,7 @@ function Blogs({ blogs }) {
           >
             <div
               style={{
-                paddingTop: "3rem",
+                marginTop: "3rem",
               }}
             >
               <p
@@ -48,10 +47,13 @@ function Blogs({ blogs }) {
               >
                 <span className="gradientText">{blog.title.substring(2)}</span>
               </p>
-              <img src={blog.coverImage}  style={{width:"100%", margin:"1rem 0"}}/>
+              <img
+                src={blog.coverImage}
+                style={{ width: "100%", margin: "1rem 0" }}
+              />
               <p
                 style={{
-                  fontSize: "1rem"
+                  fontSize: "1rem",
                 }}
               >
                 {blog.brief}
@@ -60,7 +62,7 @@ function Blogs({ blogs }) {
           </a>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

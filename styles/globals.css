@@ -34,6 +34,7 @@ a {
 p {
   padding: 0;
   margin: 0;
+  font-size: 1rem;
 }
 
 b {
@@ -221,6 +222,10 @@ b {
 }
 
 @media (max-width: 768px) {
+  p {
+    font-size: 0.875rem;
+  }
+
   .largeText {
     font-size: 4rem;
   }

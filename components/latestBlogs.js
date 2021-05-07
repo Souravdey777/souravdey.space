@@ -52,11 +52,7 @@ function Blogs({ blogs }) {
                 src={blog.coverImage}
                 style={{ width: "100%", margin: "1rem 0" }}
               />
-              <p
-                style={{
-                  fontSize: "1rem",
-                }}
-              >
+              <p>
                 {blog.brief}
               </p>
             </div>

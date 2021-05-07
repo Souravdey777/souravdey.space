@@ -9,7 +9,7 @@ function Blogs({ blogs }) {
           paddingTop: "3rem",
           textAlign: "right",
           fontWeight: "900",
-          color: "#ffffff"
+          color: "#ffffff",
         }}
       >
         /latestBlogs
@@ -50,11 +50,13 @@ function Blogs({ blogs }) {
               </p>
               <img
                 src={blog.coverImage}
-                style={{ width: "100%", margin: "1rem 0" }}
+                style={{
+                  width: "100%",
+                  margin: "1rem 0",
+                  borderRadius: "18px",
+                }}
               />
-              <p>
-                {blog.brief}
-              </p>
+              <p>{blog.brief}</p>
             </div>
           </a>
         ))}

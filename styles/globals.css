@@ -267,6 +267,8 @@ b {
     backdrop-filter: saturate(180%) blur(20px);
     z-index: 80;
     overflow-y: hidden;
+    font-size: 1.875rem;
+    color: white;
   }
   .floatText {
     position: unset;

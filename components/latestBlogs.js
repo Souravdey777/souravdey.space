@@ -53,7 +53,7 @@ function Blogs({ blogs }) {
                 style={{
                   width: "100%",
                   margin: "1rem 0",
-                  borderRadius: "18px",
+                  borderRadius: "8px"
                 }}
               />
               <p>{blog.brief}</p>

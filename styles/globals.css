@@ -61,10 +61,14 @@ b {
 }
 
 .gradientText {
+  background-color: #8193b2;
   background-image: -webkit-linear-gradient(-70deg, #a2facf, #64acff);
   background-clip: text;
+  background-size: 100%;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
 .whiteText {

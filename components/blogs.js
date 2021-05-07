@@ -38,11 +38,11 @@ function Blogs({ blogs }) {
             >
               <p
                 style={{
-                  fontSize: "2rem",
+                  fontSize: "1.75rem",
                   fontWeight: "900",
                   fontWeight: "900",
                   margin: "1rem 0",
-                  letterSpacing: "-2px",
+                  letterSpacing: "-1px",
                   lineHeight: "100%",
                 }}
               >
@@ -51,8 +51,7 @@ function Blogs({ blogs }) {
               <img src={blog.coverImage}  style={{width:"100%", margin:"1rem 0"}}/>
               <p
                 style={{
-                  fontSize: "1rem",
-                  lineHeight: "150%",
+                  fontSize: "1rem"
                 }}
               >
                 {blog.brief}

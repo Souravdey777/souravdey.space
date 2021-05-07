@@ -10,6 +10,7 @@ export default function TechSkills() {
             paddingTop: "3rem",
           textAlign: "right",
           fontWeight: "bold",
+          color: "#ffffff"
         }}
       >
         /techSkills

@@ -9,6 +9,7 @@ export default function WorkExperience() {
           paddingTop: "3rem",
           textAlign: "right",
           fontWeight: "900",
+          color: "#ffffff"
         }}
       >
         /workExperience

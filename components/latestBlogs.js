@@ -9,6 +9,7 @@ function Blogs({ blogs }) {
           paddingTop: "3rem",
           textAlign: "right",
           fontWeight: "900",
+          color: "#ffffff"
         }}
       >
         /latestBlogs

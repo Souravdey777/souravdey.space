@@ -53,7 +53,7 @@ function Blogs({ blogs }) {
                 style={{
                   width: "100%",
                   margin: "1rem 0",
-                  borderRadius: "8px"
+                  borderRadius: "8px",
                 }}
               />
               <p>{blog.brief}</p>
@@ -61,6 +61,17 @@ function Blogs({ blogs }) {
           </a>
         ))}
       </div>
+      <a
+        href="https://souravdey777.hashnode.dev"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div
+          className="gradientText readMoreButton"
+        >
+          Check all my blogs
+        </div>
+      </a>
     </div>
   );
 }

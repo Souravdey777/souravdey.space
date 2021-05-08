@@ -69,6 +69,7 @@ b {
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  z-index: 10;
 }
 
 .whiteText {
@@ -224,6 +225,19 @@ b {
 .projectTest:hover {
   background: linear-gradient(-70deg, #a2facf66, #64acff66);
   backdrop-filter: blur(50px);
+}
+
+.readMoreButton {
+  margin-top: 3rem;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  border-radius: 18px;
+  border: 2px solid #8193b2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
 }
 
 @media (max-width: 768px) {

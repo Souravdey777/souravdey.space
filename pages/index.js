@@ -130,7 +130,7 @@ export default function Home({ blogs }) {
             <TechSkills />
             {blogs && <Blogs blogs={blogs.slice(0, 4)} />}
             {/* footer */}
-            <div style={{ position: "relative" }}>
+            {/* <div style={{ position: "relative" }}>
               
       <div
         style={{
@@ -167,7 +167,7 @@ export default function Home({ blogs }) {
                   Subscribe
                 </p>
               </div>
-            </div>
+            </div> */}
             <Footer />
           </div>
         </div>

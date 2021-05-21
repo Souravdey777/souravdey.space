@@ -130,6 +130,44 @@ export default function Home({ blogs }) {
             <TechSkills />
             {blogs && <Blogs blogs={blogs.slice(0, 4)} />}
             {/* footer */}
+            <div style={{ position: "relative" }}>
+              
+      <div
+        style={{
+          marginTop: "3rem",
+          display: "flex",
+          justifyContent: "space-around",
+        }}
+      >
+        <div style={{
+          background:"radial-gradient(31.78% 72.37% at 39.24% 0%, rgba(100, 172, 255, 0.5) 3.98%, rgba(255, 255, 255, 0) 100%), radial-gradient(38.5% 104.01% at 88.5% 77.91%, rgba(162, 250, 207, 0.5) 0%, rgba(255, 255, 255, 0) 100%, rgba(255, 255, 255, 0) 100%), radial-gradient(33.2% 77.94% at 12.6% 88.49%, rgba(100, 172, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%)",
+      width:"100%",
+      position:"absolute",
+      height:"20rem",
+      borderRadius:"18px"}}/>
+          <div className="animatedCircle" style={{width:"8rem",height:"8rem",
+          marginTop: "3rem"}}></div>
+        <div className="animatedCircle" style={{width:"12rem",height:"12rem",
+          marginTop: "6rem"}}></div>
+      </div>
+              <div style={{ position: "absolute",
+              borderRadius:"18px",
+                    top:"0",
+                    right:"0",
+                    left:"0",
+                    height:"20rem",
+                    backgroundColor: "#8193b277",
+                    backdropFilter: "saturate(180%) blur(50px)", }}>
+                <p
+                  className="largeText"
+                  style={{
+                    margin: "2rem"
+                  }}
+                >
+                  Subscribe
+                </p>
+              </div>
+            </div>
             <Footer />
           </div>
         </div>
@@ -138,7 +176,7 @@ export default function Home({ blogs }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps(context) {
   let blogs = (await getLatestBlog()).data.user.publication.posts;
   console.log(blogs);
   return { props: { blogs } };

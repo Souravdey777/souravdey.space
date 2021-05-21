@@ -4,9 +4,9 @@ import Image from "next/image";
 export default function Projects() {
   return (
     <div id="projects">
-      <div>
-        <div className="ProjectRoot">
-
+      <div className="ProjectRoot">
+        <div className="eachProject">
+            
         </div>
       </div>
       <div style={{ marginTop: "3rem" }}>

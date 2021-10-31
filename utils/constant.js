@@ -1,1 +1,1 @@
-export const HASHNODE_API_URL = "https://api.hashnode.com/";
+export const HASHNODE_API_URL = 'https://api.hashnode.com/'

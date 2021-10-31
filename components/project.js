@@ -1,17 +1,15 @@
-import React from "react";
-import Image from "next/image";
+import React from 'react'
+import Image from 'next/image'
 
 export default function Projects() {
-  return (
-    <div id="projects">
-      <div className="ProjectRoot">
-        <div className="eachProject">
-            
+    return (
+        <div id="projects">
+            <div className="ProjectRoot">
+                <div className="eachProject"></div>
+            </div>
+            <div style={{ marginTop: '3rem' }}>
+                <Image src="/images/dots.png" width={190} height={64} />
+            </div>
         </div>
-      </div>
-      <div style={{ marginTop: "3rem" }}>
-        <Image src="/images/dots.png" width={190} height={64} />
-      </div>
-    </div>
-  );
+    )
 }

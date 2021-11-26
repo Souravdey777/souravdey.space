@@ -69,6 +69,8 @@ b {
     animation: gradient 10s ease infinite;
     -webkit-text-fill-color: transparent;
     text-shadow: 0px 0px #00000000;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 
 :-webkit-any(article, aside, nav, section) span {

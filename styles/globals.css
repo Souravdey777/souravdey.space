@@ -68,6 +68,7 @@ b {
     -webkit-animation: gradient 10s ease infinite;
     animation: gradient 10s ease infinite;
     -webkit-text-fill-color: transparent;
+    text-shadow: 0px 0px #00000000;
 }
 
 :-webkit-any(article, aside, nav, section) span {

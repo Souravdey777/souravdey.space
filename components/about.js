@@ -20,7 +20,7 @@ export default function About() {
             >
                 Hi <span className="gradientText">Sourav</span> here,
                 <br />
-                I'm a
+                I&apos;m a
                 <br />
                 <span className="gradientText">Full Stack Developer</span>
             </p>
@@ -34,7 +34,7 @@ export default function About() {
         <b className="gradientText">Software Developer</b>
         <br /> */}
                 <br />
-                I'm also a <b className="gradientText">design thinking facilitator</b> and a{' '}
+                I&apos;m also a <b className="gradientText">design thinking facilitator</b> and a{' '}
                 <b className="gradientText">user-centric developer</b> who believes that the merger between Design
                 Thinking and Digital Technologies will lead to the building of user-centered solutions that are
                 impactful toward the betterment of business and society.

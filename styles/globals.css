@@ -70,6 +70,13 @@ b {
     -webkit-text-fill-color: transparent;
 }
 
+:-webkit-any(article, aside, nav, section) span {
+    font-size: 1.1em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    letter-spacing: -0.04em;
+}
+
 .whiteText {
     color: white;
 }

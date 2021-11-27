@@ -9,8 +9,10 @@ export default function About() {
             <div className="test" style={{ textAlign: 'right' }}>
                 <Image src="/images/dots.png" width={190} height={64} />
             </div>
-            <div className="qoutes" style={{ marginTop: '3rem' }}>
+            <div className="qoutes" style={{ marginTop: '3rem', display: 'flex', justifyContent: 'space-between' }}>
                 <Image src="/images/qoutes.svg" width={100} height={100} />
+
+                <Image src="/images/profilep.png" width={100} height={100} />
             </div>
             <p
                 className="largeText"

@@ -84,6 +84,16 @@ b {
     color: white;
 }
 
+.whiteText2 {
+    background-color: #d0dbec;
+    padding: 0px 8px;
+    padding-bottom: 4px;
+    border-radius: 2px;
+    color: black;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
 .animatedCircle {
     width: 50px;
     height: 50px;
@@ -157,7 +167,7 @@ b {
     margin-bottom: 1rem;
     padding: 0.5rem 0.5rem;
     border-radius: 18px;
-    border: 2px solid #8193b2;
+    border: 2px solid #d0dbec;
     display: flex;
 }
 
@@ -219,7 +229,7 @@ b {
     padding: 1rem;
     width: 200px;
     height: 200px;
-    border: 2px solid #8193b2;
+    border: 2px solid #d0dbec;
     border-radius: 18px;
     transition-duration: 1s;
 }
@@ -235,7 +245,7 @@ b {
     font-weight: 900;
     letter-spacing: -1px;
     border-radius: 18px;
-    border: 2px solid #8193b2;
+    border: 2px solid #d0dbec;
     display: flex;
     justify-content: center;
     align-items: center;

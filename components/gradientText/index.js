@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const StyledGradientText = styled.span`
     /* background: ${({ theme: { colors } }) => colors.white}; */
-    background-color: #8193b2;
+    background-color: #d0dbec;
     font-weight: 900;
     background-image: -webkit-linear-gradient(-70deg, #a2facf, #64acff);
     background-clip: text;

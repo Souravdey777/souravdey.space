@@ -25,17 +25,17 @@ export default function About() {
                 <span className="gradientText">Full Stack Developer</span>
             </p>
             <p className={styles.intro}>
-                I am 24 years old <b className="gradientText">passionate learner</b> having a keen interest in
-                collaborating to build digital solutions 👨‍💻 that{' '}
-                <b className="gradientText">solve real-world problems</b> 🌍
+                I am 24 years old <b className="whiteText2">passionate learner</b> having a keen interest in
+                collaborating to build digital solutions 👨‍💻 that <b className="whiteText2">solve real-world problems</b>{' '}
+                🌍
                 <br />
                 {/* <br />
-        Working 💼 <b className="gradientText">TCS Digital</b> as a{" "}
-        <b className="gradientText">Software Developer</b>
+        Working 💼 <b className="whiteText2">TCS Digital</b> as a{" "}
+        <b className="whiteText2">Software Developer</b>
         <br /> */}
                 <br />
-                I&apos;m also a <b className="gradientText">design thinking facilitator</b> and a{' '}
-                <b className="gradientText">user-centric developer</b> who believes that the merger between Design
+                I&apos;m also a <b className="whiteText2">design thinking facilitator</b> and a{' '}
+                <b className="whiteText2">user-centric developer</b> who believes that the merger between Design
                 Thinking and Digital Technologies will lead to the building of user-centered solutions that are
                 impactful toward the betterment of business and society.
             </p>

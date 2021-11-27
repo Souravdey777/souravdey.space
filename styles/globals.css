@@ -89,7 +89,7 @@ b {
     background-color: white;
     padding: 2px 4px;
     display: inline-block;
-    border-radius: 2px;
+    border-radius: 4px;
     /* line-height: 18px; */
     white-space: nowrap;
     color: black;

@@ -61,7 +61,8 @@ b {
 }
 
 .gradientText {
-    background: linear-gradient(-70deg, #a2facf, #64acff, #a2facf, #64acff);
+    /* background: linear-gradient(-70deg, #a2facf, #64acff, #a2facf, #64acff); */
+    background: linear-gradient(-70deg, #2cda86, #469cff, #2cda86, #469cff);
     background-size: 400% 400%;
     -webkit-background-clip: text;
     background-clip: text;
@@ -85,10 +86,9 @@ b {
 }
 
 .whiteText2 {
-    background-color: #d0dbec;
-    padding: 0px 8px;
-    padding-bottom: 4px;
-    border-radius: 2px;
+    background-color: white;
+    padding: 4px;
+    border-radius: 4px;
     color: black;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
@@ -98,7 +98,7 @@ b {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: -webkit-linear-gradient(-70deg, #a2facf, #64acff, #a2facf, #64acff);
+    background: -webkit-linear-gradient(-70deg, #2cda86, #469cff, #2cda86, #469cff);
     background-size: 400% 400%;
     animation: gradient 3s ease infinite;
 }
@@ -140,7 +140,7 @@ b {
 
 .navigation .active {
     color: white;
-    background: -webkit-linear-gradient(-70deg, #a2facf, #64acff);
+    background: -webkit-linear-gradient(-70deg, #2cda86, #469cff);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -172,7 +172,7 @@ b {
 }
 
 .skill:hover {
-    background-image: -webkit-linear-gradient(-70deg, #a2facf, #64acff);
+    background-image: -webkit-linear-gradient(-70deg, #2cda86, #469cff);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -205,7 +205,7 @@ b {
 }
 
 .floatTextWord {
-    background: -webkit-linear-gradient(-70deg, #a2facf, #64acff);
+    background: -webkit-linear-gradient(-70deg, #2cda86, #469cff);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-stroke: 4px transparent;

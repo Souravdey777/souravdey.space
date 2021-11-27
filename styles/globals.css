@@ -87,8 +87,11 @@ b {
 
 .whiteText2 {
     background-color: white;
-    padding: -1px 4px;
-    border-radius: 4px;
+    padding: 2px 4px;
+    display: inline-block;
+    border-radius: 2px;
+    /* line-height: 18px; */
+    white-space: nowrap;
     color: black;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;

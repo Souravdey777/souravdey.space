@@ -12,7 +12,7 @@ export default function About() {
             <div className="qoutes" style={{ marginTop: '3rem', display: 'flex', justifyContent: 'space-between' }}>
                 <Image src="/images/qoutes.svg" width={100} height={100} />
 
-                <Image src="/images/profilep.png" width={100} height={100} />
+                <Image src="/images/profilep.png" width={150} height={150} />
             </div>
             <p
                 className="largeText"

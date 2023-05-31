@@ -7,6 +7,7 @@ import ProgressWrapper from "./ProgressWrapper/ProgressWrapper";
 import Signature from "./Signature/Signature";
 import HighLightedText from "./Typography/HighLightedText/HighLightedText";
 import IntenseText from "./Typography/IntenseText/IntenseText";
+import Footer from "./footer/footer";
 
 export {
   ProfilePic,
@@ -18,4 +19,5 @@ export {
   Anchor,
   MdxWrapper,
   ProgressWrapper,
+  Footer,
 };

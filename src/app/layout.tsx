@@ -1,8 +1,7 @@
-import { Navigation } from "@/components";
+import { Navigation, Footer } from "@/components";
 import "./globals.css";
 import styles from "@/app/page.module.css";
 import { poppins } from "./fonts";
-import Footer from "./footer";
 // import { motion } from "framer-motion";
 // import Animate from "./animation";
 

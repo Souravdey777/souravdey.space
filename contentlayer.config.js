@@ -12,37 +12,65 @@ const computedFields = {
   },
 };
 
-export const Blog = defineDocumentType(() => ({
+export const blog = defineDocumentType(() => ({
   name: "Blog",
-  filePathPattern: `*.mdx`,
+  filePathPattern: `/blogs/*.mdx`,
   contentType: "mdx",
   fields: {
     title: {
       type: "string",
       required: true,
     },
-    // description: {
-    //   type: "string",
-    // },
-    // date: {
-    //   type: "date",
-    //   // required: true,
-    // },
+    description: {
+      type: "string",
+    },
+    date: {
+      type: "date",
+      // required: true,
+    },
     published: {
       type: "boolean",
       default: true,
     },
-    // image: {
-    //   type: "string",
-    //   // required: true,
-    // },
+    image: {
+      type: "string",
+      // required: true,
+    },
+  },
+  computedFields,
+}));
+
+export const mindNuggets = defineDocumentType(() => ({
+  name: "MindNugget",
+  filePathPattern: `/mindNuggets/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: {
+      type: "string",
+      required: true,
+    },
+    description: {
+      type: "string",
+    },
+    date: {
+      type: "date",
+      // required: true,
+    },
+    published: {
+      type: "boolean",
+      default: true,
+    },
+    image: {
+      type: "string",
+      // required: true,
+    },
   },
   computedFields,
 }));
 
 export default makeSource({
-  contentDirPath: "src/content/blogs",
-  documentTypes: [Blog],
+  contentDirPath: "src/content",
+  documentTypes: [blog, mindNuggets],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [

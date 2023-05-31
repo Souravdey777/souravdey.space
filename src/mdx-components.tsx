@@ -11,7 +11,9 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     // Allows customizing built-in components, e.g. to add styling.
     strong: ({ children }) => (
-      <strong style={{ color: "var(--foreground-hex)" }}>{children}</strong>
+      <strong style={{ color: "var(--foreground-hex-intense)" }}>
+        {children}
+      </strong>
     ),
     h1: ({ children }) => (
       <h1 style={{ color: "var(--foreground-hex-intense)", fontSize: "2rem" }}>

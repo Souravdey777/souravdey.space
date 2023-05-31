@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import styles from "@/app/page.module.css";
-import { roboto } from "./fonts";
+import { roboto } from "@/app/fonts";
 import { Anchor } from "@/components";
 
 export default function Footer() {

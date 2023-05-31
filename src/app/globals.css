@@ -48,7 +48,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-hex: #eeeeee;
+    --foreground-hex: #dddddd;
     --background-hex: #000000;
 
     --foreground-hex-intense: #ffffff;

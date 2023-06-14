@@ -1,5 +1,0 @@
-const EXPRIENCE = [
-    {
-        COMPANY_NAME: 'TATA CONSULTANCY SERVICES'
-    }
-]

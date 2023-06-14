@@ -23,6 +23,10 @@ function SayHi() {
           Developer
         </HighLightedText>
       </h1>
+      <p>
+        Currenty the website is being revamped.
+        <b> Untill - 20th June, 2023 </b>
+      </p>
       {/* <div style={{ display: "flex", gap: "2rem" }}>
         <p>Go to content &#8594;</p>
         <Anchor href="/aboutMe/workingWithMe"># linkedIn</Anchor>

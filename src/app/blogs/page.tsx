@@ -6,7 +6,7 @@ import React from "react";
 async function page() {
   return (
     <MdxWrapper withoutBack withoutProgress>
-      <h1 className="mdx-h1">/mindNuggets 🧠</h1>
+      <h1 className="mdx-h1">/blogs ✍🏻</h1>
       <p>
         The mind nugget are some interesting facts that fasinates me. This is
         have content related to a diverse topic.

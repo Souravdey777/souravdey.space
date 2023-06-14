@@ -36,10 +36,10 @@ function Navigation() {
 
   return (
     <nav className={styles.nav}>
-      {navLinks?.map((link) => {
+      {navLinks?.map((link, index) => {
         const isActive = pathname.startsWith(link.url);
         return (
-          <motion.div animate={controls} key={link.name}>
+          <motion.div animate={controls} key={`${link.name}-${index}`}>
             {isActive ? (
               <Anchor className={styles.linkBlue} href="/">
                 {link.name}

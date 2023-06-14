@@ -6,14 +6,15 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --primary-hex: #0077ff;
+  --border: #d4d4d4;
+  --code-hex: #001936;
+  --code-hex-light: #00234b;
 
-  --foreground-hex: #333333;
+  --foreground-hex: #323232;
   --background-hex: #ffffff;
-
   --foreground-hex-intense: #000000;
 
-  /* --foreground-hex: #FFFFFF;
-  --background-hex: #000000; */
+  --header: #ffffff22;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -48,10 +49,11 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-hex: #dddddd;
-    --background-hex: #000000;
-
+    --foreground-hex: #d0dbec;
+    --background-hex: #010101;
     --foreground-hex-intense: #ffffff;
+
+    --header: #00000022;
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
     --secondary-glow: linear-gradient(
@@ -102,8 +104,55 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  color: var(--foreground-hex-intense);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.875rem;
+}
+
+h6 {
+  font-size: 0.75rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  * {
+    font-size: 14px;
   }
 }

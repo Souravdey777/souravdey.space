@@ -1,0 +1,31 @@
+.highLightedText {
+  font-size: inherit;
+  background: linear-gradient(-70deg, #2cda86, #1c86ff, #2cda86, #1c86ff);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-animation: gradient 10s ease infinite;
+  animation: gradient 10s ease infinite;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px #00000000;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* @media only screen and (max-width: 720px) {
+  .highLightedText {
+    font-size: 4rem;
+  }
+} */

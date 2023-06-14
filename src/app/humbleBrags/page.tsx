@@ -1,11 +1,11 @@
-import React from "react";
-import RoughIdeas from "@/content/ideas/roughIdeas.mdx";
 import { MdxWrapper } from "@/components";
+import React from "react";
+import HumbleBrags from "@/content/humbleBrags.mdx";
 
 function page() {
   return (
     <MdxWrapper>
-      <RoughIdeas />
+      <HumbleBrags />
     </MdxWrapper>
   );
 }

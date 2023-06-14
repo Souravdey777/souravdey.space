@@ -13,15 +13,15 @@ export default function MdxWrapper({
 }) {
   return (
     <main className={styles.main}>
-      <ProgressWrapper enabled={!withoutProgress}>
-        <div className={styles.mdxWrapper}>
+      <ProgressWrapper disabled={withoutProgress}>
+        <article className={styles.mdxWrapper}>
           {!withoutBack && (
             <Anchor className="" href="/">
               &#8592; Back
             </Anchor>
           )}
           {children}
-        </div>
+        </article>
       </ProgressWrapper>
     </main>
   );

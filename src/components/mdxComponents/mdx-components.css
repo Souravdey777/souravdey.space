@@ -1,0 +1,82 @@
+.mdx-h1,
+.mdx-h2,
+.mdx-h3,
+.mdx-h4,
+.mdx-h5,
+.mdx-h6,
+.mdx-strong {
+  color: var(--foreground-hex-intense);
+}
+
+.mdx-h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.mdx-h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.mdx-h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.mdx-h4 {
+  font-size: 1rem;
+}
+
+.mdx-h5 {
+  font-size: 0.875rem;
+}
+
+.mdx-h6 {
+  font-size: 0.75rem;
+}
+
+.mdx-para {
+  font-size: 1rem;
+}
+
+.mdx-code {
+  padding: 0 4px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.mdx-pre {
+  margin: 1rem 0;
+  padding: 2rem;
+  background: var(--code-hex);
+  border-radius: 4px;
+  overflow-x: scroll;
+}
+
+.mdx-pre .mdx-code {
+  width: 100%;
+  padding: 0;
+  border: none;
+}
+
+.line--highlighted {
+  background: var(--code-hex-light);
+}
+
+.word--highlighted {
+  background: var(--code-hex-light);
+}
+
+.mdx-a {
+  color: var(--foreground-hex);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.mdx-img {
+  max-width: 100%;
+}
+
+.mdx-ul {
+  margin-left: 1rem;
+}

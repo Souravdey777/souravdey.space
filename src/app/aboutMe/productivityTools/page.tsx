@@ -1,10 +1,10 @@
+import ProductivityTools from "@/content/productivityTools.mdx";
 import { MdxWrapper } from "@/components";
-import Skill from "@/content/skills.mdx";
 
 export default function Page() {
   return (
     <MdxWrapper>
-      <Skill />
+      <ProductivityTools />
     </MdxWrapper>
   );
 }

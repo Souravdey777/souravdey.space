@@ -1,0 +1,65 @@
+---
+title: MDX Components
+date: "2023-06-04"
+description: List of the MDX Components - Dev Reference only.
+publishedDate: 2021/02/14
+type: Blog
+tags:
+  - mdx
+  - components
+---
+
+# Heading 1
+
+## Heading 2
+
+### Heading 3
+
+#### Heading 4
+
+##### Heading 5
+
+###### Heading 6
+
+---
+
+**Strong Text**
+
+---
+
+Paragraph
+
+[Anchor](#)
+
+`const codeText`
+
+```ts {2-4,8-10} title="src/content/blogs/mdxComponents.mdx"
+import { Navigation, Footer } from "@/components";
+import "./globals.css";
+import styles from "@/app/page.module.css";
+import { poppins } from "./fonts";
+
+export const metadata = {
+  title: "Sourav Dey",
+  description: "Sourav Dey: Portfolio Website",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <body className={poppins.className}>
+        <header>
+          <strong className={styles.fixedHeader}>Sourav Dey</strong>
+          <Navigation />
+        </header>
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
+}
+```

@@ -1,13 +1,12 @@
 import React from "react";
 import { allBlogs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
-import { MdxWrapper } from "@/components";
+import { HighLightedText, ProgressWrapper } from "@/components";
 
-import Link from "next/link";
-import { MDXRemote } from "next-mdx-remote";
-import { Mdx } from "@/components/mdx-components";
+import { Mdx } from "@/components/mdxComponents/mdx-components";
 
 import styles from "@/app/page.module.css";
+import Image from "next/image";
 
 interface PageProps {
   params: {
@@ -15,10 +14,10 @@ interface PageProps {
   };
 }
 
-async function getBlogsFromParams(slug: string) {
-  const blog = allBlogs.find((blog) => blog._raw.flattenedPath === slug);
-
-  allBlogs.map((blog) => console.log(blog._raw.flattenedPath));
+function getBlogsFromParams(slug: string) {
+  const blog = allBlogs.find(
+    (blog) => blog._raw.flattenedPath.split("/")[1] === slug
+  );
 
   if (!blog) {
     notFound();
@@ -28,18 +27,19 @@ async function getBlogsFromParams(slug: string) {
 
 async function page({ params }: PageProps) {
   const blog = await getBlogsFromParams(params.slug);
-  // const MDXContent = useMDXComponent(blog.body.code);
-  // const mdxSource = await serialize(blog, { parseFrontmatter: true });
   return (
-    <main>
-      <MdxWrapper>
-        {/* <h1>{blog.title}</h1> */}
+    <ProgressWrapper>
+      <section className={styles.fullHeightContainer}>
+        <h1>{blog.title}</h1>
+        <h3>{blog.description}</h3>
+      </section>
+      {/* <section className={styles.fullHeightContainer}>
+        <Image src={blog.image} alt={blog.title} fill={true} />
+      </section> */}
+      <article className={styles.mdxWrapperContent}>
         <Mdx code={blog.body.code} />
-      </MdxWrapper>
-      {/* <MdxWrapper>{blog.body.code}</MdxWrapper> */}
-      {/* <MDXRemote {...mdxSource} components={mdxComponents} /> */}
-      {/* <MDXContent components={mdxComponents} /> */}
-    </main>
+      </article>
+    </ProgressWrapper>
   );
 }
 

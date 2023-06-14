@@ -12,7 +12,7 @@ const computedFields = {
   },
 };
 
-export const blog = defineDocumentType(() => ({
+export const Blog = defineDocumentType(() => ({
   name: "Blog",
   filePathPattern: `/blogs/*.mdx`,
   contentType: "mdx",
@@ -40,7 +40,7 @@ export const blog = defineDocumentType(() => ({
   computedFields,
 }));
 
-export const mindNuggets = defineDocumentType(() => ({
+export const MindNuggets = defineDocumentType(() => ({
   name: "MindNugget",
   filePathPattern: `/mindNuggets/*.mdx`,
   contentType: "mdx",
@@ -62,7 +62,32 @@ export const mindNuggets = defineDocumentType(() => ({
     },
     image: {
       type: "string",
-      // required: true,
+    },
+  },
+  computedFields,
+}));
+
+export const Idea = defineDocumentType(() => ({
+  name: "Idea",
+  filePathPattern: `ideas/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: {
+      type: "string",
+      required: true,
+    },
+  },
+  computedFields,
+}));
+
+export const Book = defineDocumentType(() => ({
+  name: "Book",
+  filePathPattern: `bookShelf/*.mdx`,
+  contentType: "mdx",
+  fields: {
+    title: {
+      type: "string",
+      required: true,
     },
   },
   computedFields,
@@ -70,7 +95,7 @@ export const mindNuggets = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: "src/content",
-  documentTypes: [blog, mindNuggets],
+  documentTypes: [Blog, MindNuggets, Idea, Book],
   mdx: {
     remarkPlugins: [remarkGfm],
     rehypePlugins: [

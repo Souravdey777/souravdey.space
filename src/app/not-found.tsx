@@ -4,7 +4,7 @@ import styles from "@/app/page.module.css";
 export default function NotFound() {
   return (
     <div className={styles.main}>
-      <main className={styles.helloWorld}>
+      <main className={styles.fullHeightContainer70}>
         <h1>Not Found</h1>
         <p>
           Dear Explorer,

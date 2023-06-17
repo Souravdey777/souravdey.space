@@ -112,6 +112,7 @@ h5,
 h6,
 strong {
   color: var(--foreground-hex-intense);
+  line-height: 1.2;
 }
 
 h1 {

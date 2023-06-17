@@ -18,10 +18,8 @@ async function page() {
           description,
         } = blog;
         return (
-          <Link key={title} href={flattenedPath}>
-            <h1>
-              <strong>{title}</strong>
-            </h1>
+          <Link key={title} href={flattenedPath} style={{ margin: "16px 0" }}>
+            <h1>{title}</h1>
             <p>{description}</p>
           </Link>
         );

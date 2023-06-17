@@ -24,14 +24,14 @@ function SayHi() {
         </HighLightedText>
       </h1>
       <p>
-        Currenty the website is being revamped.
-        <b> Untill - 20th June, 2023 </b>
+        Occasionally <strong>Designer</strong> | 
+        <strong>Blogger</strong> | <strong>Mentor</strong>
       </p>
-      {/* <div style={{ display: "flex", gap: "2rem" }}>
-        <p>Go to content &#8594;</p>
-        <Anchor href="/aboutMe/workingWithMe"># linkedIn</Anchor>
-        <Anchor href="/aboutMe/socialPresence"># github</Anchor>
-      </div> */}
+      <p>
+        Currenty the website is being revamped. 😭
+        <br />
+        <strong>Will be ready by 20th June, 2023</strong>
+      </p>
     </section>
   );
 }

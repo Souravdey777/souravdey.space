@@ -20,8 +20,8 @@ export default function Page() {
         <MdxWrapper withoutBack withoutProgress>
           <Intro />
           <Signature />
-          <Anchor href="/aboutMe">/myStory &#8594;</Anchor>
           <div className={styles.linkList}>
+            <Anchor href="/aboutMe">/myStory &#8594;</Anchor>
             <Anchor href="/aboutMe/workingWithMe">
               /workingWithMe &#8594;
             </Anchor>

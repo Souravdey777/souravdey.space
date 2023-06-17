@@ -6,6 +6,7 @@
 .mdx-h6,
 .mdx-strong {
   color: var(--foreground-hex-intense);
+  line-height: 1.2;
 }
 
 .mdx-h1 {

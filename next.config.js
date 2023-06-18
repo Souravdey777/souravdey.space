@@ -3,6 +3,7 @@ const nextConfig = {
   env: {
     GOOGLE_ANALYTICS: "G-BJ96LSKFFB",
   },
+  images: { domains: ["cdn.hashnode.com"] },
   experimental: {
     mdxRs: true,
     appDir: true,

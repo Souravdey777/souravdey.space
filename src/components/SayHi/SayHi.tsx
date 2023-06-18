@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "@/app/page.module.css";
 import { Anchor, HighLightedText, ProfilePic } from "@/components";
 import qoutesDI from "@/assets/qoutesDI.svg";
+import Link from "next/link";
 
 function SayHi() {
   return (
@@ -28,10 +29,24 @@ function SayHi() {
         <strong>Blogger</strong> | <strong>Mentor</strong>
       </p>
       <p>
-        Currenty the website is being revamped. 😭
+        Currenty the website is being revamped. 🚀
         <br />
         <strong>Will be ready by 20th June, 2023</strong>
       </p>
+      <div
+        className={styles.linkList}
+        style={{ flexDirection: "row", gap: "16px" }}
+      >
+        <Link target="_blank" href="https://github.com/Souravdey777/">
+          Github
+        </Link>
+        <Link target="_blank" href="https://www.linkedin.com/in/souravdey777/">
+          LinkedIn
+        </Link>
+        <Link target="_blank" href="https://www.youtube.com/@techWithSD">
+          YouTube
+        </Link>
+      </div>
     </section>
   );
 }

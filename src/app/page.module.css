@@ -4,13 +4,6 @@
   align-items: flex-end;
 }
 
-.fixedHeader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  margin: 2rem;
-}
-
 .fixedFooter {
   position: fixed;
   left: 0;
@@ -82,17 +75,6 @@
 
   .bigText {
     font-size: 4rem;
-  }
-
-  .fixedHeader {
-    position: fixed;
-    display: flex;
-    margin: 0;
-    padding: 1.5rem 2rem;
-    width: 100%;
-    background-color: var(--header);
-    backdrop-filter: saturate(180%) blur(20px);
-    box-shadow: 2px 0px 15px #23262622;
   }
 
   .fixedFooter {

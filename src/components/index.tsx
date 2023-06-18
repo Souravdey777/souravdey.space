@@ -10,8 +10,10 @@ import HighLightedText from "./HighLightedText/HighLightedText";
 import Card from "./card/card";
 import Footer from "./footer/footer";
 import DecorativeContent from "./DecorativeContent/DecorativeContent";
+import Header from "./Header/Header";
 
 export {
+  Header,
   ProfilePic,
   SayHi,
   DecorativeContent,

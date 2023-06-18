@@ -15,7 +15,7 @@ function DecorativeContent() {
         )}
       >
         <HighLightedText>
-          Designig and
+          Designing and
           <br /> Developing Future
         </HighLightedText>
       </h3>

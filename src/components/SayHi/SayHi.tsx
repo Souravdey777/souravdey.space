@@ -33,10 +33,7 @@ function SayHi() {
         <br />
         <strong>Will be ready by 20th June, 2023</strong>
       </p>
-      <strong
-        className={styles.linkList}
-        style={{ flexDirection: "row", gap: "16px" }}
-      >
+      <strong className={styles.linkList} style={{ flexDirection: "row" }}>
         <Link target="_blank" href="https://github.com/Souravdey777/">
           Github&#8594;
         </Link>

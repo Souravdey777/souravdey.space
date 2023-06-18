@@ -11,6 +11,9 @@ import {
   SayHi,
   Signature,
 } from "@/components";
+import Link from "next/link";
+import clsx from "clsx";
+import { roboto } from "./fonts";
 
 export default function Page() {
   return (
@@ -21,18 +24,14 @@ export default function Page() {
         <MdxWrapper withoutBack withoutProgress>
           <Intro />
           <Signature />
-          <strong className={styles.linkList}>
-            <Anchor href="/aboutMe">/myStory &#8594;</Anchor>
-            <Anchor href="/aboutMe/workingWithMe">
-              /workingWithMe &#8594;
-            </Anchor>
-            <Anchor href="/aboutMe/socialPresence">
-              /socialPresence &#8594;
-            </Anchor>
-            <Anchor href="/aboutMe/productivityTools">
+          <strong className={clsx(styles.linkList, roboto.className)}>
+            <Link href="/aboutMe">/myStory🙋🏻‍♂️ &#8594;</Link>
+            {/* <Link href="/aboutMe/workingWithMe">/workingWithMe &#8594;</Link> */}
+            <Link href="/aboutMe/socialPresence">/socialPresence &#8594;</Link>
+            {/* <Link href="/aboutMe/productivityTools">
               /productivityTools &#8594;
-            </Anchor>
-            <Anchor href="mailto:piyush.kolkata@gmail.com">/sayHi ✉️ </Anchor>
+            </Link> */}
+            <Link href="mailto:piyush.kolkata@gmail.com">/sayHi ✉️ </Link>
           </strong>
           <DecorativeContent />
         </MdxWrapper>

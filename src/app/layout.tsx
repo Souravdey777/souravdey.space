@@ -24,9 +24,20 @@ export default function RootLayout({
     <html lang="en">
       {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-BJ96LSKFFB"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
         strategy="lazyOnload"
       />
+      <Script id="google-analytics" strategy="lazyOnload">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+            page_path: window.location.pathname,
+          });
+          console.log(${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS})
+        `}
+      </Script>
       <body className={poppins.className}>
         <header>
           <strong className={styles.fixedHeader}>Sourav Dey</strong>

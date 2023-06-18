@@ -43,13 +43,13 @@ const Menu = ({
           {...path01Variants.closed}
           animate={path01Controls}
           transition={{ duration: 0.2 }}
-          stroke="#000000"
+          stroke="var(--foreground-hex-intense)"
         />
         <motion.path
           {...path02Variants.closed}
           animate={path02Controls}
           transition={{ duration: 0.2 }}
-          stroke="#000000"
+          stroke="var(--foreground-hex-intense)"
         />
       </svg>
     </button>

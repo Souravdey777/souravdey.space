@@ -4,10 +4,10 @@ export const navLinks = [
   // { name: "/workExperience", url: "/workExperience" },
   { name: "/mentorship", url: "/mentorship" },
   { name: "/blogs", url: "/blogs" },
-  { name: "/mindNuggets", url: "/mindNuggets" },
+  // { name: "/mindNuggets", url: "/mindNuggets" },
   // { name: "/projects", url: "/projects" },
-  { name: "/ideas", url: "/ideas" },
-  { name: "/appearances", url: "/appearances" },
+  // { name: "/ideas", url: "/ideas" },
+  // { name: "/appearances", url: "/appearances" },
   { name: "/humbleBrags", url: "/humbleBrags" },
   // { name: "/bookShelf", url: "/bookShelf" },
 ];

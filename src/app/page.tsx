@@ -3,6 +3,7 @@ import styles from "@/app/page.module.css";
 
 import {
   Anchor,
+  DecorativeContent,
   HighLightedText,
   MdxWrapper,
   ProfilePic,
@@ -33,6 +34,7 @@ export default function Page() {
             </Anchor>
             <Anchor href="mailto:piyush.kolkata@gmail.com">/sayHi ✉️ </Anchor>
           </div>
+          <DecorativeContent />
         </MdxWrapper>
       </ProgressWrapper>
     </main>

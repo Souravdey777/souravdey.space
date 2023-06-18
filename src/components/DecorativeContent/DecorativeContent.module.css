@@ -1,0 +1,38 @@
+.decorativeContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  gap: 8px;
+}
+
+.decorativeContentText {
+  text-align: right;
+}
+
+.animatedCircle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: -webkit-linear-gradient(
+    -70deg,
+    #2cda86,
+    #1c86ff,
+    #2cda86,
+    #1c86ff
+  );
+  background-size: 400% 400%;
+  animation: gradient 3s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

@@ -1,4 +1,4 @@
-import { Poppins, Roboto } from "next/font/google";
+import { Poppins, Roboto, Permanent_Marker } from "next/font/google";
 
 export const poppins = Poppins({
   subsets: ["latin"],
@@ -8,4 +8,9 @@ export const poppins = Poppins({
 export const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "700", "900"],
+});
+
+export const permanentMarker = Permanent_Marker({
+  subsets: ["latin"],
+  weight: ["400"],
 });

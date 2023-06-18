@@ -9,10 +9,12 @@ import Signature from "./Signature/Signature";
 import HighLightedText from "./HighLightedText/HighLightedText";
 import Card from "./card/card";
 import Footer from "./footer/footer";
+import DecorativeContent from "./DecorativeContent/DecorativeContent";
 
 export {
   ProfilePic,
   SayHi,
+  DecorativeContent,
   Signature,
   HighLightedText,
   Navigation,

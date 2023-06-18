@@ -1,0 +1,17 @@
+.blogCard {
+  margin: 16px 0;
+  color: var(--foreground-hex-intense);
+}
+
+.blogCardText {
+  color: var(--foreground-hex);
+}
+
+.blogCardTitle {
+  margin: 8px 0;
+}
+
+.blogCard:hover .blogCardTitle {
+  transition-duration: 0.5s;
+  color: var(--primary-hex);
+}

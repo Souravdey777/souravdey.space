@@ -4,11 +4,8 @@ import { navLinks } from "@/routes";
 import { motion } from "framer-motion";
 
 import styles from "./Navigation.module.css";
-import Anchor from "../Anchor/Anchor";
 import { Dispatch, SetStateAction } from "react";
 import Link from "next/link";
-import clsx from "clsx";
-import { roboto } from "@/app/fonts";
 
 function MobileNavigation({
   setOpen,
@@ -24,7 +21,7 @@ function MobileNavigation({
         return (
           <motion.div key={`${link.name}-${index}`}>
             <Link
-              className={styles.linkBlue}
+              className={isActive ? styles.linkBlue : styles.linkWhite}
               href={link.url}
               onClick={() => setOpen(false)}
             >

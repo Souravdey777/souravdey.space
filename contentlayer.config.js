@@ -26,7 +26,7 @@ export const Blog = defineDocumentType(() => ({
     },
     publishedDate: {
       type: "date",
-      // required: true,
+      required: true,
     },
     published: {
       type: "boolean",
@@ -35,6 +35,10 @@ export const Blog = defineDocumentType(() => ({
     image: {
       type: "string",
       // required: true,
+    },
+    tags: {
+      type: "list",
+      of: { type: "string" },
     },
   },
   computedFields,

@@ -2,7 +2,10 @@ import { MdxWrapper } from "@/components";
 import { allBlogs } from "contentlayer/generated";
 import Link from "next/link";
 import React from "react";
-// import readingTime from "reading-time";
+import readingTime from "reading-time";
+import dayjs from "dayjs";
+
+import styles from "./blogs.module.css";
 
 async function page() {
   return (
@@ -18,16 +21,20 @@ async function page() {
           title,
           description,
           published,
-          // body: { code },
+          tags,
+          body: { raw },
+          publishedDate,
         } = blog;
-        console.log(blog.code);
-        // const readTime = readingTime(code);
+        const date = dayjs(publishedDate).format("DD MMM, YYYY");
+        const readTime = readingTime(raw).text;
         if (published)
           return (
-            <Link key={title} href={flattenedPath} style={{ margin: "16px 0" }}>
-              <h1>{title}</h1>
-              <p>{description}</p>
-              {/* <p>{readTime}</p> */}
+            <Link className={styles.blogCard} key={title} href={flattenedPath}>
+              <p className={styles.blogCardText}>
+                {date} / {readTime}
+              </p>
+              <h3 className={styles.blogCardTitle}>{title}</h3>
+              <p className={styles.blogCardText}>{description}</p>
             </Link>
           );
       })}

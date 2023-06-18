@@ -38,13 +38,13 @@ function SayHi() {
         style={{ flexDirection: "row", gap: "16px" }}
       >
         <Link target="_blank" href="https://github.com/Souravdey777/">
-          Github&#8599;
+          Github&#8594;
         </Link>
         <Link target="_blank" href="https://www.linkedin.com/in/souravdey777/">
-          LinkedIn&#8599;
+          LinkedIn&#8594;
         </Link>
         <Link target="_blank" href="https://www.youtube.com/@techWithSD">
-          YouTube&#8599;
+          YouTube&#8594;
         </Link>
       </strong>
     </section>

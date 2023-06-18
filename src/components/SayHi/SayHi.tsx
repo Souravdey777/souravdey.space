@@ -33,20 +33,20 @@ function SayHi() {
         <br />
         <strong>Will be ready by 20th June, 2023</strong>
       </p>
-      <div
+      <strong
         className={styles.linkList}
         style={{ flexDirection: "row", gap: "16px" }}
       >
         <Link target="_blank" href="https://github.com/Souravdey777/">
-          Github
+          Github&#8599;
         </Link>
         <Link target="_blank" href="https://www.linkedin.com/in/souravdey777/">
-          LinkedIn
+          LinkedIn&#8599;
         </Link>
         <Link target="_blank" href="https://www.youtube.com/@techWithSD">
-          YouTube
+          YouTube&#8599;
         </Link>
-      </div>
+      </strong>
     </section>
   );
 }

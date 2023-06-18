@@ -21,7 +21,7 @@ export default function Page() {
         <MdxWrapper withoutBack withoutProgress>
           <Intro />
           <Signature />
-          <div className={styles.linkList}>
+          <strong className={styles.linkList}>
             <Anchor href="/aboutMe">/myStory &#8594;</Anchor>
             <Anchor href="/aboutMe/workingWithMe">
               /workingWithMe &#8594;
@@ -33,7 +33,7 @@ export default function Page() {
               /productivityTools &#8594;
             </Anchor>
             <Anchor href="mailto:piyush.kolkata@gmail.com">/sayHi ✉️ </Anchor>
-          </div>
+          </strong>
           <DecorativeContent />
         </MdxWrapper>
       </ProgressWrapper>

@@ -31,7 +31,7 @@ function SayHi() {
       <p>
         Currenty the website is being revamped. 🚀
         <br />
-        <strong>Will be ready by 20th June, 2023</strong>
+        <strong>Will be ready by 30th June, 2023</strong>
       </p>
       <strong className={styles.linkList} style={{ flexDirection: "row" }}>
         <Link target="_blank" href="https://github.com/Souravdey777/">

@@ -11,7 +11,7 @@
   --code-hex-light: #00234b;
 
   --foreground-hex: #323232;
-  --background-hex: #dfdfdf;
+  --background-hex: #f8f9f9;
   --foreground-hex-intense: #101010;
 
   --header: transparent;
@@ -142,6 +142,7 @@ h6 {
 
 p {
   font-size: 1rem;
+  line-height: 1.4;
 }
 
 @media (prefers-color-scheme: dark) {

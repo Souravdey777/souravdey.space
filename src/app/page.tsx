@@ -21,7 +21,7 @@ export default function Page() {
       <ProgressWrapper>
         <SayHi />
         {/* Small About Me */}
-        <MdxWrapper withoutBack withoutProgress>
+        <div className={styles.fullHeightContainer}>
           <Intro />
           <Signature />
           <strong className={clsx(styles.linkList, roboto.className)}>
@@ -34,7 +34,7 @@ export default function Page() {
             <Link href="mailto:piyush.kolkata@gmail.com">/sayHi ✉️ </Link>
           </strong>
           <DecorativeContent />
-        </MdxWrapper>
+        </div>
       </ProgressWrapper>
     </main>
   );

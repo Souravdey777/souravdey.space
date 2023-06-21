@@ -11,10 +11,10 @@
   --code-hex-light: #00234b;
 
   --foreground-hex: #323232;
-  --background-hex: #ffffff;
-  --foreground-hex-intense: #000000;
+  --background-hex: #dfdfdf;
+  --foreground-hex-intense: #101010;
 
-  --header: #ffffff22;
+  --header: transparent;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -50,10 +50,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-hex: #d0dbec;
-    --background-hex: #010101;
-    --foreground-hex-intense: #ffffff;
-
-    --header: #00000022;
+    --background-hex: #101010;
+    --foreground-hex-intense: #dfdfdf;
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
     --secondary-glow: linear-gradient(

@@ -15,30 +15,20 @@
 
 .mdxWrapper,
 .mdxWrapperContent,
-.fullHeightContainer,
-.fullHeightContainer70 {
+.fullHeightContainer {
   display: flex;
   flex-direction: column;
-  width: 75%;
-  min-height: 100vh;
-  padding: 10rem 15%;
+  max-width: 540px;
+  margin: 10rem auto;
   gap: 2rem;
 }
 
 .mdxWrapperContent {
   width: 100%;
-  padding: 10rem 25%;
-}
-
-.fullHeightContainer70 {
-  min-height: unset;
-  gap: 4rem;
+  margin: 10rem auto;
 }
 
 .fullHeightContainer {
-  justify-content: center;
-  padding: 10rem 25%;
-  width: 100vw;
   gap: 4rem;
 }
 
@@ -66,11 +56,9 @@
 @media only screen and (max-width: 720px) {
   .mdxWrapper,
   .mdxWrapperContent,
-  .fullHeightContainer,
-  .fullHeightContainer70 {
+  .fullHeightContainer {
     width: 100%;
-    min-height: 100vh;
-    padding: 10rem 2rem;
+    padding: 2rem;
   }
 
   .bigText {

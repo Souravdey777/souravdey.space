@@ -8,7 +8,7 @@ import Link from "next/link";
 
 function SayHi() {
   return (
-    <section className={styles.fullHeightContainer70}>
+    <section className={styles.fullHeightContainer}>
       <div className={styles.imageContainer}>
         {/* Decorative Image */}
         <Image src={qoutesDI} width={96} height={96} alt="" />
@@ -42,6 +42,11 @@ function SayHi() {
         </Link>
         <Link target="_blank" href="https://www.youtube.com/@techWithSD">
           YouTube&#8594;
+        </Link>
+      </strong>
+      <strong className={styles.linkList} style={{ flexDirection: "row" }}>
+        <Link target="_blank" href="https://space.topmate.io/souravdey777">
+          Mentorship 1:1 &#8594;
         </Link>
       </strong>
     </section>

@@ -46,8 +46,10 @@ async function page({ params }: PageProps) {
       <section className={styles.fullHeightContainer}>
         <h1>{title}</h1>
         <h3>{description}</h3>
-        <p>
-          {date} / {readTime}
+        <p style={{ textAlign: "center" }}>
+          {date}
+          <br />
+          ☕️ {readTime}
         </p>
         {/* {image && (
           <Image

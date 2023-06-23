@@ -16,7 +16,7 @@
 //         have content related to a diverse topic.
 //       </p>
 //       {allBlogs
-//         ?.sort((a: any, b: any) =>
+//         .sort((a: any, b: any) =>
 //           dayjs(a?.publishedDate).isAfter(dayjs(b?.publishedDate)) ? -1 : 1
 //         )
 //         .map((blog: any) => {

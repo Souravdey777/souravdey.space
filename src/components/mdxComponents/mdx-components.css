@@ -36,9 +36,10 @@
   font-size: 0.75rem;
 }
 
-.mdx-para {
-  font-size: 1rem;
-  line-height: 1.4;
+.mdx-para,
+.mdx-strong,
+.mdx-ul {
+  font-size: 0.875rem;
 }
 
 .mdx-code {
@@ -77,8 +78,17 @@
 
 .mdx-img {
   max-width: 100%;
+  cursor: pointer;
 }
 
 .mdx-ul {
   margin-left: 1rem;
+}
+
+@media only screen and (max-width: 720px) {
+  .mdx-para,
+  .mdx-strong,
+  .mdx-ul {
+    font-size: 1rem;
+  }
 }

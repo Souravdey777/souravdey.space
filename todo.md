@@ -1,7 +1,7 @@
 # Todo
 
 1. Update all blog content 16th Jun
-    - Paste all content to /blogs
+    - Paste all content to /blogs - map them in hashnode too.
     - add tags : `array`
     - add type published : `true/false`
     - add images:  `url`
@@ -17,6 +17,7 @@
 4. modify the all section under about me
 5. Action items in home page
 6. /mindNuggets plan the content
+7. read.cv gallary effect.
 
 ---
 - /appearnces
@@ -26,3 +27,4 @@
 - /podcast
 - /ideas
 - subsstack
+- read focus desktop mode - animated

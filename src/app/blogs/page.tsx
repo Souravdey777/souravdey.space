@@ -12,8 +12,6 @@ async function page() {
     <MdxWrapper withoutBack withoutProgress>
       <h1 className="mdx-h1">/blogs ✍🏻</h1>
       <p>
-        The mind nugget are some interesting facts that fasinates me. This is
-        have content related to a diverse topic.
       </p>
       {allBlogs
         ?.sort((a: any, b: any) =>

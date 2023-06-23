@@ -4,12 +4,15 @@ import dayjs from "dayjs";
 
 import { allBlogs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
-import { HighLightedText, ProgressWrapper } from "@/components";
+import { Anchor, HighLightedText, ProgressWrapper } from "@/components";
 
 import { Mdx } from "@/components/mdxComponents/mdx-components";
 
 import styles from "@/app/page.module.css";
 import Image from "next/image";
+import Link from "next/link";
+
+import { SiTwitter, SiLinkedin } from "@icons-pack/react-simple-icons";
 
 interface PageProps {
   params: {
@@ -30,6 +33,7 @@ function getBlogsFromParams(slug: string) {
 
 async function page({ params }: PageProps) {
   const blog = await getBlogsFromParams(params.slug);
+  const { slug } = params;
 
   const {
     title,
@@ -42,16 +46,44 @@ async function page({ params }: PageProps) {
   const date = dayjs(publishedDate).format("DD MMM, YYYY");
   const readTime = readingTime(raw).text;
   return (
-    <ProgressWrapper>
-      <section className={styles.fullHeightContainer}>
-        <h1>{title}</h1>
-        <h3>{description}</h3>
-        <p style={{ textAlign: "center" }}>
-          {date}
-          <br />
-          ☕️ {readTime}
-        </p>
-        {/* {image && (
+    <>
+      <ProgressWrapper>
+        <section className={styles.fullHeightContainer}>
+          <h1>{title}</h1>
+          <h3>{description}</h3>
+          <p>
+            {date}
+            <br />
+            ☕️ {readTime}
+          </p>
+          <div
+            style={{ display: "flex", alignItems: "flex-start", gap: "32px" }}
+          >
+            <p>Share the blog &#8594;</p>
+            <Link
+              href={`https://twitter.com/intent/tweet?text=Check out this blog on ${title} by @Souravdey777%0A%0Ahttps://souravdey.space/blogs/${slug}`}
+              target="_blank"
+            >
+              <SiTwitter
+                title="My title"
+                color="var(--foreground-hex)"
+                size={24}
+              />
+            </Link>
+            <Link
+              href={`https://www.linkedin.com/sharing/share-offsite/?url=https://souravdey.space/blogs/${slug}`}
+              target="_blank"
+            >
+              <SiLinkedin
+                title="My title"
+                color="var(--foreground-hex)"
+                size={24}
+              />
+            </Link>
+          </div>
+          <hr/>
+
+          {/* {image && (
           <Image
             src={image}
             alt={title}
@@ -59,11 +91,12 @@ async function page({ params }: PageProps) {
             style={{ objectFit: "contain" }}
           />
         )} */}
-      </section>
-      <article className={styles.mdxWrapperContent}>
-        <Mdx code={code} />
-      </article>
-    </ProgressWrapper>
+        </section>
+        <article className={styles.mdxWrapperContent}>
+          <Mdx code={code} />
+        </article>
+      </ProgressWrapper>
+    </>
   );
 }
 

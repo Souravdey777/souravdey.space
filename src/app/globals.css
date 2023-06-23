@@ -141,8 +141,15 @@ h6 {
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.4;
+  font-size: 0.875rem;
+}
+
+hr {
+  margin: 16px -16px;
+  border: none;
+  height: 0.2px;
+  background: var(--border);
+  background-color: var(--border);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -154,5 +161,8 @@ p {
 @media only screen and (max-width: 720px) {
   * {
     font-size: 14px;
+  }
+  p {
+    font-size: 1rem;
   }
 }

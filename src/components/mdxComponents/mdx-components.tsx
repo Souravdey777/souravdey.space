@@ -8,6 +8,7 @@ import { MdxCard } from "./mdx-card";
 
 import "./mdx-components.css";
 import Image from "next/image";
+import MdxImg from "./mdx-img";
 
 interface mxdComponentProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
@@ -43,9 +44,7 @@ export const mdxComponents = {
   ),
   a: ({ ...props }) => <a className="mdx-a" {...props} />,
   pre: ({ ...props }) => <pre className="mdx-pre" {...props} />,
-  img: ({ className, ...props }: mxdComponentProps) => (
-    <img className={clsx(className, "mdx-img")} {...props} />
-  ),
+  img: MdxImg,
   ul: ({ ...props }) => <ul className="mdx-ul" {...props} />,
   MdxCard,
 };

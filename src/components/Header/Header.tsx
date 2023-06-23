@@ -4,13 +4,16 @@ import Menu from "../Navigation/Menu";
 import Navigation from "../Navigation/Navigation";
 import styles from "./Header.module.css";
 import MobileNavigation from "../Navigation/MobileNavigation";
+import Link from "next/link";
 
 function Header() {
   const [isOpen, setOpen] = useState(false);
   return (
     <header>
       <div className={styles.fixedHeader}>
-        <strong>Sourav Dey</strong>
+        <Link href="/">
+          <strong>Sourav Dey</strong>
+        </Link>
         <Menu isOpen={isOpen} setOpen={setOpen} />
       </div>
       <Navigation />

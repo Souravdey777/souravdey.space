@@ -6,6 +6,12 @@ import { Anchor, HighLightedText, ProfilePic } from "@/components";
 import qoutesDI from "@/assets/qoutesDI.svg";
 import Link from "next/link";
 
+import {
+  SiGithub,
+  SiLinkedin,
+  SiYoutube,
+} from "@icons-pack/react-simple-icons";
+
 function SayHi() {
   return (
     <section className={styles.fullHeightContainer}>
@@ -35,18 +41,30 @@ function SayHi() {
       </p>
       <strong className={styles.linkList} style={{ flexDirection: "row" }}>
         <Link target="_blank" href="https://github.com/Souravdey777/">
-          Github&#8594;
+          <SiGithub
+            title="Github"
+            color="var(--foreground-hex-intense)"
+            size={24}
+          />
         </Link>
         <Link target="_blank" href="https://www.linkedin.com/in/souravdey777/">
-          LinkedIn&#8594;
+          <SiLinkedin
+            title="LinkedIn"
+            color="var(--foreground-hex-intense)"
+            size={24}
+          />
         </Link>
         <Link target="_blank" href="https://www.youtube.com/@techWithSD">
-          YouTube&#8594;
+          <SiYoutube
+            title="YouTube"
+            color="var(--foreground-hex-intense)"
+            size={24}
+          />
         </Link>
       </strong>
       <strong className={styles.linkList} style={{ flexDirection: "row" }}>
         <Link target="_blank" href="https://space.topmate.io/souravdey777">
-          Mentorship 1:1 &#8594;
+          1:1 Mentorship &#8594;
         </Link>
       </strong>
     </section>

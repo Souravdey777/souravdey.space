@@ -11,6 +11,7 @@ import Card from "./card/card";
 import Footer from "./footer/footer";
 import DecorativeContent from "./DecorativeContent/DecorativeContent";
 import Header from "./Header/Header";
+import YouTubeEmbed from "./YouTubeEmbed/YouTubeEmbed";
 
 export {
   Header,
@@ -26,4 +27,5 @@ export {
   ProgressWrapper,
   Footer,
   Card,
+  YouTubeEmbed,
 };

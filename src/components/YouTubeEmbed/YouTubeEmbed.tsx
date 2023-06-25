@@ -1,12 +1,12 @@
 import React from "react";
 
-function YouTubeEmbed({ link }: { link: string }) {
+function YouTubeEmbed({ slugHash }: { slugHash: string }) {
   return (
     <iframe
       id="ytplayer"
       width="100%"
       height="540"
-      src={`https://www.youtube.com/embed/${link}?autoplay=1&origin=http://example.com`}
+      src={`https://www.youtube.com/embed/${slugHash}?autoplay=1&origin=http://example.com`}
     />
   );
 }

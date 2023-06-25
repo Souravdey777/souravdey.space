@@ -7,6 +7,7 @@ export const navLinks = [
   // { name: "/mindNuggets", url: "/mindNuggets" },
   // { name: "/projects", url: "/projects" },
   // { name: "/ideas", url: "/ideas" },
+  // { name: "/designs", url: "/designs" },
   // { name: "/appearances", url: "/appearances" },
   { name: "/humbleBrags", url: "/humbleBrags" },
   // { name: "/bookShelf", url: "/bookShelf" },

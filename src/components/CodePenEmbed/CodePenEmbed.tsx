@@ -9,6 +9,7 @@ function CodePenEmbed({ slugHash }: { slugHash: string }) {
         data-theme-id="dark"
         data-default-tab="result"
         data-slug-hash={slugHash}
+        data-zoom="0.5"
         data-user="souravdey777"
         style={{ display: "flex", border: "2px solid" }}
       >

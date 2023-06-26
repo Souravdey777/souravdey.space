@@ -28,7 +28,7 @@ export default function Page() {
             {/* <Link href="/aboutMe/productivityTools">
               /productivityTools &#8594;
             </Link> */}
-            <Link href="mailto:piyush.kolkata@gmail.com">/sayHi ✉️ </Link>
+            <a href="mailto:piyush.kolkata@gmail.com">/sayHi ✉️ </a>
           </strong>
           <DecorativeContent />
         </div>

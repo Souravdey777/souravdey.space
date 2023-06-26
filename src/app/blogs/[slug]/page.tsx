@@ -20,6 +20,19 @@ interface PageProps {
   };
 }
 
+export async function generateMetadata({ params }: PageProps) {
+  const blog = await getBlogsFromParams(params.slug);
+
+  const { title, description, image } = blog;
+  return {
+    title: `Blog | ${title}`,
+    description,
+    openGraph: {
+      images: image,
+    },
+  };
+}
+
 function getBlogsFromParams(slug: string) {
   const blog = allBlogs.find(
     (blog) => blog._raw.flattenedPath.split("/")[1] === slug

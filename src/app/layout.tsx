@@ -7,7 +7,7 @@ import Script from "next/script";
 
 export const metadata = {
   title: "Sourav Dey",
-  description: "Sourav Dey: Digital Space",
+  description: "Sourav Dey | Digital Space",
 };
 
 export default function RootLayout({

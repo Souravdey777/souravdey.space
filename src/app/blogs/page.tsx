@@ -7,6 +7,12 @@ import dayjs from "dayjs";
 
 import styles from "./blogs.module.css";
 
+export const metadata = {
+  title: "Blogs | Sourav Dey",
+  description: "Sourav Dey | Digital Space",
+};
+
+
 async function page({
   searchParams,
 }: {

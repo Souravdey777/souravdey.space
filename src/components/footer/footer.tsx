@@ -5,7 +5,7 @@ import { roboto } from "@/app/fonts";
 import Link from "next/link";
 
 export default function Footer() {
-  const [time, setTime] = useState(currentTime());
+  const [time, setTime] = useState("");
 
   function currentTime() {
     return new Date().toLocaleTimeString(undefined, {

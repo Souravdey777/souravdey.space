@@ -40,6 +40,9 @@ export const Blog = defineDocumentType(() => ({
       type: "list",
       of: { type: "string" },
     },
+    series: {
+      type: "string",
+    },
   },
   computedFields,
 }));

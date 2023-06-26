@@ -7,42 +7,50 @@ import dayjs from "dayjs";
 
 import styles from "./blogs.module.css";
 
-async function page() {
+async function page({
+  searchParams,
+}: {
+  searchParams: {
+    series: string;
+  };
+}) {
+  const series = searchParams?.series || null;
+
+  let blogs = allBlogs?.sort((a: any, b: any) =>
+    dayjs(a?.publishedDate).isAfter(dayjs(b?.publishedDate)) ? -1 : 1
+  );
+
+  if (series) {
+    blogs = blogs?.filter((blog) => blog.series === series);
+  }
+
   return (
     <MdxWrapper withoutBack withoutProgress>
       <h1 className="mdx-h1">/blogs ✍🏻</h1>
       <p></p>
-      {allBlogs
-        ?.sort((a: any, b: any) =>
-          dayjs(a?.publishedDate).isAfter(dayjs(b?.publishedDate)) ? -1 : 1
-        )
-        .map((blog: any) => {
-          const {
-            _raw: { flattenedPath },
-            title,
-            description,
-            published,
-            tags,
-            body: { raw },
-            publishedDate,
-          } = blog;
-          const date = dayjs(publishedDate).format("DD MMM, YYYY");
-          const readTime = readingTime(raw).text;
-          if (published)
-            return (
-              <Link
-                className={styles.blogCard}
-                key={title}
-                href={flattenedPath}
-              >
-                <p className={styles.blogCardText}>
-                  {readTime} &#x2022; {date}
-                </p>
-                <h3 className={styles.blogCardTitle}>{title}</h3>
-                <p className={styles.blogCardText}>{description}</p>
-              </Link>
-            );
-        })}
+      {blogs.map((blog: any) => {
+        const {
+          _raw: { flattenedPath },
+          title,
+          description,
+          published,
+          tags,
+          body: { raw },
+          publishedDate,
+        } = blog;
+        const date = dayjs(publishedDate).format("DD MMM, YYYY");
+        const readTime = readingTime(raw).text;
+        if (published)
+          return (
+            <Link className={styles.blogCard} key={title} href={flattenedPath}>
+              <p className={styles.blogCardText}>
+                {readTime} &#x2022; {date}
+              </p>
+              <h3 className={styles.blogCardTitle}>{title}</h3>
+              <p className={styles.blogCardText}>{description}</p>
+            </Link>
+          );
+      })}
     </MdxWrapper>
   );
 }

@@ -40,6 +40,7 @@ async function page({ params }: PageProps) {
     description,
     publishedDate,
     image,
+    series,
     body: { raw, code },
   } = blog;
 
@@ -89,6 +90,14 @@ async function page({ params }: PageProps) {
               />
             </Link>
           </div>
+          {series && (
+            <Link
+              href={`/blogs?series=${series}`}
+              style={{ textTransform: "capitalize" }}
+            >
+              Read more blogs from the {series} Series
+            </Link>
+          )}
           <hr />
         </section>
         <article className={styles.mdxWrapperContent}>

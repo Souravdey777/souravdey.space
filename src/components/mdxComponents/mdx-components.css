@@ -38,7 +38,7 @@
 
 .mdx-para,
 .mdx-strong,
-.mdx-ul {
+.mdx-list {
   font-size: 0.875rem;
 }
 
@@ -86,14 +86,14 @@
   cursor: pointer;
 }
 
-.mdx-ul {
+.mdx-list {
   margin-left: 1rem;
 }
 
 @media only screen and (max-width: 720px) {
   .mdx-para,
   .mdx-strong,
-  .mdx-ul {
+  .mdx-list {
     font-size: 1rem;
   }
 }

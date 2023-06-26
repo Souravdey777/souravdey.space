@@ -6,7 +6,7 @@ function YouTubeEmbed({ slugHash }: { slugHash: string }) {
       id="ytplayer"
       width="100%"
       height="540"
-      src={`https://www.youtube.com/embed/${slugHash}?origin=https://souravdey.space`}
+      src={`https://www.youtube.com/embed/${slugHash}`}
     />
   );
 }

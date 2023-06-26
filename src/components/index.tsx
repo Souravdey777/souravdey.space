@@ -8,9 +8,9 @@ import ProgressWrapper from "./ProgressWrapper/ProgressWrapper";
 import Signature from "./Signature/Signature";
 import HighLightedText from "./HighLightedText/HighLightedText";
 import Card from "./card/card";
-import Footer from "./Footer/Footer";
 import DecorativeContent from "./DecorativeContent/DecorativeContent";
 import Header from "./Header/Header";
+import Footer from "./Footer/Footer";
 import YouTubeEmbed from "./YouTubeEmbed/YouTubeEmbed";
 
 export {

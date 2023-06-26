@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: PageProps) {
     title: `Blog | ${title}`,
     description,
     openGraph: {
-      images: [image],
+      images: image,
     },
   };
 }

@@ -4,9 +4,6 @@ import styles from "@/app/page.module.css";
 import {
   Anchor,
   DecorativeContent,
-  HighLightedText,
-  MdxWrapper,
-  ProfilePic,
   ProgressWrapper,
   SayHi,
   Signature,

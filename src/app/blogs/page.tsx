@@ -11,8 +11,7 @@ async function page() {
   return (
     <MdxWrapper withoutBack withoutProgress>
       <h1 className="mdx-h1">/blogs ✍🏻</h1>
-      <p>
-      </p>
+      <p></p>
       {allBlogs
         ?.sort((a: any, b: any) =>
           dayjs(a?.publishedDate).isAfter(dayjs(b?.publishedDate)) ? -1 : 1

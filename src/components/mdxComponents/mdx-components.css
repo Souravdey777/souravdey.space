@@ -60,6 +60,7 @@
   width: 100%;
   padding: 0;
   border: none;
+  color: var(--white-hex);
 }
 
 .mdx-blockquote {
@@ -76,7 +77,7 @@
 }
 
 .mdx-a {
-  color: var(--foreground-hex);
+  color: var(--primary-hex);
   font-weight: bold;
   text-decoration: underline;
 }

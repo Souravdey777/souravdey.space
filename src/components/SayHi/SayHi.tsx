@@ -7,7 +7,9 @@ import qoutesDI from "@/assets/qoutesDI.svg";
 import Link from "next/link";
 
 import {
+  SiCodersrank,
   SiGithub,
+  SiInstagram,
   SiLinkedin,
   SiYoutube,
 } from "@icons-pack/react-simple-icons";
@@ -17,13 +19,7 @@ function SayHi() {
     <section className={styles.fullHeightContainer}>
       <div className={styles.imageContainer}>
         {/* Decorative Image */}
-        <Image
-          src={qoutesDI}
-          width={96}
-          height={96}
-          alt=""
-          priority
-        />
+        <Image src={qoutesDI} width={96} height={96} alt="" priority />
         {/* Profile Image */}
         <ProfilePic />
       </div>
@@ -45,7 +41,10 @@ function SayHi() {
         <br />
         <strong>Will be ready by 30th June, 2023</strong>
       </p>
-      <strong className={styles.linkList} style={{ flexDirection: "row" }}>
+      <strong
+        className={styles.linkList}
+        style={{ flexDirection: "row", justifyContent: "space-evenly" }}
+      >
         <Link target="_blank" href="https://github.com/Souravdey777/">
           <SiGithub
             title="Github"
@@ -67,10 +66,27 @@ function SayHi() {
             size={24}
           />
         </Link>
+        <Link target="_blank" href="https://www.instagram.com/souravdey777">
+          <SiInstagram
+            title="Instagram"
+            color="var(--foreground-hex-intense)"
+            size={24}
+          />
+        </Link>
+        <Link
+          target="_blank"
+          href="https://profile.codersrank.io/user/souravdey777"
+        >
+          <SiCodersrank
+            title="Codersrank"
+            color="var(--foreground-hex-intense)"
+            size={24}
+          />
+        </Link>
       </strong>
       <strong className={styles.linkList} style={{ flexDirection: "row" }}>
         <Link target="_blank" href="https://space.topmate.io/souravdey777">
-          1:1 Mentorship &#8594;
+          Book a session for 1:1 Mentorship &#8594;
         </Link>
       </strong>
     </section>

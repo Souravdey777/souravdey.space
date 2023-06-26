@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import styles from "@/app/page.module.css";
 import { roboto } from "@/app/fonts";
-import { Anchor } from "@/components";
+import Link from "next/link";
 
 export default function Footer() {
   const [time, setTime] = useState(currentTime());
@@ -23,7 +23,10 @@ export default function Footer() {
   return (
     <footer className={styles.fixedFooter}>
       <p>
-        Built with <Anchor href="https://nextjs.org/">NextJs</Anchor>
+        Built with{" "}
+        <Link href="https://nextjs.org/" target="_blank">
+          NextJs
+        </Link>
       </p>
       <p className={roboto.className}>India / {time}</p>
     </footer>

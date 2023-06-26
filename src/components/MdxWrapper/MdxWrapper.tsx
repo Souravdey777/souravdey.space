@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "@/app/page.module.css";
-import { Anchor, ProgressWrapper } from "@/components";
+import { ProgressWrapper } from "@/components";
+import Link from "next/link";
 
 export default function MdxWrapper({
   children,
@@ -16,9 +17,9 @@ export default function MdxWrapper({
       <ProgressWrapper disabled={withoutProgress}>
         <article className={styles.mdxWrapper}>
           {!withoutBack && (
-            <Anchor className="" href="/">
+            <Link className="" href="/">
               &#8592; Back
-            </Anchor>
+            </Link>
           )}
           {children}
         </article>

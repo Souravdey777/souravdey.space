@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 
 import { allBlogs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
-import { Anchor, HighLightedText, ProgressWrapper } from "@/components";
+import { ProgressWrapper } from "@/components";
 
 import { Mdx } from "@/components/mdxComponents/mdx-components";
 
@@ -68,7 +68,7 @@ async function page({ params }: PageProps) {
           <div
             style={{ display: "flex", alignItems: "flex-start", gap: "32px" }}
           >
-            <p>Share the blog &#8594;</p>
+            <b>Share the blog &#8594;</b>
             <Link
               href={`https://twitter.com/intent/tweet?text=Check out this blog on ${title} by @Souravdey777%0A%0Ahttps://souravdey.space/blogs/${slug}`}
               target="_blank"
@@ -95,7 +95,7 @@ async function page({ params }: PageProps) {
               href={`/blogs?series=${series}`}
               style={{ textTransform: "capitalize" }}
             >
-              Read more blogs from the {series} Series
+              Read more blogs from the {series} Series &#8594;
             </Link>
           )}
           <hr />

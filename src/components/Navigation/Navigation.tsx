@@ -11,8 +11,8 @@ import {
 } from "framer-motion";
 
 import styles from "./Navigation.module.css";
-import Anchor from "../Anchor/Anchor";
 import { useEffect } from "react";
+import Link from "next/link";
 
 function Navigation() {
   const pathname = usePathname();
@@ -40,18 +40,12 @@ function Navigation() {
         const isActive = pathname.startsWith(link.url);
         return (
           <motion.div animate={controls} key={`${link.name}-${index}`}>
-            {isActive ? (
-              <Anchor className={styles.linkBlue} href="/">
-                {link.name}
-              </Anchor>
-            ) : (
-              <Anchor
-                className={isActive ? styles.linkBlue : styles.linkWhite}
-                href={link.url}
-              >
-                {link.name}
-              </Anchor>
-            )}
+            <Link
+              className={isActive ? styles.linkBlue : styles.linkWhite}
+              href={link.url}
+            >
+              {link.name}
+            </Link>
           </motion.div>
         );
       })}

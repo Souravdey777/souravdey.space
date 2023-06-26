@@ -21,6 +21,7 @@ function ProfilePic() {
         width={125}
         height={154}
         alt="Sourav Dey: Profile Pic"
+        priority
       />
     </motion.div>
   );

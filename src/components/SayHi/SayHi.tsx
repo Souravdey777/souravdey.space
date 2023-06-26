@@ -17,7 +17,13 @@ function SayHi() {
     <section className={styles.fullHeightContainer}>
       <div className={styles.imageContainer}>
         {/* Decorative Image */}
-        <Image src={qoutesDI} width={96} height={96} alt="" />
+        <Image
+          src={qoutesDI}
+          width={96}
+          height={96}
+          alt=""
+          priority
+        />
         {/* Profile Image */}
         <ProfilePic />
       </div>

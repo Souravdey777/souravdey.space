@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction, useCallback, useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import styles from "./Navigation.module.css";
 
@@ -23,9 +23,8 @@ const Menu = ({
   const path01Controls = useAnimation();
   const path02Controls = useAnimation();
 
-  const onClick = async () => {
-    setOpen(!isOpen);
-    if (!isOpen) {
+  const switchIcons = useCallback(async () => {
+    if (isOpen) {
       await path02Controls.start(path02Variants.moving);
       path01Controls.start(path01Variants.open);
       path02Controls.start(path02Variants.open);
@@ -34,7 +33,16 @@ const Menu = ({
       await path02Controls.start(path02Variants.moving);
       path02Controls.start(path02Variants.closed);
     }
+  }, [isOpen, path01Controls, path02Controls]);
+
+  const onClick = async () => {
+    setOpen(!isOpen);
+    switchIcons();
   };
+
+  useEffect(() => {
+    switchIcons();
+  }, [isOpen, switchIcons]);
 
   return (
     <button className={styles.menuButton} onClick={onClick}>

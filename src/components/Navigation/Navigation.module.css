@@ -34,12 +34,13 @@
   .navMobile {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     position: fixed;
     height: 100vh;
     left: 0;
     top: 0;
     padding: 0 2rem;
+    gap: 5rem
     width: 100%;
     background-color: var(--header);
     backdrop-filter: saturate(180%) blur(20px);

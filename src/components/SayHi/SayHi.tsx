@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import styles from "@/app/page.module.css";
-import { HighLightedText, ProfilePic } from "@/components";
+import { Anchor, HighLightedText, ProfilePic } from "@/components";
 import qoutesDI from "@/assets/qoutesDI.svg";
 import Link from "next/link";
 
@@ -85,7 +85,7 @@ function SayHi() {
         </Link>
       </strong>
       <strong className={styles.linkList} style={{ flexDirection: "row" }}>
-        <Link target="_blank" href="https://cal.com/souravdey777/quick-chat">
+        <Link target="_blank" href="https://cal.com/souravdey/quick-chat">
           Quick 1:1 ⚡️ 15-Minutes &#8594;
         </Link>
       </strong>

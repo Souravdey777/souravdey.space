@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import styles from "@/app/page.module.css";
-import { Anchor, HighLightedText, ProfilePic } from "@/components";
+import { HighLightedText, ProfilePic } from "@/components";
 import qoutesDI from "@/assets/qoutesDI.svg";
 import Link from "next/link";
 
@@ -85,8 +85,8 @@ function SayHi() {
         </Link>
       </strong>
       <strong className={styles.linkList} style={{ flexDirection: "row" }}>
-        <Link target="_blank" href="https://space.topmate.io/souravdey777">
-          Book a session for 1:1 Mentorship &#8594;
+        <Link target="_blank" href="https://cal.com/souravdey777/quick-chat">
+          Quick 1:1 ⚡️ 15-Minutes &#8594;
         </Link>
       </strong>
     </section>

@@ -36,14 +36,9 @@ function SayHi() {
         Occasionally <strong>Designer</strong> | 
         <strong>Blogger</strong> | <strong>Mentor</strong>
       </p>
-      <p>
-        Currenty the website is being revamped. 🚀
-        <br />
-        <strong>Will be ready by 30th June, 2023</strong>
-      </p>
       <strong
         className={styles.linkList}
-        style={{ flexDirection: "row", justifyContent: "space-evenly" }}
+        style={{ flexDirection: "row", justifyContent: "space-between" }}
       >
         <Link target="_blank" href="https://github.com/Souravdey777/">
           <SiGithub
@@ -84,9 +79,12 @@ function SayHi() {
           />
         </Link>
       </strong>
-      <strong className={styles.linkList} style={{ flexDirection: "row" }}>
+      <strong className={styles.linkList}>
         <Link target="_blank" href="https://cal.com/souravdey/quick-chat">
-          Quick 1:1 ⚡️ 15-Minutes &#8594;
+          Quick 15-Mins 1:1 ⚡️ &#8594;
+        </Link>
+        <Link target="_blank" href="https://souravdey.substack.com/">
+          Get email upadtes &#8594;
         </Link>
       </strong>
     </section>

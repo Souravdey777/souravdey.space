@@ -2,7 +2,6 @@ import Intro from "@/content/intro.mdx";
 import styles from "@/app/page.module.css";
 
 import {
-  Anchor,
   DecorativeContent,
   ProgressWrapper,
   SayHi,
@@ -22,13 +21,11 @@ export default function Page() {
           <Intro />
           <Signature />
           <strong className={clsx(styles.linkList, roboto.className)}>
-            <Link href="/aboutMe">/myStory🙋🏻‍♂️ &#8594;</Link>
-            {/* <Link href="/aboutMe/workingWithMe">/workingWithMe &#8594;</Link> */}
-            <Link href="/aboutMe/socialPresence">/socialPresence &#8594;</Link>
-            {/* <Link href="/aboutMe/productivityTools">
-              /productivityTools &#8594;
-            </Link> */}
-            <a href="mailto:piyush.kolkata@gmail.com">/sayHi ✉️ </a>
+            <Link href="/aboutMe">/aboutMe</Link>
+            {/* <Link href="/aboutMe/workingWithMe">/workingWithMe</Link>
+            <Link href="/aboutMe/socialPresence">/socialPresence</Link>
+            <Link href="/aboutMe/productivityTools">/productivityTools</Link> */}
+            <a href="mailto:piyush.kolkata@gmail.com">/mailMe</a>
           </strong>
           <DecorativeContent />
         </div>

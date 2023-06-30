@@ -2,12 +2,16 @@ import { Footer, Header } from "@/components";
 import "./globals.css";
 import { poppins } from "./fonts";
 import Script from "next/script";
-// import { motion } from "framer-motion";
-// import Animate from "./animation";
+
+import profilePic from "@/assets/profilepic.png";
 
 export const metadata = {
   title: "Sourav Dey",
-  description: "Sourav Dey | Digital Space",
+  description:
+    "Hi! I am Sourav, a Software Developer from India. Occasionally Designer | Blogger | Mentor",
+  openGraph: {
+    images: profilePic,
+  },
 };
 
 export default function RootLayout({

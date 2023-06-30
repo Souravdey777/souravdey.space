@@ -6,7 +6,7 @@ import Script from "next/script";
 import profilePic from "@/assets/profilepic.png";
 
 export const metadata = {
-  title: "Sourav Dey",
+  title: "Sourav Dey | Digital Space",
   description:
     "Hi! I am Sourav, a Software Developer from India. Occasionally Designer | Blogger | Mentor",
   openGraph: {

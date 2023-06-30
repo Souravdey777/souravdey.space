@@ -84,7 +84,7 @@ function SayHi() {
           Quick 15-Mins 1:1 ⚡️ &#8594;
         </Link>
         <Link target="_blank" href="https://souravdey.substack.com/">
-          Get email upadtes &#8594;
+          Subscribe to Dev Decoded &#8594;
         </Link>
       </strong>
     </section>

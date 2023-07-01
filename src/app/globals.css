@@ -8,22 +8,22 @@
   --white-hex: #ffffff;
 
   --primary-hex: #1c86ff;
-  --border: #d4d4d4;
+  --border: #979797;
   --code-hex: #001936;
   --code-hex-light: #00234b;
 
   --foreground-hex: #323232;
   --background-hex: #f8f9f9;
-  --foreground-hex-intense: #101010;
+  --foreground-hex-intense: #121212;
 
   --header: transparent;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-hex: #d0dbec;
-    --background-hex: #101010;
-    --foreground-hex-intense: #dfdfdf;
+    --foreground-hex: #dfdfdf;
+    --background-hex: #121212;
+    --foreground-hex-intense: #f8f9f9;
   }
 }
 
@@ -100,7 +100,7 @@ hr {
 }
 
 blockquote {
-  border-left: 2px solid var(--foreground-hex-intense);
+  border-left: 5px solid var(--foreground-hex-intense);
   padding-left: 24px;
 }
 

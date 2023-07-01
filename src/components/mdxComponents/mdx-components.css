@@ -77,9 +77,13 @@
 }
 
 .mdx-a {
-  color: var(--primary-hex);
-  font-weight: bold;
+  color: var(--foreground-hex);
   text-decoration: underline;
+  transition-duration: 0.2s;
+}
+
+.mdx-a:hover {
+  color: var(--primary-hex);
 }
 
 .mdx-img {

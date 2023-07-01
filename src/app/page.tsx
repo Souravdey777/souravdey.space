@@ -21,11 +21,11 @@ export default function Page() {
           <Intro />
           <Signature />
           <strong className={clsx(styles.linkList, roboto.className)}>
-            <Link href="/aboutMe">/aboutMe</Link>
+            <Link href="/aboutMe">/aboutMe &#8594;</Link>
             {/* <Link href="/aboutMe/workingWithMe">/workingWithMe</Link>
             <Link href="/aboutMe/socialPresence">/socialPresence</Link>
             <Link href="/aboutMe/productivityTools">/productivityTools</Link> */}
-            <a href="mailto:piyush.kolkata@gmail.com">/mailMe</a>
+            <a href="mailto:piyush.kolkata@gmail.com">/mailMe &#8594;</a>
           </strong>
           <DecorativeContent />
         </div>

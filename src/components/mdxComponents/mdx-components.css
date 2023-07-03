@@ -76,13 +76,18 @@
   background: var(--code-hex-light);
 }
 
-.mdx-a {
-  color: var(--foreground-hex);
+.mdx-a,
+.mdx-a * {
+  color: var(--foreground-hex-intense);
   text-decoration: underline;
   transition-duration: 0.2s;
 }
 
 .mdx-a:hover {
+  color: var(--primary-hex);
+}
+
+.mdx-a:hover * {
   color: var(--primary-hex);
 }
 

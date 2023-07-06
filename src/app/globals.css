@@ -104,6 +104,10 @@ blockquote {
   padding-left: 2rem;
 }
 
+blockquote blockquote {
+  padding-left: 0.8rem;
+}
+
 * {
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none; /* Firefox */

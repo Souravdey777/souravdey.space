@@ -11,12 +11,13 @@ export default function Page() {
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
+              gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
               color: "var(--foreground-hex-intense)",
+              gap: '0.8rem'
             }}
           >
             {skills.map((skill) => (
-              <strong key={skill}>{skill}</strong>
+              <p key={skill}>{skill}</p>
             ))}
           </div>
         </>

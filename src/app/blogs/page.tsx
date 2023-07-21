@@ -12,7 +12,6 @@ export const metadata = {
   description: "Sourav Dey | Digital Space",
 };
 
-
 async function page({
   searchParams,
 }: {
@@ -41,6 +40,7 @@ async function page({
           description,
           published,
           tags,
+          views,
           body: { raw },
           publishedDate,
         } = blog;
@@ -50,7 +50,8 @@ async function page({
           return (
             <Link className={styles.blogCard} key={title} href={flattenedPath}>
               <p className={styles.blogCardText}>
-                {readTime} &#x2022; {date}
+                {readTime} &#x2022; {date}{" "}
+                {views && <>&#x2022; {views} views</>}
               </p>
               <h3 className={styles.blogCardTitle}>{title}</h3>
               <p className={styles.blogCardText}>{description}</p>

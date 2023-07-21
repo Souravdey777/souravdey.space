@@ -43,6 +43,9 @@ export const Blog = defineDocumentType(() => ({
     series: {
       type: "string",
     },
+    views: {
+      type: "string"
+    }
   },
   computedFields,
 }));

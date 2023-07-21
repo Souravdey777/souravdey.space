@@ -25,7 +25,8 @@
 
 .mdxWrapperContent {
   width: 100%;
-  margin: 10rem auto;
+  margin: auto;
+  margin-bottom: 10rem;
 }
 
 .fullHeightContainer {

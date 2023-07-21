@@ -17,14 +17,11 @@ export default function Page() {
       <ProgressWrapper>
         <SayHi />
         {/* Small About Me */}
-        <div className={styles.fullHeightContainer}>
+        <div className={styles.mdxWrapperContent}>
           <Intro />
           <Signature />
           <strong className={clsx(styles.linkList, roboto.className)}>
             <Link href="/aboutMe">/aboutMe &#8594;</Link>
-            {/* <Link href="/aboutMe/workingWithMe">/workingWithMe</Link>
-            <Link href="/aboutMe/socialPresence">/socialPresence</Link>
-            <Link href="/aboutMe/productivityTools">/productivityTools</Link> */}
             <a href="mailto:piyush.kolkata@gmail.com">/mailMe &#8594;</a>
           </strong>
           <DecorativeContent />

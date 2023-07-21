@@ -76,9 +76,10 @@ async function page({ params }: PageProps) {
           )}
           <h1>{title}</h1>
           <section
-            style={{ display: "flex", flexDirection: "column", gap: "24px" }}
+            style={{ display: "flex", flexDirection: "column", gap: "16px" }}
           >
             <h3>{description}</h3>
+            <hr />
             <p>
               {readTime} &#x2022; {date}
             </p>
@@ -100,6 +101,7 @@ async function page({ params }: PageProps) {
               </Link>
               <CopyLink link={`https://souravdey.space/blogs/${slug}`} />
             </div>
+            <hr />
           </section>
           {series && (
             <Link
@@ -109,7 +111,6 @@ async function page({ params }: PageProps) {
               Read more blogs from the {series} Series &#8594;
             </Link>
           )}
-          <hr />
         </section>
         <article className={styles.mdxWrapperContent}>
           <Mdx code={code} />

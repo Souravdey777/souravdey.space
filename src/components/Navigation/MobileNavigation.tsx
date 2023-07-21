@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import styles from "./Navigation.module.css";
 import { Dispatch, SetStateAction } from "react";
 import Link from "next/link";
-import { poppins } from "@/app/fonts";
+import { roboto } from "@/app/fonts";
 
 function MobileNavigation({
   setOpen,
@@ -21,7 +21,7 @@ function MobileNavigation({
         const isActive = pathname.startsWith(link.url);
         return (
           <motion.div
-            className={poppins.className}
+            className={roboto.className}
             key={`${link.name}-${index}`}
           >
             <Link

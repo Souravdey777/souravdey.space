@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import styles from "./Navigation.module.css";
 import { Dispatch, SetStateAction } from "react";
 import Link from "next/link";
+import { roboto } from "@/app/fonts";
 
 function MobileNavigation({
   setOpen,
@@ -19,7 +20,10 @@ function MobileNavigation({
       {navLinks?.map((link, index) => {
         const isActive = pathname.startsWith(link.url);
         return (
-          <motion.div key={`${link.name}-${index}`}>
+          <motion.div
+            className={roboto.className}
+            key={`${link.name}-${index}`}
+          >
             <Link
               className={isActive ? styles.linkBlue : styles.linkWhite}
               href={link.url}

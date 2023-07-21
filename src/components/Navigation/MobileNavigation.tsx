@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import styles from "./Navigation.module.css";
 import { Dispatch, SetStateAction } from "react";
 import Link from "next/link";
-import { roboto } from "@/app/fonts";
+import { poppins } from "@/app/fonts";
 
 function MobileNavigation({
   setOpen,
@@ -26,7 +26,7 @@ function MobileNavigation({
               href={link.url}
               onClick={() => setOpen(false)}
             >
-              <h1 className={roboto.className}>{link.name}</h1>
+              <h1 className={poppins.className}>{link.name}</h1>
             </Link>
           </motion.div>
         );

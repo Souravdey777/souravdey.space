@@ -29,7 +29,7 @@ function MobileNavigation({
               href={link.url}
               onClick={() => setOpen(false)}
             >
-              <h2>{link.name}</h2>
+              <h1>{link.name}</h1>
             </Link>
           </motion.div>
         );

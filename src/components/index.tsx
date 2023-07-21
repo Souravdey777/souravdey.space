@@ -12,6 +12,7 @@ import DecorativeContent from "./DecorativeContent/DecorativeContent";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 import YouTubeEmbed from "./YouTubeEmbed/YouTubeEmbed";
+import CopyLink from "./CopyLink/CopyLink";
 
 export {
   Header,
@@ -28,4 +29,5 @@ export {
   Footer,
   Card,
   YouTubeEmbed,
+  CopyLink
 };

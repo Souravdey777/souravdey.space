@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 
 import { allBlogs } from "contentlayer/generated";
 import { notFound } from "next/navigation";
-import { ProgressWrapper } from "@/components";
+import { CopyLink, ProgressWrapper } from "@/components";
 
 import { Mdx } from "@/components/mdxComponents/mdx-components";
 
@@ -13,6 +13,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { SiTwitter, SiLinkedin } from "@icons-pack/react-simple-icons";
+import { Linkedin, Twitter } from "lucide-react";
 
 interface PageProps {
   params: {
@@ -74,35 +75,32 @@ async function page({ params }: PageProps) {
             />
           )}
           <h1>{title}</h1>
-          <h3>{description}</h3>
-          <p>
-            {readTime} &#x2022; {date}
-          </p>
-          <div
-            style={{ display: "flex", alignItems: "flex-start", gap: "32px" }}
+          <section
+            style={{ display: "flex", flexDirection: "column", gap: "24px" }}
           >
-            <b>Share the blog &#8594;</b>
-            <Link
-              href={`https://twitter.com/intent/tweet?text=Check out this blog on ${title} by @Souravdey777%0A%0Ahttps://souravdey.space/blogs/${slug}`}
-              target="_blank"
+            <h3>{description}</h3>
+            <p>
+              {readTime} &#x2022; {date}
+            </p>
+            <b>Share the blog</b>
+            <div
+              style={{ display: "flex", alignItems: "flex-start", gap: "32px" }}
             >
-              <SiTwitter
-                title="My title"
-                color="var(--foreground-hex)"
-                size={24}
-              />
-            </Link>
-            <Link
-              href={`https://www.linkedin.com/sharing/share-offsite/?url=https://souravdey.space/blogs/${slug}`}
-              target="_blank"
-            >
-              <SiLinkedin
-                title="My title"
-                color="var(--foreground-hex)"
-                size={24}
-              />
-            </Link>
-          </div>
+              <Link
+                href={`https://twitter.com/intent/tweet?text=Check out this blog: ${title} by @Souravdey777%0A%0Ahttps://souravdey.space/blogs/${slug}`}
+                target="_blank"
+              >
+                <Twitter color="var(--foreground-hex)" size={24} />
+              </Link>
+              <Link
+                href={`https://www.linkedin.com/sharing/share-offsite/?url=https://souravdey.space/blogs/${slug}`}
+                target="_blank"
+              >
+                <Linkedin color="var(--foreground-hex)" size={24} />
+              </Link>
+              <CopyLink link={`https://souravdey.space/blogs/${slug}`} />
+            </div>
+          </section>
           {series && (
             <Link
               href={`/blogs?series=${series}`}

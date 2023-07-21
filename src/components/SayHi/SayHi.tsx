@@ -2,17 +2,12 @@ import React from "react";
 import Image from "next/image";
 
 import styles from "@/app/page.module.css";
-import { Anchor, HighLightedText, ProfilePic } from "@/components";
+import { HighLightedText, ProfilePic } from "@/components";
 import qoutesDI from "@/assets/qoutesDI.svg";
 import Link from "next/link";
 
-import {
-  SiCodersrank,
-  SiGithub,
-  SiInstagram,
-  SiLinkedin,
-  SiYoutube,
-} from "@icons-pack/react-simple-icons";
+import { SiCodersrank } from "@icons-pack/react-simple-icons";
+import { Github, Instagram, Linkedin, Youtube } from "lucide-react";
 
 function SayHi() {
   return (
@@ -41,32 +36,16 @@ function SayHi() {
         style={{ flexDirection: "row", justifyContent: "space-between" }}
       >
         <Link target="_blank" href="https://github.com/Souravdey777/">
-          <SiGithub
-            title="Github"
-            color="var(--foreground-hex-intense)"
-            size={24}
-          />
+          <Github color="var(--foreground-hex-intense)" size={24} />
         </Link>
         <Link target="_blank" href="https://www.linkedin.com/in/souravdey777/">
-          <SiLinkedin
-            title="LinkedIn"
-            color="var(--foreground-hex-intense)"
-            size={24}
-          />
+          <Linkedin color="var(--foreground-hex-intense)" size={24} />
         </Link>
         <Link target="_blank" href="https://www.youtube.com/@techWithSD">
-          <SiYoutube
-            title="YouTube"
-            color="var(--foreground-hex-intense)"
-            size={24}
-          />
+          <Youtube color="var(--foreground-hex-intense)" size={24} />
         </Link>
         <Link target="_blank" href="https://www.instagram.com/souravdey777">
-          <SiInstagram
-            title="Instagram"
-            color="var(--foreground-hex-intense)"
-            size={24}
-          />
+          <Instagram color="var(--foreground-hex-intense)" size={24} />
         </Link>
         <Link
           target="_blank"

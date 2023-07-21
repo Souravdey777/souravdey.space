@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import styles from "./Navigation.module.css";
 import { Dispatch, SetStateAction } from "react";
 import Link from "next/link";
-import { permanentMarker } from "@/app/fonts";
+import { poppins } from "@/app/fonts";
 
 function MobileNavigation({
   setOpen,
@@ -21,7 +21,7 @@ function MobileNavigation({
         const isActive = pathname.startsWith(link.url);
         return (
           <motion.div
-            className={permanentMarker.className}
+            className={poppins.className}
             key={`${link.name}-${index}`}
           >
             <Link

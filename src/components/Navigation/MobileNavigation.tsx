@@ -20,16 +20,13 @@ function MobileNavigation({
       {navLinks?.map((link, index) => {
         const isActive = pathname.startsWith(link.url);
         return (
-          <motion.div
-            className={roboto.className}
-            key={`${link.name}-${index}`}
-          >
+          <motion.div key={`${link.name}-${index}`}>
             <Link
               className={isActive ? styles.linkBlue : styles.linkWhite}
               href={link.url}
               onClick={() => setOpen(false)}
             >
-              <h1>{link.name}</h1>
+              <h1 className={roboto.className}>{link.name}</h1>
             </Link>
           </motion.div>
         );

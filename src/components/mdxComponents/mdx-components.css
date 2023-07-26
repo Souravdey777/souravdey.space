@@ -10,36 +10,36 @@
 }
 
 .mdx-h1 {
-  font-size: 2.5rem;
+  font-size: 3.2rem;
   font-weight: 900;
 }
 
 .mdx-h2 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 700;
 }
 
 .mdx-h3 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
 }
 
 .mdx-h4 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .mdx-h5 {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .mdx-h6 {
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 
 .mdx-para,
 .mdx-strong,
 .mdx-list {
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .mdx-code {

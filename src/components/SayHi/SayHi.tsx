@@ -59,7 +59,7 @@ function SayHi() {
         </Link>
       </strong>
       <strong className={styles.linkList}>
-        <Link target="_blank" href="https://cal.com/souravdey/quick-chat">
+        <Link className={styles.linkBlue} target="_blank" href="https://cal.com/souravdey/quick-chat">
           Book: Quick 15-Mins 1:1 ⚡️ &#8594;
         </Link>
         {/* <Link target="_blank" href="https://souravdey.substack.com/">

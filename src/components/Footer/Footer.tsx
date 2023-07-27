@@ -24,7 +24,7 @@ export default function Footer() {
     <footer className={styles.fixedFooter}>
       <p>
         Built with{" "}
-        <Link href="https://nextjs.org/" target="_blank">
+        <Link className={styles.linkBlue} href="https://nextjs.org/" target="_blank">
           NextJs
         </Link>
       </p>

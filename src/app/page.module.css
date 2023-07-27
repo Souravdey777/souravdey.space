@@ -54,6 +54,12 @@
   gap: 32px;
 }
 
+.linkBlue,
+.linkBlue:hover {
+  color: var(--primary-hex);
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 720px) {
   .mdxWrapper,
   .mdxWrapperContent,

@@ -19,8 +19,15 @@ export default function Page() {
           <Intro />
           <Signature />
           <strong className={styles.linkList}>
-            <Link href="/aboutMe"> Read about me &#8594;</Link>
-            <a href="mailto:piyush.kolkata@gmail.com">Drop me an email &#8594;</a>
+            <Link className={styles.linkBlue} href="/aboutMe">
+              /aboutMe &#8594;
+            </Link>
+            <a
+              className={styles.linkBlue}
+              href="mailto:piyush.kolkata@gmail.com"
+            >
+              /emailMe &#8594;
+            </a>
           </strong>
           <DecorativeContent />
         </div>

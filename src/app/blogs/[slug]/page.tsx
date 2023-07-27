@@ -91,6 +91,15 @@ async function page({ params }: PageProps) {
               {readTime} &#x2022; {date}
             </p>
             <hr />
+            {series && (
+              <Link href={`/blogs?series=${series}`} className="mdx-a">
+                <b>
+                  Read more blogs from the{" "}
+                  <span style={{ textTransform: "capitalize" }}>{series}</span>{" "}
+                  Series &#8594;
+                </b>
+              </Link>
+            )}
             <p>Share the blog</p>
             <div
               style={{
@@ -116,15 +125,6 @@ async function page({ params }: PageProps) {
             </div>
             <hr />
           </section>
-          {series && (
-            <Link href={`/blogs?series=${series}`}>
-              <b>
-                Read more blogs from the{" "}
-                <span style={{ textTransform: "capitalize" }}>{series}</span>{" "}
-                Series &#8594;
-              </b>
-            </Link>
-          )}
         </section>
         <article
           className={styles.mdxWrapperContent}

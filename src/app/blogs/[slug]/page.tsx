@@ -12,7 +12,6 @@ import styles from "@/app/page.module.css";
 import Image from "next/image";
 import Link from "next/link";
 
-import { SiTwitter, SiLinkedin } from "@icons-pack/react-simple-icons";
 import { Linkedin, Twitter } from "lucide-react";
 
 interface PageProps {
@@ -65,7 +64,7 @@ async function page({ params }: PageProps) {
       <ProgressWrapper>
         <section
           className={styles.fullHeightContainer}
-          style={{ maxWidth: "840px" }}
+          style={{ maxWidth: "720px" }}
         >
           {image && (
             <Image
@@ -79,16 +78,27 @@ async function page({ params }: PageProps) {
           )}
           <h1 style={{ textAlign: "center" }}>{title}</h1>
           <section
-            style={{ display: "flex", flexDirection: "column", gap: "16px" }}
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              gap: "16px",
+              textAlign: "center",
+            }}
           >
-            <h3 style={{ textAlign: "center" }}>{description}</h3>
-            <hr />
+            <h3>{description}</h3>
             <p>
               {readTime} &#x2022; {date}
             </p>
-            <b>Share the blog</b>
+            <hr />
+            <p>Share the blog</p>
             <div
-              style={{ display: "flex", alignItems: "flex-start", gap: "32px" }}
+              style={{
+                display: "flex",
+                alignItems: "flex-start",
+                justifyContent: "center",
+                gap: "32px",
+              }}
             >
               <Link
                 href={`https://twitter.com/intent/tweet?text=Check out this blog: ${title} by @Souravdey777%0A%0Ahttps://souravdey.space/blogs/${slug}`}
@@ -107,17 +117,18 @@ async function page({ params }: PageProps) {
             <hr />
           </section>
           {series && (
-            <Link
-              href={`/blogs?series=${series}`}
-              style={{ textTransform: "capitalize" }}
-            >
-              Read more blogs from the {series} Series &#8594;
+            <Link href={`/blogs?series=${series}`}>
+              <b>
+                Read more blogs from the{" "}
+                <span style={{ textTransform: "capitalize" }}>{series}</span>{" "}
+                Series &#8594;
+              </b>
             </Link>
           )}
         </section>
         <article
           className={styles.mdxWrapperContent}
-          style={{ maxWidth: "840px" }}
+          style={{ maxWidth: "720px" }}
         >
           <Mdx code={code} />
         </article>

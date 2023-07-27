@@ -44,9 +44,16 @@ body {
   background: var(--background-hex);
 }
 
-a {
-  color: var(--primary-hex);
+a,
+a * {
+  color: var(--foreground-hex-intense);
   text-decoration: none;
+  transition-duration: 0.2s;
+}
+
+a:hover,
+a:hover * {
+  color: var(--primary-hex);
 }
 
 h1,

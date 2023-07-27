@@ -6,6 +6,12 @@
   z-index: 100;
 }
 
+.linkWhite,
+.linkWhite:hover {
+  color: var(--foreground-hex-intense);
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 720px) {
   .fixedHeader {
     position: fixed;

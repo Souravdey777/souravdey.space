@@ -12,7 +12,7 @@ function Header() {
     <header>
       <div className={styles.fixedHeader}>
         <Link href="/">
-          <strong>Sourav Dey</strong>
+          <strong className={styles.linkWhite}>Sourav Dey</strong>
         </Link>
         <Menu isOpen={isOpen} setOpen={setOpen} />
       </div>

@@ -8,8 +8,6 @@ import {
   Signature,
 } from "@/components";
 import Link from "next/link";
-import clsx from "clsx";
-import { roboto } from "./fonts";
 
 export default function Page() {
   return (
@@ -20,9 +18,9 @@ export default function Page() {
         <div className={styles.mdxWrapperContent}>
           <Intro />
           <Signature />
-          <strong className={clsx(styles.linkList, roboto.className)}>
-            <Link href="/aboutMe">/aboutMe &#8594;</Link>
-            <a href="mailto:piyush.kolkata@gmail.com">/mailMe &#8594;</a>
+          <strong className={styles.linkList}>
+            <Link href="/aboutMe"> Read about me &#8594;</Link>
+            <a href="mailto:piyush.kolkata@gmail.com">Drop me an email &#8594;</a>
           </strong>
           <DecorativeContent />
         </div>

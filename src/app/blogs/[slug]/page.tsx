@@ -63,7 +63,10 @@ async function page({ params }: PageProps) {
   return (
     <>
       <ProgressWrapper>
-        <section className={styles.fullHeightContainer}>
+        <section
+          className={styles.fullHeightContainer}
+          style={{ maxWidth: "840px" }}
+        >
           {image && (
             <Image
               src={image}
@@ -74,11 +77,11 @@ async function page({ params }: PageProps) {
               style={{ margin: "0 -10%", width: "120%", height: "auto" }}
             />
           )}
-          <h1>{title}</h1>
+          <h1 style={{ textAlign: "center" }}>{title}</h1>
           <section
             style={{ display: "flex", flexDirection: "column", gap: "16px" }}
           >
-            <h3>{description}</h3>
+            <h3 style={{ textAlign: "center" }}>{description}</h3>
             <hr />
             <p>
               {readTime} &#x2022; {date}
@@ -112,7 +115,10 @@ async function page({ params }: PageProps) {
             </Link>
           )}
         </section>
-        <article className={styles.mdxWrapperContent}>
+        <article
+          className={styles.mdxWrapperContent}
+          style={{ maxWidth: "840px" }}
+        >
           <Mdx code={code} />
         </article>
       </ProgressWrapper>

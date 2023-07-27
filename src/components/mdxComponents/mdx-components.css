@@ -38,7 +38,8 @@
 
 .mdx-para,
 .mdx-strong,
-.mdx-list {
+.mdx-list,
+.mdx-a {
   font-size: 1rem;
 }
 

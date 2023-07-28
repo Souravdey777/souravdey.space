@@ -60,6 +60,18 @@
   text-decoration: none;
 }
 
+.linkBtn {
+  color: var(--foreground-hex-intense);
+  border: 2px solid var(--foreground-hex-intense);
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.linkBtn:hover {
+  border: 2px solid var(--primary-hex);
+}
+
 @media only screen and (max-width: 720px) {
   .mdxWrapper,
   .mdxWrapperContent,

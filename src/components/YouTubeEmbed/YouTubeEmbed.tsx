@@ -11,10 +11,11 @@ function YouTubeEmbed({
     <iframe
       id="ytplayer"
       width="100%"
-      height={portraitMode ? "540" : "280"}
+      height={portraitMode ? "540" : "420"}
       src={`https://www.youtube.com/embed/${slugHash}`}
       style={{
         border: "none",
+        borderRadius: '4px',
         outline: "none",
       }}
     />

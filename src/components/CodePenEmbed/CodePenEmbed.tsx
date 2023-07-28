@@ -5,7 +5,7 @@ function CodePenEmbed({ slugHash }: { slugHash: string }) {
     <>
       <p
         className="codepen"
-        data-height="300"
+        data-height="420"
         data-theme-id="dark"
         data-default-tab="result"
         data-slug-hash={slugHash}

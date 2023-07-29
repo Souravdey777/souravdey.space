@@ -1,7 +1,7 @@
 ---
 type: Blog
 title: LeetCode Question - 376. Wiggle Subsequence 🧠
-description:
+description: "3rd July 2022 | 🗓 Daily LeetCode Challenge - #3"
 publishedDate: 2022/07/03
 lastUpdatedDate:
 published: true
@@ -44,7 +44,7 @@ So, this series of blogs is all about practicing Daily LeetCode Challenges & Pro
 1. First check if the length of the `nums` array is smaller than two or not. If yes, we will simply return the length of the array ie. `0` for `[]` and `1` for `[x]` (where x can be any value)
 2. We check the first difference between the `1st` from the `0th` value in the `nums` array and store it in the `previousdiff`
 3. If the values are not equal we will count both the no. for the wiggle sequence thus our counter will be `2` and if equal we take our counter to be `1`
-4. Now, While iterating the `nums` array we will compare the compare current difference and previous difference. If one is positive the other should be negative or vice versa. Now, we will increment the count if the conditions are satisfied and update the previous difference with the current difference.
+4. Now, While iterating the `nums` array we will compare the compare current difference and the previous difference. If one is positive the other should be negative or vice versa. Now, we will increment the count if the conditions are satisfied and update the previous difference with the current difference.
 5. Finally return the count of the wiggle sequence.
 
 **Code in JS 🧑‍💻**

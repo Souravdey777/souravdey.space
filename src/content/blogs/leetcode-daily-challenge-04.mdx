@@ -1,7 +1,7 @@
 ---
 type: Blog
 title: LeetCode Question - 135. Candy 🍭
-description:
+description: "4th July 2022 | 🗓 Daily LeetCode Challenge - #4"
 publishedDate: 2022/07/04
 lastUpdatedDate:
 published: true
@@ -66,7 +66,7 @@ The third child gets 1 candy because it satisfies the above two conditions.
 **Algorithm**
 
 1. Create a new array of `candies` with all initial values as at least one candy will be given to all the children.
-2. Now, traverse from the left of the array to the right of the array and increase the count of the candies to be given based on the rating of the neighbor child. In this iteration, we are incrementing candies count only based on the left neighbor.
+2. Now, traverse from the left of the array to the right of the array and increase the count of the candies to be given based on the rating of the neighbor child. In this iteration, we are incrementing the candies count only based on the left neighbor.
 3. Now, repeat the above from right to left and also store the sum.
 4. Finally return the total sum of candies. 🍭
 

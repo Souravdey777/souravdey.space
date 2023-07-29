@@ -71,9 +71,14 @@ async function page({ params }: PageProps) {
               src={image}
               alt={title}
               width={0}
-              height={0}
+              height={454}
               sizes="100vw"
-              style={{ margin: "0 -10%", width: "120%", height: "auto" }}
+              style={{
+                margin: "0 -10%",
+                width: "120%",
+                height: "auto",
+              }}
+              priority
             />
           )}
           <h1 style={{ textAlign: "center" }}>{title}</h1>

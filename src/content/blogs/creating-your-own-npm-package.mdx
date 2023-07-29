@@ -49,7 +49,7 @@ This is the minimum key-value pair that is required to publish a package
 
 But, again if you want things to be done efficiently. Create the package.json with the below command
 
-```SHELL
+``` shell
 npm init
 ```
 
@@ -88,7 +88,7 @@ We have the package.json ready. Now, index.js comes to the picture that is defin
 
 Let's create a simple function in the **index.js** file. 👇
 
-```JS
+``` js
 function awesomeEmojiLog(message) {
   if (message === undefined) throw new Error("No Message Found");
   console.log("😎", message);
@@ -100,13 +100,13 @@ module.exports = awesomeEmojiLog;
 It is any day better to test your function before publishing it.
 It can be easily called inside index.js as
 
-```JS
+``` js
 awesomeEmojiLog("This is awesome emoji");
 ```
 
 Test it with a simple command
 
-```SHELL
+``` shell
 node index.js
 ```
 
@@ -126,13 +126,13 @@ Done. Cool.
 
 Log in to npm using the terminal with any of these two commands
 
-```SHELL
+``` shell
 npm login
 ```
 
 or
 
-```SHELL
+``` shell
 npm adduser
 ```
 
@@ -140,7 +140,7 @@ Enter the **username**, **password**, and **email ID** as asked.
 
 After that, you are one command away from your npm package. Just type this
 
-```SHELL
+``` shell
 npm publish
 ```
 
@@ -148,7 +148,7 @@ Note- If your package name starts with "@Your-username/packageName"
 
 use the below command.
 
-```SHELL
+``` shell
 npm publish --access=public
 ```
 
@@ -160,7 +160,7 @@ Create your repo **awesome-npm** and push the code.
 
 Follow the command to push the code.
 
-```SHELL
+``` shell
 echo "# awesome-npm" >> README.md
 git init
 git add .

@@ -6,6 +6,7 @@
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
   --white-hex: #ffffff;
+  --black-hex: #000000;
 
   --primary-hex: #1c86ff;
   --grey: #979797;
@@ -16,6 +17,7 @@
   --foreground-hex: #323232;
   --background-hex: #f8f9f9;
   --foreground-hex-intense: #121212;
+  --background-hex-intense: var(--white-hex);
 
   --header: transparent;
 }
@@ -25,6 +27,7 @@
     --foreground-hex: #dfdfdf;
     --background-hex: #121212;
     --foreground-hex-intense: #f8f9f9;
+    --background-hex-intense: var(--black-hex);
   }
 }
 

@@ -11,6 +11,7 @@ import Image from "next/image";
 import MdxImg from "./mdx-img";
 import YouTubeEmbed from "../YouTubeEmbed/YouTubeEmbed";
 import CodePenEmbed from "../CodePenEmbed/CodePenEmbed";
+import ImageGrid from "../ImageGrid/ImageGrid";
 
 interface mxdComponentProps extends React.HTMLAttributes<HTMLDivElement> {
   className?: string;
@@ -52,6 +53,7 @@ export const mdxComponents = {
   MdxCard,
   YouTubeEmbed,
   CodePenEmbed,
+  ImageGrid,
 };
 
 interface MdxProps {

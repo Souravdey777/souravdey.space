@@ -46,14 +46,14 @@
 .mdx-code {
   padding: 2px 4px;
   background-color: var(--grey2);
-  border-radius: 4px;
+  border-radius: var(--border-radius-s);
 }
 
 .mdx-pre {
   margin: 1rem 0;
   padding: 2rem;
   background: var(--code-hex);
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   overflow-x: scroll;
 }
 
@@ -96,7 +96,7 @@
 .mdx-img {
   max-width: 100%;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: var(--border-radius-s)
 }
 
 .mdx-list {

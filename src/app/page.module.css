@@ -63,7 +63,7 @@
 .linkBtn {
   color: var(--foreground-hex-intense);
   border: 2px solid var(--foreground-hex-intense);
-  border-radius: 8px;
+  border-radius: var(--border-radius);
   padding: 12px;
   text-align: center;
 }

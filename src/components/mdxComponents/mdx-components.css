@@ -44,6 +44,7 @@
 }
 
 .mdx-code {
+  color: var(--white-hex);
   padding: 2px 4px;
   background-color: var(--grey2);
   border-radius: var(--border-radius-s);

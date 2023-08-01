@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./YoutubeEmbed.module.css";
 
 function YouTubeEmbed({
   slugHash,
@@ -9,15 +10,16 @@ function YouTubeEmbed({
 }) {
   return (
     <iframe
+      className={styles.ytplayer}
       id="ytplayer"
-      width="100%"
-      height={portraitMode ? "540" : "420"}
       src={`https://www.youtube.com/embed/${slugHash}`}
-      style={{
-        border: "none",
-        borderRadius: '4px',
-        outline: "none",
-      }}
+      style={
+        portraitMode
+          ? {
+              height: "540px",
+            }
+          : {}
+      }
     />
   );
 }

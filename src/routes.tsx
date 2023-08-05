@@ -1,7 +1,6 @@
 export const navLinks = [
   { name: "/aboutMe", url: "/aboutMe" },
   // { name: "/skills", url: "/skills" },
-  // { name: "/workExperience", url: "/workExperience" },
   { name: "/mentorship", url: "/mentorship" },
   { name: "/blogs", url: "/blogs" },
   // { name: "/mindNuggets", url: "/mindNuggets" },

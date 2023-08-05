@@ -44,8 +44,8 @@ export const Blog = defineDocumentType(() => ({
       type: "string",
     },
     views: {
-      type: "string"
-    }
+      type: "string",
+    },
   },
   computedFields,
 }));
@@ -62,9 +62,9 @@ export const MindNuggets = defineDocumentType(() => ({
     description: {
       type: "string",
     },
-    date: {
+    publishedDate: {
       type: "date",
-      // required: true,
+      required: true,
     },
     published: {
       type: "boolean",

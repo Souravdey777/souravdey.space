@@ -1,5 +1,5 @@
 import { MdxWrapper } from "@/components";
-import { allBlogs } from "contentlayer/generated";
+import { allMindNuggets } from "contentlayer/generated";
 import Link from "next/link";
 import React from "react";
 import readingTime from "reading-time";
@@ -13,33 +13,27 @@ async function page() {
         The mind nugget are some interesting facts that fasinates me. This is
         have content related to a diverse topic.
       </p>
-      {allBlogs
-        .sort((a: any, b: any) =>
-          dayjs(a?.publishedDate).isAfter(dayjs(b?.publishedDate)) ? -1 : 1
-        )
-        .map((blog: any) => {
-          const {
-            _raw: { flattenedPath },
-            title,
-            description,
-            published,
-            tags,
-            body: { raw },
-            publishedDate,
-          } = blog;
-          const date = dayjs(publishedDate).format("DD MMM, YYYY");
-          const readTime = readingTime(raw).text;
-          if (published)
-            return (
-              <Link key={title} href={flattenedPath}>
-                <p>
-                  {readTime} &#x2022; {date}
-                </p>
-                <h3>{title}</h3>
-                <p>{description}</p>
-              </Link>
-            );
-        })}
+      {console.log({ allMindNuggets })}
+      {allMindNuggets.map((mindNuggets: any) => {
+        const {
+          _raw: { flattenedPath },
+          title,
+          description,
+          published,
+          // body: { raw },
+          // publishedDate,
+        } = mindNuggets;
+        // const date = dayjs(publishedDate).format("DD MMM, YYYY");
+        // const readTime = readingTime(raw).text;
+        if (published)
+          return (
+            <Link key={title} href={flattenedPath}>
+              <p>{/* {readTime} &#x2022; {date} */}</p>
+              <h3>{title}</h3>
+              <p>{description}</p>
+            </Link>
+          );
+      })}
     </MdxWrapper>
   );
 }

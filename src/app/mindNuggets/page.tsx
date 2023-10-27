@@ -13,7 +13,6 @@ async function page() {
         The mind nugget are some interesting facts that fasinates me. This is
         have content related to a diverse topic.
       </p>
-      {console.log({ allMindNuggets })}
       {allMindNuggets.map((mindNuggets: any) => {
         const {
           _raw: { flattenedPath },

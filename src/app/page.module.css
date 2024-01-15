@@ -61,15 +61,8 @@
 }
 
 .linkBtn {
-  color: var(--foreground-hex-intense);
-  border: 2px solid var(--foreground-hex-intense);
-  border-radius: var(--border-radius);
-  padding: 14px;
-  transition: 0.5s;
-}
-
-.linkBtnMentorship {
-  color: var(--foreground-hex-intense);
+  color: var(--background-hex-intense);
+  background-color: var(--foreground-hex-intense);
   border: 2px solid var(--foreground-hex-intense);
   border-radius: var(--border-radius);
   padding: 14px;
@@ -77,12 +70,8 @@
 }
 
 .linkBtnDescription {
+  color: var(--background-hex-intense);
   font-weight: normal;
-}
-
-.linkBtn:hover,
-.linkBtnMentorship:hover {
-  border: 2px solid var(--primary-hex);
 }
 
 @media only screen and (max-width: 720px) {

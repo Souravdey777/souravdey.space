@@ -66,18 +66,16 @@ function SayHi() {
         >
           👋🏻 Let&apos;s chat!
           <br />
-          <br />
           <span className={styles.linkBtnDescription}>
             15 Mins Quick Chat ⚡️
           </span>
         </Link>
         <Link
-          className={styles.linkBtnMentorship}
+          className={styles.linkBtn}
           target="_blank"
           href="https://topmate.io/souravdey777"
         >
-          Get 1:1 Mentorship: ⚡️
-          <br />
+          ⚡️ Get 1:1 Mentorship:
           <br />
           <span className={styles.linkBtnDescription}>
             90% discount until the 31st Jan. ✨

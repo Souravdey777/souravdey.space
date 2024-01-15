@@ -57,7 +57,7 @@
 .linkBtnList {
   display: flex;
   flex-direction: row;
-  gap: 32px;
+  gap: 16px;
 }
 
 .linkBlue,

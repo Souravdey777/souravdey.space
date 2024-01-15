@@ -56,7 +56,6 @@
 
 .linkBtnList {
   display: flex;
-  flex-direction: row;
   gap: 16px;
 }
 
@@ -67,17 +66,28 @@
 }
 
 .linkBtn {
-  color: var(--background-hex-intense);
-  background-color: var(--foreground-hex-intense);
+  color: var(--foreground-hex-intense);
+  background-color: var(--background-hex-intense);
+  border: 1px solid var(--foreground-hex);
   border-radius: var(--border-radius);
   padding: 14px;
   transition: 0.5s;
 }
 
-.linkBtnDescription {
+.linkBtn:hover {
   color: var(--background-hex-intense);
+  background-color: var(--foreground-hex-intense);
+}
+
+.linkBtnDescription {
+  color: var(--foreground-hex-intense);
   font-size: 0.875rem;
   font-weight: normal;
+  transition: 0.5s;
+}
+
+.linkBtnDescription:hover {
+  color: var(--primary-hex);
 }
 
 @media only screen and (max-width: 720px) {

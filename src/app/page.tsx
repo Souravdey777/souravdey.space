@@ -20,13 +20,13 @@ export default function Page() {
           <Signature />
           <strong className={styles.linkList}>
             <Link className={styles.linkBlue} href="/aboutMe">
-              /aboutMe &#8594;
+              /aboutMe
             </Link>
             <a
               className={styles.linkBlue}
               href="mailto:piyush.kolkata@gmail.com"
             >
-              /emailMe &#8594;
+              /emailMe
             </a>
           </strong>
           <DecorativeContent />

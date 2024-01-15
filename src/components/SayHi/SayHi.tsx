@@ -58,7 +58,7 @@ function SayHi() {
           />
         </Link>
       </strong>
-      <strong className={styles.linkList}>
+      <strong className={styles.linkBtnList}>
         <Link
           className={styles.linkBtn}
           target="_blank"

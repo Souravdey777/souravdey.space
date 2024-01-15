@@ -64,7 +64,24 @@ function SayHi() {
           target="_blank"
           href="https://cal.com/souravdey/quick-chat"
         >
-          Book: Quick 15-Mins 1:1 ⚡️ &#8594;
+          👋🏻 Let&apos;s chat!
+          <br />
+          <br />
+          <span className={styles.linkBtnDescription}>
+            15 Mins Quick Chat ⚡️
+          </span>
+        </Link>
+        <Link
+          className={styles.linkBtnMentorship}
+          target="_blank"
+          href="https://topmate.io/souravdey777"
+        >
+          Get 1:1 Mentorship: ⚡️
+          <br />
+          <br />
+          <span className={styles.linkBtnDescription}>
+            90% discount until the 31st Jan. ✨
+          </span>
         </Link>
         {/* <Link target="_blank" href="https://souravdey.substack.com/">
           Subscribe to Dev Decoded &#8594;

@@ -3,6 +3,7 @@ Content Meta
 ---
 type:  
 title:  
+description:  
 publishedDate:  
 lastUpdatedDate:  
 published:  

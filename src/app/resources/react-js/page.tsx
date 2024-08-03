@@ -1,6 +1,6 @@
 import { MdxWrapper } from "@/components";
 import React from "react";
-import Resources from "@/content/resources/react-js.mdx";
+import ReactJsResources from "@/content/resources/react-js.mdx";
 
 export const metadata = {
   title: "ReactJs Resources | Sourav Dey",
@@ -9,7 +9,7 @@ export const metadata = {
 function page() {
   return (
     <MdxWrapper withoutBack>
-      <Resources />
+      <ReactJsResources />
     </MdxWrapper>
   );
 }

@@ -8,7 +8,7 @@ export const metadata = {
 
 function page() {
   return (
-    <MdxWrapper>
+    <MdxWrapper withoutBack>
       <Resources />
     </MdxWrapper>
   );

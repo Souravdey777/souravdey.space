@@ -18,7 +18,7 @@ export default function MdxWrapper({
         <article className={styles.mdxWrapper}>
           {!withoutBack && (
             <Link className={styles.linkBlue} href="/">
-              <b>&#8592; Home</b>
+              &#8592; Home
             </Link>
           )}
           {children}

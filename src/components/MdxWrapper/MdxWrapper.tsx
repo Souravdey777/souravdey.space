@@ -17,8 +17,8 @@ export default function MdxWrapper({
       <ProgressWrapper disabled={withoutProgress}>
         <article className={styles.mdxWrapper}>
           {!withoutBack && (
-            <Link className="" href="/">
-              &#8592; Back
+            <Link className="linkBlue" href="/">
+              Home
             </Link>
           )}
           {children}
